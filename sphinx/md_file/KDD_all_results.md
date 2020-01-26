@@ -1,4 +1,4 @@
-# Results on different datasets(KDD)
+# Results on Different Datasets(KDD)
 
 ## Results on Bike
 
