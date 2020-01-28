@@ -12,13 +12,13 @@
 
 ## Results on DiDi Dataset
 
-|          **City: Xian**          | Params |              val-rmse              | test-rmse |      Converged Time       |
-| :------------------------------: | :----: | :--------------------------------: | :-------: | :-----------------------: |
-|       No external feature        |   V1   |                                    | 5.871044  |  6.64 hour / 6911 epochs  |
-| 原UTCB（hour & holiday feature） |        |                                    |  5.89154  |                           |
-|           dense layer            |   V1   |              9.764658              | 5.807899  | 13.70 hour / 14188 epochs |
-|       one embedding layer        |   V1   | <font color="red">10.548454</font> | 6.1003566 |  2.03 hour / 1531 epochs  |
-|       classified Embedding       |   V1   | <font color="red">20.22674</font>  | 17.148306 |  1.00 hour / 366 epochs   |
+|          **City: Xian**          |    Params     | val-rmse  | test-rmse |      Converged Time       |
+| :------------------------------: | :-----------: | :-------: | :-------: | :-----------------------: |
+|       No external feature        |      V1       |           | 5.871044  |  6.64 hour / 6911 epochs  |
+| 原UTCB（hour & holiday feature） |               |           |  5.89154  |                           |
+|           dense layer            |      V1       | 9.764658  | 5.807899  | 13.70 hour / 14188 epochs |
+|       one embedding layer        |      V1       | 10.548454 | 6.1003566 |  2.03 hour / 1531 epochs  |
+|       classified Embedding       | V1（lr:1e-6） | 18.090849 | 16.203615 |  3.63 hour / 3220 epochs  |
 
-注：西安的one embedding layer 和classified Embedding不收敛，调小学习率（由1e-5调整为5e-6）正在重新跑。
+注：默认lr为1e-5
 
