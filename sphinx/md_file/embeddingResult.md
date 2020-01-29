@@ -22,3 +22,14 @@
 
 注：默认lr为1e-5
 
+
+
+## Results on Metro Dataset
+
+|        **City: Shanghai**        | Params |  val-rmse  | test-rmse |      Converged Time       |
+| :------------------------------: | :----: | :--------: | :-------: | :-----------------------: |
+|       No external feature        |   V1   | 139.64864  | 827.4815  |  4.95 hour / 3938 epochs  |
+| 原UTCB（hour & holiday feature） |        |  92.74990  | 151.11746 |                           |
+|           dense layer            |   V1   | ---不收敛  | ---不收敛 |                           |
+|       one embedding layer        |   V1   | ---不收敛  | ---不收敛 |                           |
+|       classified Embedding       |   V1   | 123.484825 | 177.69667 | 19.08 hour / 15640 epochs |
