@@ -85,6 +85,7 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">External Results</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#results-on-bike-dataset">Results on Bike Dataset</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#results-on-didi-dataset">Results on DiDi Dataset</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#results-on-metro-dataset">Results on Metro Dataset</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="KDD_all_results.html">Results on Different Datasets(KDD)</a></li>
@@ -241,20 +242,70 @@
 <tr>
 <td align="center">one embedding layer</td>
 <td align="center">V1</td>
-<td align="center"><font color="red">10.548454</font></td>
+<td align="center">10.548454</td>
 <td align="center">6.1003566</td>
 <td align="center">2.03 hour / 1531 epochs</td>
 </tr>
 <tr>
 <td align="center">classified Embedding</td>
-<td align="center">V1</td>
-<td align="center"><font color="red">20.22674</font></td>
-<td align="center">17.148306</td>
-<td align="center">1.00 hour / 366 epochs</td>
+<td align="center">V1（lr:1e-6）</td>
+<td align="center">18.090849</td>
+<td align="center">16.203615</td>
+<td align="center">3.63 hour / 3220 epochs</td>
 </tr>
 </tbody>
-</table><p>注：西安的one embedding layer 和classified Embedding不收敛，调小学习率（由1e-5调整为5e-6）正在重新跑。</p>
+</table><p>注：默认lr为1e-5</p>
 </div>
+<div class="section" id="results-on-metro-dataset">
+<h2>Results on Metro Dataset<a class="headerlink" href="#results-on-metro-dataset" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th align="center"><strong>City: Shanghai</strong></th>
+<th align="center">Params</th>
+<th align="center">val-rmse</th>
+<th align="center">test-rmse</th>
+<th align="center">Converged Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">No external feature</td>
+<td align="center">V1</td>
+<td align="center">139.64864</td>
+<td align="center">827.4815</td>
+<td align="center">4.95 hour / 3938 epochs</td>
+</tr>
+<tr>
+<td align="center">原UTCB（hour &amp; holiday feature）</td>
+<td align="center"></td>
+<td align="center">92.74990</td>
+<td align="center">151.11746</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">dense layer</td>
+<td align="center">V1</td>
+<td align="center">---不收敛</td>
+<td align="center">---不收敛</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">one embedding layer</td>
+<td align="center">V1</td>
+<td align="center">---不收敛</td>
+<td align="center">---不收敛</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">classified Embedding</td>
+<td align="center">V1</td>
+<td align="center">123.484825</td>
+<td align="center">177.69667</td>
+<td align="center">19.08 hour / 15640 epochs</td>
+</tr>
+</tbody>
+</table></div>
 </div>
 
 
