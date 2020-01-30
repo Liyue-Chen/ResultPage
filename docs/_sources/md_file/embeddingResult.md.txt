@@ -28,7 +28,7 @@
 
 |        **City: Shanghai**        | Params |  val-rmse  | test-rmse |      Converged Time       |
 | :------------------------------: | :----: | :--------: | :-------: | :-----------------------: |
-|       No external feature        |   V1   | 139.64864  | 827.4815  |  4.95 hour / 3938 epochs  |
+|       No external feature        |   V1   |            |           |                           |
 | 原UTCB（hour & holiday feature） |        |  92.74990  | 151.11746 |                           |
 |           dense layer            |   V1   | ---不收敛  | ---不收敛 |                           |
 |       one embedding layer        |   V1   | ---不收敛  | ---不收敛 |                           |
