@@ -26,10 +26,11 @@
 
 ## Results on Metro Dataset
 
-|        **City: Shanghai**        | Params |              val-rmse              |             test-rmse              |      Converged Time       |
-| :------------------------------: | :----: | :--------------------------------: | :--------------------------------: | :-----------------------: |
-|       No external feature        |   V1   |                                    |                                    |                           |
-| 原UTCB（hour & holiday feature） |        |              92.74990              |             151.11746              |                           |
-|           dense layer            |   V1   | <font color="red">1371.1122</font> | <font color="red">1346.9358</font> |  9.13 hour / 7729 epochs  |
-|       one embedding layer        |   V1   |             148.48398              |             221.04675              | 82.71 hour / 69988 epochs |
-|       classified Embedding       |   V1   |             123.484825             |             177.69667              | 19.08 hour / 15640 epochs |
+|        **City: Shanghai**        | Params |                           val-rmse                           |                    test-rmse                     |                    Converged Time                    |
+| :------------------------------: | :----: | :----------------------------------------------------------: | :----------------------------------------------: | :--------------------------------------------------: |
+|       No external feature        |   V1   |                                                              |                                                  |                                                      |
+| 原UTCB（hour & holiday feature） |        |                           92.74990                           |                    151.11746                     |                                                      |
+|           dense layer            |   V1   | 139.64864(adam )<br /><font color="red">1371.1122(sgd)</font> | 827.4815<br /><font color="red">1346.9358</font> | 4.95 hour / 3938 epochs<br />9.13 hour / 7729 epochs |
+|       one embedding layer        |   V1   |                          148.48398                           |                    221.04675                     |              82.71 hour / 69988 epochs               |
+|       classified Embedding       |   V1   |                          123.484825                          |                    177.69667                     |              19.08 hour / 15640 epochs               |
+
