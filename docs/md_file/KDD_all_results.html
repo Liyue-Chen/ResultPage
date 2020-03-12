@@ -86,7 +86,10 @@
 <li class="toctree-l2"><a class="reference internal" href="#results-on-bike">Results on Bike</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#results-on-didi">Results on DiDi</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#results-on-metro">Results on Metro</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#results-on-charge-station">Results on Charge-Station</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#results-on-charge-station">Results on Charge-Station</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#c-p-t-trial">C P T trial</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -289,10 +292,10 @@
 </tr>
 <tr>
 <td align="center">ST_MGCN (G/DCI)</td>
+<td align="center">2.51288</td>
 <td align="center"></td>
 <td align="center"></td>
-<td align="center"></td>
-<td></td>
+<td>24.25 hour / 183 epochs</td>
 </tr>
 <tr>
 <td align="center">DCRNN(G/D C)</td>
@@ -317,10 +320,10 @@
 </tr>
 <tr>
 <td align="center">AMulti-GCLSTM-V1</td>
+<td align="center">2.40976</td>
 <td align="center"></td>
 <td align="center"></td>
-<td align="center"></td>
-<td></td>
+<td>6764 epochs</td>
 </tr>
 <tr>
 <td align="center">AMulti-GCLSTM-V2</td>
@@ -331,10 +334,10 @@
 </tr>
 <tr>
 <td align="center">AMulti-GCLSTM-V3</td>
+<td align="center">2.41109</td>
 <td align="center"></td>
 <td align="center"></td>
-<td align="center"></td>
-<td></td>
+<td>244.95 hour / 2848 epochs</td>
 </tr>
 </tbody>
 </table><table border="1" class="docutils">
@@ -378,10 +381,10 @@
 </tr>
 <tr>
 <td align="center">ST_MGCN (G/DCI)</td>
+<td align="center">3.72337</td>
 <td align="center"></td>
 <td align="center"></td>
-<td align="center"></td>
-<td></td>
+<td>15.00 hour / 207 epochs</td>
 </tr>
 <tr>
 <td align="center">DCRNN(G/D C)</td>
@@ -413,10 +416,10 @@
 </tr>
 <tr>
 <td align="center">AMulti-GCLSTM-V2</td>
+<td align="center">3.50671</td>
 <td align="center"></td>
 <td align="center"></td>
-<td align="center"></td>
-<td></td>
+<td>15000 epochs</td>
 </tr>
 <tr>
 <td align="center">AMulti-GCLSTM-V3</td>
@@ -476,26 +479,26 @@
 <tr>
 <td align="center">ST-ResNet</td>
 <td align="center"><code>待补充</code></td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center"><strong>2.34799</strong></td>
+<td align="center">2.71872</td>
 <td align="center"><code>待补充</code></td>
-<td align="center"></td>
+<td align="center">0.29 hour</td>
 </tr>
 <tr>
 <td align="center">ST_MGCN (G/DCI)</td>
 <td align="center"><code>待补充</code></td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">2.35121</td>
+<td align="center">2.71417</td>
 <td align="center">248985</td>
-<td align="center"></td>
+<td align="center">4.78 hour / 290 epochs</td>
 </tr>
 <tr>
 <td align="center">DCRNN (G/D C)</td>
 <td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">2.35779</td>
+<td align="center">2.88934</td>
 <td align="center">50368</td>
-<td align="center"></td>
+<td align="center">90.71 hour / 10000 epochs</td>
 </tr>
 <tr>
 <td align="center">LSTM(C)</td>
@@ -525,7 +528,7 @@
 <td align="center">AMulti-GCLSTM-V2(G/DCI)</td>
 <td align="center"><code>1-1-1-64-32-2-64</code></td>
 <td align="center">2.35982</td>
-<td align="center">2.63673</td>
+<td align="center"><strong>2.63673</strong></td>
 <td align="center"></td>
 <td align="center">8.34 hour / 2778 epochs</td>
 </tr>
@@ -822,42 +825,42 @@
 <tr>
 <td align="center">LSTM(C)</td>
 <td align="center"><code>1-64-32-2-64</code></td>
+<td align="center">46.02485</td>
+<td align="center">49.19564</td>
 <td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">17.32 hour / 10000 epochs</td>
 </tr>
 <tr>
 <td align="center">TMeta</td>
 <td align="center"><code>1-1-1-64-32-2-64</code></td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">31.00504</td>
+<td align="center">45.17080</td>
 <td align="center">62789</td>
-<td align="center"></td>
+<td align="center">27.09 hour / 7979 epochs</td>
 </tr>
 <tr>
 <td align="center">AMulti-GCLSTM-V1 (G/DCI)</td>
 <td align="center"><code>1-1-1-64-32-2-64</code></td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">26.76940</td>
+<td align="center">38.76618</td>
 <td align="center">189521</td>
-<td align="center"></td>
+<td align="center">49.45 hour / 5401 epochs</td>
 </tr>
 <tr>
 <td align="center">AMulti-GCLSTM-V2 (G/DCI)</td>
 <td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">27.94002</td>
+<td align="center">38.90800</td>
 <td align="center">180561</td>
-<td align="center"></td>
+<td align="center">52.65 hour / 7685 epochs</td>
 </tr>
 <tr>
 <td align="center">AMulti-GCLSTM-V3(G/DCI)</td>
 <td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">27.51130</td>
+<td align="center">37.98901</td>
 <td align="center">488447</td>
-<td align="center"></td>
+<td align="center">21.59 hour / 2217 epochs</td>
 </tr>
 </tbody>
 </table><table border="1" class="docutils">
@@ -915,10 +918,10 @@
 <tr>
 <td align="center">DCRNN(G/D C)</td>
 <td align="center">---</td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">46.79165</td>
+<td align="center">65.71969</td>
 <td align="center">50368</td>
-<td align="center"></td>
+<td align="center">165.58 hour / 19050 epochs</td>
 </tr>
 <tr>
 <td align="center">LSTM(C)</td>
@@ -939,18 +942,18 @@
 <tr>
 <td align="center">AMulti-GCLSTM-V1 (G/DCI)</td>
 <td align="center"><code>1-1-1-64-32-2-64</code></td>
-<td align="center">42.23115</td>
-<td align="center">49.84194</td>
+<td align="center">42.03588</td>
+<td align="center">49.46800</td>
 <td align="center">189521</td>
-<td align="center">80.09 hour / 10000 epochs</td>
+<td align="center">84.38 hour / 10387 epochs</td>
 </tr>
 <tr>
 <td align="center">AMulti-GCLSTM-V2 (G/DCI)</td>
 <td align="center"></td>
-<td align="center">44.57267</td>
-<td align="center">50.36893</td>
+<td align="center">43.22523</td>
+<td align="center">50.01080</td>
 <td align="center">180561</td>
-<td align="center">67.78 hour / 10000 epochs</td>
+<td align="center">101.56 hour / 15000 epochs</td>
 </tr>
 <tr>
 <td align="center">AMulti-GCLSTM-V3(G/DCI)</td>
@@ -1032,141 +1035,40 @@
 <tr>
 <td align="center">TMeta</td>
 <td align="center"><code>1-64-32-2-64</code></td>
-<td align="center">136.06951</td>
-<td align="center">107.00211</td>
+<td align="center">130.06602</td>
+<td align="center">102.85933</td>
 <td align="center">62789</td>
-<td align="center">26.07 hour / 10000 epochs</td>
+<td align="center">47.22 hour / 20000 epochs</td>
 </tr>
 <tr>
 <td align="center">AMulti-GCLSTM-V1 (G/DCI)</td>
 <td align="center"><code>1-1-1-64-32-2-64</code></td>
-<td align="center">95.21418</td>
-<td align="center"><strong>100.22448</strong></td>
+<td align="center">84.79937</td>
+<td align="center">97.87108</td>
 <td align="center">189521</td>
-<td align="center">41.09 hour / 10000 epochs</td>
+<td align="center">81.89 hour / 19970 epochs</td>
 </tr>
 <tr>
 <td align="center">AMulti-GCLSTM-V2 (G/DCI)</td>
-<td align="center"></td>
-<td align="center">107.02998</td>
-<td align="center">112.83125</td>
+<td align="center">未完全收敛$\Uparrow$</td>
+<td align="center">94.91725</td>
+<td align="center">106.41066</td>
 <td align="center">180561</td>
-<td align="center">34.80 hour / 10000 epochs</td>
+<td align="center">69.72 hour / 20000 epochs</td>
 </tr>
 <tr>
 <td align="center">AMulti-GCLSTM-V3(G/DCI)</td>
 <td align="center"></td>
-<td align="center"><strong>91.06395</strong></td>
-<td align="center">100.74052</td>
+<td align="center"><strong>88.32695</strong></td>
+<td align="center"><strong>94.77593</strong></td>
 <td align="center">488447</td>
-<td align="center">38.77 hour / 10000 epochs</td>
+<td align="center">40.19 hour / 10004 epochs</td>
 </tr>
 </tbody>
 </table></div>
 <div class="section" id="results-on-charge-station">
 <h2>Results on Charge-Station<a class="headerlink" href="#results-on-charge-station" title="Permalink to this headline">¶</a></h2>
 <table border="1" class="docutils">
-<thead>
-<tr>
-<th align="center"><font color='#ff0000'><strong>City: Beijing <br />TimeFitness: 15mins</strong></font></th>
-<th align="center">Params</th>
-<th align="center">val-rmse</th>
-<th align="center">test-rmse</th>
-<th align="center"># Params</th>
-<th align="center">Converged Time</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="center">HM</td>
-<td align="center"><code>2-0-2</code></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">---</td>
-<td align="center">---</td>
-</tr>
-<tr>
-<td align="center">ARIMA(C)</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">---</td>
-<td align="center">---</td>
-</tr>
-<tr>
-<td align="center">XGBoost</td>
-<td align="center"><code>12-7-0-20-2</code></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">---</td>
-<td align="center">---</td>
-</tr>
-<tr>
-<td align="center">GBRT</td>
-<td align="center"><code>12-10-0-100-2</code></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">---</td>
-<td align="center">---</td>
-</tr>
-<tr>
-<td align="center">ST_MGCN (G/DC)</td>
-<td align="center"><code>待补充</code></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">166025</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">DCRNN(G/D C)</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">50368</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">LSTM(C)</td>
-<td align="center"><code>1-64-32-2-64</code></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">28992</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">TMeta</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">62789</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">AMulti-GCLSTM-V1 (G/DC)</td>
-<td align="center"><code>1-1-1-64-32-2-64</code></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">130379</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">AMulti-GCLSTM-V2 (G/DC)</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">129867</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">AMulti-GCLSTM-V3 (G/DC)</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center">488447</td>
-<td align="center"></td>
-</tr>
-</tbody>
-</table><table border="1" class="docutils">
 <thead>
 <tr>
 <th align="center"><font color='#ff0000'><strong>City: Beijing <br />TimeFitness: 30mins</strong></font></th>
@@ -1213,10 +1115,10 @@
 <tr>
 <td align="center">ST_MGCN (G/DC)</td>
 <td align="center"><code>待补充</code></td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">0.47922</td>
+<td align="center">0.69083</td>
 <td align="center">166025</td>
-<td align="center"></td>
+<td align="center">4.05 hour / 380 epochs</td>
 </tr>
 <tr>
 <td align="center">DCRNN(G/D C)</td>
@@ -1229,10 +1131,10 @@
 <tr>
 <td align="center">LSTM(C)</td>
 <td align="center"><code>1-64-32-2-64</code></td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">0.51263</td>
+<td align="center">0.75474</td>
 <td align="center">28992</td>
-<td align="center"></td>
+<td align="center">14.20 hour / 15135 epochs</td>
 </tr>
 <tr>
 <td align="center">TMeta</td>
@@ -1313,11 +1215,11 @@
 </tr>
 <tr>
 <td align="center">ST_MGCN (G/DC)</td>
-<td align="center"><code>待补充</code></td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">LSTMUnit:32</td>
+<td align="center">1.07300</td>
+<td align="center">1.52022</td>
 <td align="center">166025</td>
-<td align="center">1.57 hour  253 epochs</td>
+<td align="center">3.84 hour / 884 epochs</td>
 </tr>
 <tr>
 <td align="center">DCRNN(G/D C)</td>
@@ -1330,18 +1232,18 @@
 <tr>
 <td align="center">LSTM(C)</td>
 <td align="center"><code>1-64-32-2-64</code></td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">0.71128</td>
+<td align="center">0.99865</td>
 <td align="center">28992</td>
-<td align="center"></td>
+<td align="center">8.19 hour / 17309 epochs</td>
 </tr>
 <tr>
 <td align="center">TMeta</td>
 <td align="center"><code>1-64-32-2-64</code></td>
-<td align="center">0.61306</td>
-<td align="center">0.84222</td>
+<td align="center">0.60686</td>
+<td align="center">0.84018</td>
 <td align="center">62789</td>
-<td align="center">15.14 hour / 20000 epochs</td>
+<td align="center">31.53 hour / 39999 epochs</td>
 </tr>
 <tr>
 <td align="center">AMulti-GCLSTM-V1 (G/DC)</td>
@@ -1368,7 +1270,52 @@
 <td align="center">23.76 hour / 10497 epochs</td>
 </tr>
 </tbody>
-</table></div>
+</table><p>注：60mins的ST_MGCN方法误差较大，经检查正常收敛，batch_size和LSTMUnit进行了简单的搜索，rmse没有得到明显的下降。</p>
+<div class="section" id="c-p-t-trial">
+<h3>C P T trial<a class="headerlink" href="#c-p-t-trial" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th align="center"><strong>City: Chongqing </strong></th>
+<th>C P T</th>
+<th align="center">val-rmse</th>
+<th align="center">test-rmse</th>
+<th align="center">Converged Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">TMeta 30mins</td>
+<td><code>6-7-4</code></td>
+<td align="center">0.47808</td>
+<td align="center">0.68627</td>
+<td align="center">27.48 hour / 20000 epochs</td>
+</tr>
+<tr>
+<td align="center">TMeta 30mins</td>
+<td><code>12-14-8</code></td>
+<td align="center">0.51892</td>
+<td align="center">0.68751</td>
+<td align="center">7.11 hour / 10770 epochs</td>
+</tr>
+<tr>
+<td align="center">TMeta 1h</td>
+<td><code>6-7-4</code></td>
+<td align="center">0.60686</td>
+<td align="center">0.84018</td>
+<td align="center">31.53 hour / 39999 epochs</td>
+</tr>
+<tr>
+<td align="center">TMeta 1h</td>
+<td><code>12-14-8</code></td>
+<td align="center">0.60945</td>
+<td align="center">0.84900</td>
+<td align="center">3.28 hour / 8172 epochs</td>
+</tr>
+</tbody>
+</table><p>注：在30mins和1h的粒度下，成倍的CPT结果相差不大。</p>
+</div>
+</div>
 </div>
 
 

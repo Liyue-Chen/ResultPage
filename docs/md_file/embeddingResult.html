@@ -161,7 +161,7 @@
 <thead>
 <tr>
 <th align="center"><strong>City: NYC</strong></th>
-<th align="center">Params</th>
+<th align="center">Version</th>
 <th align="center">test-rmse</th>
 <th align="center"># Params</th>
 <th align="center">Converged Time</th>
@@ -171,9 +171,9 @@
 <tr>
 <td align="center">No external feature</td>
 <td align="center">V1</td>
+<td align="center">3.51827</td>
 <td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">5930 epochs</td>
 </tr>
 <tr>
 <td align="center">原UTCB（hour &amp; holiday feature）</td>
@@ -207,11 +207,12 @@
 </table></div>
 <div class="section" id="results-on-didi-dataset">
 <h2>Results on DiDi Dataset<a class="headerlink" href="#results-on-didi-dataset" title="Permalink to this headline">¶</a></h2>
+<p>①外部特征未归一化    ②外部特征归一化    √收敛    ×未收敛，达到了最大epoch</p>
 <table border="1" class="docutils">
 <thead>
 <tr>
 <th align="center"><strong>City: Xian</strong></th>
-<th align="center">Params</th>
+<th align="center">Version</th>
 <th align="center">val-rmse</th>
 <th align="center">test-rmse</th>
 <th align="center">Converged Time</th>
@@ -235,34 +236,42 @@
 <tr>
 <td align="center">dense layer</td>
 <td align="center">V1</td>
-<td align="center">9.764658</td>
-<td align="center">5.807899</td>
-<td align="center">13.70 hour / 14188 epochs</td>
+<td align="center">9.764658<br />15.373072</td>
+<td align="center">5.807899<br />6.3856196</td>
+<td align="center">13.70 hour / 14188 epochs<br />15.20 hour / 15163 epochs</td>
 </tr>
 <tr>
 <td align="center">one embedding layer</td>
 <td align="center">V1</td>
-<td align="center">10.548454</td>
-<td align="center">6.1003566</td>
-<td align="center">2.03 hour / 1531 epochs</td>
+<td align="center">7.86501①<br />7.915668②</td>
+<td align="center">6.0782647<br />6.0681624</td>
+<td align="center">29.30 hour / 29223 epochs<br />29.40 hour / 29326 epochs</td>
 </tr>
 <tr>
 <td align="center">classified Embedding</td>
-<td align="center">V1（lr:1e-6）</td>
-<td align="center">18.090849</td>
-<td align="center">16.203615</td>
-<td align="center">3.63 hour / 3220 epochs</td>
+<td align="center">V1</td>
+<td align="center">7.6469483​① √<br />7.570738②√</td>
+<td align="center">5.851229<br />5.8357115</td>
+<td align="center">39.18 hour / 40001 epochs<br />49.32 hour / 50001 epochs</td>
+</tr>
+<tr>
+<td align="center">External-closeness</td>
+<td align="center">V1</td>
+<td align="center">7.9909368</td>
+<td align="center">5.8367977</td>
+<td align="center"><strong>0.83 hour / 383 epochs</strong></td>
 </tr>
 </tbody>
 </table><p>注：默认lr为1e-5</p>
 </div>
 <div class="section" id="results-on-metro-dataset">
 <h2>Results on Metro Dataset<a class="headerlink" href="#results-on-metro-dataset" title="Permalink to this headline">¶</a></h2>
+<p>①外部特征未归一化    ②外部特征归一化    √收敛    ×未收敛，达到了最大epoch</p>
 <table border="1" class="docutils">
 <thead>
 <tr>
 <th align="center"><strong>City: Shanghai</strong></th>
-<th align="center">Params</th>
+<th align="center">Version</th>
 <th align="center">val-rmse</th>
 <th align="center">test-rmse</th>
 <th align="center">Converged Time</th>
@@ -286,23 +295,30 @@
 <tr>
 <td align="center">dense layer</td>
 <td align="center">V1</td>
-<td align="center">139.64864(adam )<br /><font color="red">1371.1122(sgd)</font></td>
-<td align="center">827.4815<br /><font color="red">1346.9358</font></td>
-<td align="center">4.95 hour / 3938 epochs<br />9.13 hour / 7729 epochs</td>
+<td align="center">139.64864①√<br />802.6042①×</td>
+<td align="center">827.4815<br />768.85956</td>
+<td align="center">4.95 hour / 3938 epochs<br />24.12 hour / 20000 epochs</td>
 </tr>
 <tr>
 <td align="center">one embedding layer</td>
 <td align="center">V1</td>
-<td align="center">148.48398</td>
+<td align="center">148.48398①×</td>
 <td align="center">221.04675</td>
 <td align="center">82.71 hour / 69988 epochs</td>
 </tr>
 <tr>
 <td align="center">classified Embedding</td>
 <td align="center">V1</td>
-<td align="center">123.484825</td>
+<td align="center">123.484825​①​√</td>
 <td align="center">177.69667</td>
 <td align="center">19.08 hour / 15640 epochs</td>
+</tr>
+<tr>
+<td align="center">External-closeness</td>
+<td align="center">V1(batch_size:32)</td>
+<td align="center">106.34441②√</td>
+<td align="center">164.20714</td>
+<td align="center"><strong>9.39 hour / 3537 epochs</strong></td>
 </tr>
 </tbody>
 </table></div>
