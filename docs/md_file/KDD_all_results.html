@@ -84,8 +84,16 @@
 <li class="toctree-l1"><a class="reference internal" href="embeddingResult.html">External Results</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Results on Different Datasets(KDD)</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#results-on-bike">Results on Bike</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#results-on-didi">Results on DiDi</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#results-on-metro">Results on Metro</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#results-on-didi">Results on DiDi</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#xi-an">Xi’an</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#chengdu">Chengdu</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#results-on-metro">Results on Metro</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#chongqing">Chongqing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#shanghai">Shanghai</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="#results-on-charge-station">Results on Charge-Station</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#c-p-t-trial">C P T trial</a></li>
 </ul>
@@ -166,9 +174,9 @@
 <thead>
 <tr>
 <th align="center"><font color='red'><strong>Fitness: 15 mins</strong></font></th>
-<th align="center">NYC</th>
-<th align="center">Chicago</th>
-<th align="center">DC</th>
+<th align="center">NYCⅠ</th>
+<th align="center">ChicagoⅡ</th>
+<th align="center">DCⅢ</th>
 <th>Converged Time</th>
 </tr>
 </thead>
@@ -238,26 +246,26 @@
 </tr>
 <tr>
 <td align="center">AMulti-GCLSTM-V2</td>
+<td align="center">1.67336</td>
 <td align="center"></td>
 <td align="center"></td>
-<td align="center"></td>
-<td></td>
+<td>84.40 hour / 6088 epochs</td>
 </tr>
 <tr>
 <td align="center">AMulti-GCLSTM-V3</td>
+<td align="center">1.65351</td>
 <td align="center"></td>
 <td align="center"></td>
-<td align="center"></td>
-<td></td>
+<td>26.27 hour / 930 epochs</td>
 </tr>
 </tbody>
 </table><table border="1" class="docutils">
 <thead>
 <tr>
 <th align="center"><font color='red'><strong>Fitness: 30 mins</strong></font></th>
-<th align="center">NYC</th>
-<th align="center">Chicago</th>
-<th align="center">DC</th>
+<th align="center">NYCⅠ</th>
+<th align="center">ChicagoⅡ</th>
+<th align="center">DCⅢ</th>
 <th>Converged Time</th>
 </tr>
 </thead>
@@ -344,9 +352,9 @@
 <thead>
 <tr>
 <th align="center"><font color='red'><strong>Fitness: 60 mins</strong></font></th>
-<th align="center">NYC</th>
-<th align="center">Chicago</th>
-<th align="center">DC</th>
+<th align="center">NYCⅠ</th>
+<th align="center">ChicagoⅡ</th>
+<th align="center">DCⅢ</th>
 <th>Converged Time</th>
 </tr>
 </thead>
@@ -384,7 +392,7 @@
 <td align="center">3.72337</td>
 <td align="center"></td>
 <td align="center"></td>
-<td>15.00 hour / 207 epochs</td>
+<td>15.00 hour / 207 epochsⅠ</td>
 </tr>
 <tr>
 <td align="center">DCRNN(G/D C)</td>
@@ -397,41 +405,43 @@
 <td align="center">LSTM (C)</td>
 <td align="center">5.16719</td>
 <td align="center"></td>
-<td align="center"></td>
-<td></td>
+<td align="center">3.23409</td>
+<td><br /><br />2.94 hour / 1783 epochsⅢ</td>
 </tr>
 <tr>
 <td align="center">TMeta-LSTM-GAL</td>
 <td align="center">3.73916</td>
 <td align="center"></td>
-<td align="center"></td>
-<td>115.19 hour / 16343 epochs</td>
+<td align="center">2.55653</td>
+<td>115.19 hour / 16343 epochsⅠ<br />28.50 hour / 7194 epochsⅢ</td>
 </tr>
 <tr>
 <td align="center">AMulti-GCLSTM-V1</td>
 <td align="center">3.51827</td>
 <td align="center"></td>
 <td align="center"></td>
-<td>5930 epochs</td>
+<td>5930 epochsⅠ</td>
 </tr>
 <tr>
 <td align="center">AMulti-GCLSTM-V2</td>
 <td align="center">3.50671</td>
 <td align="center"></td>
 <td align="center"></td>
-<td>15000 epochs</td>
+<td>15000 epochsⅠ</td>
 </tr>
 <tr>
 <td align="center">AMulti-GCLSTM-V3</td>
+<td align="center">3.52124</td>
 <td align="center"></td>
 <td align="center"></td>
-<td align="center"></td>
-<td></td>
+<td>7438 epochsⅠ</td>
 </tr>
 </tbody>
 </table></div>
 <div class="section" id="results-on-didi">
 <h2>Results on DiDi<a class="headerlink" href="#results-on-didi" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="xi-an">
+<h3>Xi’an<a class="headerlink" href="#xi-an" title="Permalink to this headline">¶</a></h3>
 <table border="1" class="docutils">
 <thead>
 <tr>
@@ -760,8 +770,341 @@
 </tr>
 </tbody>
 </table></div>
+<div class="section" id="chengdu">
+<h3>Chengdu<a class="headerlink" href="#chengdu" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th align="center"><font color='red'><strong>City: Chengdu  Fitness: 15 mins</strong></font></th>
+<th align="center">Params</th>
+<th align="center">val-rmse</th>
+<th align="center">test-rmse</th>
+<th align="center"># Params</th>
+<th align="center">Converged Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">HM</td>
+<td align="center"><code>5-0-4</code></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">---</td>
+<td align="center">---</td>
+</tr>
+<tr>
+<td align="center">ARIMA(C)</td>
+<td align="center">--</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">--</td>
+<td align="center">--</td>
+</tr>
+<tr>
+<td align="center">XGBoost</td>
+<td align="center"><code>7-14-0-10-4</code></td>
+<td align="center">2.75455</td>
+<td align="center">2.79919</td>
+<td align="center">---</td>
+<td align="center">---</td>
+</tr>
+<tr>
+<td align="center">GBRT</td>
+<td align="center"><code>11-2-2-45-3</code></td>
+<td align="center"></td>
+<td align="center">2.77484</td>
+<td align="center">---</td>
+<td align="center">---</td>
+</tr>
+<tr>
+<td align="center">ST-ResNet</td>
+<td align="center"><code>待补充</code></td>
+<td align="center"></td>
+<td align="center">2.71872</td>
+<td align="center"><code>待补充</code></td>
+<td align="center">0.29 hour</td>
+</tr>
+<tr>
+<td align="center">ST_MGCN (G/DCI)</td>
+<td align="center"><code>待补充</code></td>
+<td align="center"></td>
+<td align="center">2.71417</td>
+<td align="center">248985</td>
+<td align="center">4.78 hour / 290 epochs</td>
+</tr>
+<tr>
+<td align="center">DCRNN (G/D C)</td>
+<td align="center"></td>
+<td align="center">2.35779</td>
+<td align="center">2.88934</td>
+<td align="center">50368</td>
+<td align="center">90.71 hour / 10000 epochs</td>
+</tr>
+<tr>
+<td align="center">LSTM(C)</td>
+<td align="center"><code>1-64-32-2-64</code></td>
+<td align="center">2.58331</td>
+<td align="center">3.05138</td>
+<td align="center"></td>
+<td align="center">6.01 hour / 8600 epochs</td>
+</tr>
+<tr>
+<td align="center">TMeta(TM)</td>
+<td align="center"></td>
+<td align="center">2.39823</td>
+<td align="center">2.91712</td>
+<td align="center"></td>
+<td align="center">0.86 hour / 7 epochs</td>
+</tr>
+<tr>
+<td align="center">AMulti-GCLSTM-V1 (G/DCI)</td>
+<td align="center"><code>1-1-1-64-32-2-64</code></td>
+<td align="center">2.45115</td>
+<td align="center">2.65320</td>
+<td align="center"></td>
+<td align="center">24.12 hour / 7082 epochs</td>
+</tr>
+<tr>
+<td align="center">AMulti-GCLSTM-V2(G/DCI)</td>
+<td align="center"><code>1-1-1-64-32-2-64</code></td>
+<td align="center">2.35982</td>
+<td align="center"><strong>2.63673</strong></td>
+<td align="center"></td>
+<td align="center">8.34 hour / 2778 epochs</td>
+</tr>
+<tr>
+<td align="center">AMulti-GCLSTM-V3(G/DCI)</td>
+<td align="center"></td>
+<td align="center">2.40360</td>
+<td align="center">2.64849</td>
+<td align="center"></td>
+<td align="center">6.50 hour / 941 epochs</td>
+</tr>
+</tbody>
+</table><table border="1" class="docutils">
+<thead>
+<tr>
+<th align="center"><font color='red'><strong>City: Chengdu  Fitness: 30 mins</strong></font></th>
+<th align="center">Params</th>
+<th align="center">val-rmse</th>
+<th align="center">test-rmse</th>
+<th align="center"># Params</th>
+<th align="center">Converged Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">HM</td>
+<td align="center"><code>2-0-2</code></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">---</td>
+<td align="center">---</td>
+</tr>
+<tr>
+<td align="center">ARIMA(C)</td>
+<td align="center">--</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">--</td>
+<td align="center">--</td>
+</tr>
+<tr>
+<td align="center">XGBoost</td>
+<td align="center"><code>9-0-2-25-3</code></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">---</td>
+<td align="center">---</td>
+</tr>
+<tr>
+<td align="center">GBRT</td>
+<td align="center"><code>9-0-2-80-3</code></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">---</td>
+<td align="center">---</td>
+</tr>
+<tr>
+<td align="center">ST-ResNet</td>
+<td align="center"><code>4-64-3-32-6</code></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"><code>待补充</code></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">ST_MGCN (G/DCI)</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">248985</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">DCRNN (G/D C)</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">50368</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">LSTM(C)</td>
+<td align="center"><code>1-64-32-2-64</code></td>
+<td align="center">5.86460</td>
+<td align="center">6.44397</td>
+<td align="center"></td>
+<td align="center">11.24 hour / 50000 epochs</td>
+</tr>
+<tr>
+<td align="center">TMeta</td>
+<td align="center"></td>
+<td align="center">4.20394</td>
+<td align="center">4.67784</td>
+<td align="center"></td>
+<td align="center">2.17 hour / 3919 epochs</td>
+</tr>
+<tr>
+<td align="center">AMulti-GCLSTM-V1 (G/DCI)</td>
+<td align="center"><code>1-1-1-64-32-2-64</code></td>
+<td align="center">4.18897</td>
+<td align="center">4.64988</td>
+<td align="center"></td>
+<td align="center">5.25 hour / 2649 epochs</td>
+</tr>
+<tr>
+<td align="center">AMulti-GCLSTM-V2(G/DCI)</td>
+<td align="center"><code>1-1-1-64-32-2-64</code></td>
+<td align="center">4.10975</td>
+<td align="center">4.61277</td>
+<td align="center"></td>
+<td align="center">2.79 hour / 1472 epochs</td>
+</tr>
+<tr>
+<td align="center">AMulti-GCLSTM-V3(G/DCI)</td>
+<td align="center"></td>
+<td align="center">4.13489</td>
+<td align="center">4.63502</td>
+<td align="center"></td>
+<td align="center">5.97 hour / 2398 epochs</td>
+</tr>
+</tbody>
+</table><table border="1" class="docutils">
+<thead>
+<tr>
+<th align="center"><font color='red'><strong>City: Chengdu Fitness: 60mins</strong></font></th>
+<th align="center">Params</th>
+<th align="center">val-rmse</th>
+<th align="center">test-rmse</th>
+<th align="center"># Params</th>
+<th align="center">Converged Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">HM</td>
+<td align="center"><code>1-1-2</code></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">---</td>
+<td align="center">---</td>
+</tr>
+<tr>
+<td align="center">ARIMA(C)</td>
+<td align="center">--</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">--</td>
+<td align="center">--</td>
+</tr>
+<tr>
+<td align="center">XGBoost</td>
+<td align="center"><code>12-0-2-10-5</code></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">---</td>
+<td align="center">---</td>
+</tr>
+<tr>
+<td align="center">GBRT</td>
+<td align="center"><code>9-0-2-50-2</code></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">---</td>
+<td align="center">---</td>
+</tr>
+<tr>
+<td align="center">ST-ResNet</td>
+<td align="center"><code>待补充</code></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">---</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">ST_MGCN (G/DCI)</td>
+<td align="center"><code>待补充</code></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">DCRNN (G/D C)</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">LSTM(C)</td>
+<td align="center"><code>1-64-32-2-64</code></td>
+<td align="center">12.69784</td>
+<td align="center">13.48316</td>
+<td align="center"></td>
+<td align="center">3.48 hour / 17464 epochs</td>
+</tr>
+<tr>
+<td align="center">TMeta</td>
+<td align="center"></td>
+<td align="center">6.48812</td>
+<td align="center">6.94881</td>
+<td align="center"></td>
+<td align="center">3.68 hour / 13715 epochs</td>
+</tr>
+<tr>
+<td align="center">AMulti-GCLSTM-V1 (G/DCI)</td>
+<td align="center"><code>1-1-1-64-32-2-64</code></td>
+<td align="center">6.36790</td>
+<td align="center">6.85750</td>
+<td align="center"></td>
+<td align="center">2.54 hour / 2285 epochs</td>
+</tr>
+<tr>
+<td align="center">AMulti-GCLSTM-V2(G/DCI)</td>
+<td align="center"><code>1-1-1-64-32-2-64</code></td>
+<td align="center">6.39528</td>
+<td align="center">6.87330</td>
+<td align="center"></td>
+<td align="center">1.40 hour / 1445 epochs</td>
+</tr>
+<tr>
+<td align="center">AMulti-GCLSTM-V3(G/DCI)</td>
+<td align="center"></td>
+<td align="center">6.30479</td>
+<td align="center">6.90394</td>
+<td align="center"></td>
+<td align="center">1.76 hour / 1052 epochs</td>
+</tr>
+</tbody>
+</table></div>
+</div>
 <div class="section" id="results-on-metro">
 <h2>Results on Metro<a class="headerlink" href="#results-on-metro" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="chongqing">
+<h3>Chongqing<a class="headerlink" href="#chongqing" title="Permalink to this headline">¶</a></h3>
 <table border="1" class="docutils">
 <thead>
 <tr>
@@ -1066,6 +1409,313 @@
 </tr>
 </tbody>
 </table></div>
+<div class="section" id="shanghai">
+<h3>Shanghai<a class="headerlink" href="#shanghai" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th align="center"><font color='#ff0000'><strong>City: Shanghai  Fitness: 15mins</strong></font></th>
+<th align="center">Params</th>
+<th align="center">val-rmse</th>
+<th align="center">test-rmse</th>
+<th align="center"># Params</th>
+<th align="center">Converged Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">HM</td>
+<td align="center"><code>2-1-4</code></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">---</td>
+<td align="center">---</td>
+</tr>
+<tr>
+<td align="center">ARIMA(C)</td>
+<td align="center">---</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">---</td>
+<td align="center">---</td>
+</tr>
+<tr>
+<td align="center">XGBoost</td>
+<td align="center"><code>9-14-2-200-5</code></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">---</td>
+<td align="center">---</td>
+</tr>
+<tr>
+<td align="center">GBRT</td>
+<td align="center"><code>12-10-4-200-5</code></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">---</td>
+<td align="center">---</td>
+</tr>
+<tr>
+<td align="center">ST_MGCN (G/DCI)</td>
+<td align="center"><code>待补充</code></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">248985</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">DCRNN(G/D C)</td>
+<td align="center">---</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">LSTM(C)</td>
+<td align="center"><code>1-64-32-2-64</code></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">TMeta</td>
+<td align="center"><code>1-1-1-64-32-2-64</code></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">62789</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">AMulti-GCLSTM-V1 (G/DCI)</td>
+<td align="center"><code>1-1-1-64-32-2-64</code></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">189521</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">AMulti-GCLSTM-V2 (G/DCI)</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">180561</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">AMulti-GCLSTM-V3(G/DCI)</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">488447</td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table><table border="1" class="docutils">
+<thead>
+<tr>
+<th align="center"><font color='#ff0000'><strong>City: Shanghai  Fitness: 30mins</strong></font></th>
+<th align="center">Params</th>
+<th align="center">val-rmse</th>
+<th align="center">test-rmse</th>
+<th align="center"># Params</th>
+<th align="center">Converged Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">HM</td>
+<td align="center"><code>2-1-4</code></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">---</td>
+<td align="center">---</td>
+</tr>
+<tr>
+<td align="center">ARIMA(C)</td>
+<td align="center">---</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">---</td>
+<td align="center">---</td>
+</tr>
+<tr>
+<td align="center">XGBoost</td>
+<td align="center"><code>9-14-2-200-5</code></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">---</td>
+<td align="center">---</td>
+</tr>
+<tr>
+<td align="center">GBRT</td>
+<td align="center"><code>12-10-4-200-5</code></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">---</td>
+<td align="center">---</td>
+</tr>
+<tr>
+<td align="center">ST_MGCN (G/DCI)</td>
+<td align="center"><code>待补充</code></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">248985</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">DCRNN(G/D C)</td>
+<td align="center">---</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">LSTM(C)</td>
+<td align="center"><code>1-64-32-2-64</code></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">TMeta</td>
+<td align="center"><code>1-1-1-64-32-2-64</code></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">62789</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">AMulti-GCLSTM-V1 (G/DCI)</td>
+<td align="center"><code>1-1-1-64-32-2-64</code></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">189521</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">AMulti-GCLSTM-V2 (G/DCI)</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">180561</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">AMulti-GCLSTM-V3(G/DCI)</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">488447</td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table><table border="1" class="docutils">
+<thead>
+<tr>
+<th align="center"><font color='#ff0000'><strong>City: Shanghai  Fitness: 60mins</strong></font></th>
+<th align="center">Params</th>
+<th align="center">val-rmse</th>
+<th align="center">test-rmse</th>
+<th align="center"># Params</th>
+<th align="center">Converged Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">HM</td>
+<td align="center"><code>2-1-4</code></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">---</td>
+<td align="center">---</td>
+</tr>
+<tr>
+<td align="center">ARIMA(C)</td>
+<td align="center">---</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">---</td>
+<td align="center">---</td>
+</tr>
+<tr>
+<td align="center">XGBoost</td>
+<td align="center"><code>9-14-2-200-5</code></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">---</td>
+<td align="center">---</td>
+</tr>
+<tr>
+<td align="center">GBRT</td>
+<td align="center"><code>12-10-4-200-5</code></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">---</td>
+<td align="center">---</td>
+</tr>
+<tr>
+<td align="center">ST_MGCN (G/DCI)</td>
+<td align="center"><code>待补充</code></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">248985</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">DCRNN(G/D C)</td>
+<td align="center">---</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">LSTM(C)</td>
+<td align="center"><code>1-64-32-2-64</code></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">TMeta</td>
+<td align="center"><code>1-1-1-64-32-2-64</code></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">62789</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">AMulti-GCLSTM-V1 (G/DCI)</td>
+<td align="center"><code>1-1-1-64-32-2-64</code></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">189521</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">AMulti-GCLSTM-V2 (G/DCI)</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">180561</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">AMulti-GCLSTM-V3(G/DCI)</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">488447</td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table></div>
+</div>
 <div class="section" id="results-on-charge-station">
 <h2>Results on Charge-Station<a class="headerlink" href="#results-on-charge-station" title="Permalink to this headline">¶</a></h2>
 <table border="1" class="docutils">

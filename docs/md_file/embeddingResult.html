@@ -84,7 +84,10 @@
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">External Results</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#results-on-bike-dataset">Results on Bike Dataset</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#results-on-didi-dataset">Results on DiDi Dataset</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#results-on-didi-dataset">Results on DiDi Dataset</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#one-hot-vs-directly-digitize">one-hot VS directly digitize</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="#results-on-metro-dataset">Results on Metro Dataset</a></li>
 </ul>
 </li>
@@ -263,6 +266,38 @@
 </tr>
 </tbody>
 </table><p>注：默认lr为1e-5</p>
+<div class="section" id="one-hot-vs-directly-digitize">
+<h3>one-hot VS directly digitize<a class="headerlink" href="#one-hot-vs-directly-digitize" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th align="center"><strong>City: Xian</strong></th>
+<th align="center">Version</th>
+<th align="center">dim</th>
+<th align="center">val-rmse</th>
+<th align="center">test-rmse</th>
+<th align="center">Converged Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">one embedding layer</td>
+<td align="center">V1(one-hot)</td>
+<td align="center">63(30 weather+24 hourofday+ 7 dayofweek +2 holiday)</td>
+<td align="center">7.915668</td>
+<td align="center">6.0681624</td>
+<td align="center">29.40 hour / 29326 epochs</td>
+</tr>
+<tr>
+<td align="center">one embedding layer</td>
+<td align="center">V1(directly digitize)</td>
+<td align="center">33(30 weather+1 hourofday+ 1 dayofweek + 1 holiday)</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table></div>
 </div>
 <div class="section" id="results-on-metro-dataset">
 <h2>Results on Metro Dataset<a class="headerlink" href="#results-on-metro-dataset" title="Permalink to this headline">¶</a></h2>
@@ -295,16 +330,16 @@
 <tr>
 <td align="center">dense layer</td>
 <td align="center">V1</td>
-<td align="center">139.64864①√<br />802.6042①×</td>
-<td align="center">827.4815<br />768.85956</td>
-<td align="center">4.95 hour / 3938 epochs<br />24.12 hour / 20000 epochs</td>
+<td align="center">139.64864①√<br />802.6042①×<br />685.7447②×</td>
+<td align="center">827.4815<br />768.85956<br />536.91705</td>
+<td align="center">4.95 hour / 3938 epochs<br />24.12 hour / 20000 epochs<br />36.29 hour / 30000 epochs</td>
 </tr>
 <tr>
 <td align="center">one embedding layer</td>
 <td align="center">V1</td>
-<td align="center">148.48398①×</td>
-<td align="center">221.04675</td>
-<td align="center">82.71 hour / 69988 epochs</td>
+<td align="center">148.48398①×<br />134.51851②×</td>
+<td align="center">221.04675<br />204.40411</td>
+<td align="center">82.71 hour / 69988 epochs<br />82.1460000 epochs</td>
 </tr>
 <tr>
 <td align="center">classified Embedding</td>
@@ -315,10 +350,10 @@
 </tr>
 <tr>
 <td align="center">External-closeness</td>
-<td align="center">V1(batch_size:32)</td>
-<td align="center">106.34441②√</td>
-<td align="center">164.20714</td>
-<td align="center"><strong>9.39 hour / 3537 epochs</strong></td>
+<td align="center">V1(batch_size:32)<br />V1(batch_size:64)</td>
+<td align="center">106.34441②√<br />108.24415</td>
+<td align="center">164.20714<br />158.71454</td>
+<td align="center"><strong>9.39 hour / 3537 epochs</strong><br />18.75 hour / 9568 epochs</td>
 </tr>
 </tbody>
 </table></div>

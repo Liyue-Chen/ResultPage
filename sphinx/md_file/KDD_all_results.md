@@ -6,55 +6,57 @@
 
 ## Results on Bike
 
-| <font color='red'>**Fitness: 15 mins**</font> |            NYC             | Chicago |  DC  | Converged Time          |
-| :-------------------------------------------: | :------------------------: | :-----: | :--: | ----------------------- |
-|                      HM                       |      1.89180 `3-1-2`       |         |      |                         |
-|                   ARIMA(C)                    |                            |         |      |                         |
-|                    XGBoost                    | 1.93168 `10-12-0` 部分搜索 |         |      |                         |
-|                     GBRT                      |                            |         |      |                         |
-|                ST_MGCN (G/DCI)                |                            |         |      |                         |
-|                 DCRNN(G/D C)                  |                            |         |      |                         |
-|                   LSTM (C)                    |          1.98866           |         |      | 14.87 hour / 986 epochs |
-|                TMeta-LSTM-GAL                 |          1.81819           |         |      | 361 epochs              |
-|               AMulti-GCLSTM-V1                |                            |         |      |                         |
-|               AMulti-GCLSTM-V2                |                            |         |      |                         |
-|               AMulti-GCLSTM-V3                |                            |         |      |                         |
+| <font color='red'>**Fitness: 15 mins**</font> |            NYCⅠ            | ChicagoⅡ | DCⅢ  | Converged Time           |
+| :-------------------------------------------: | :------------------------: | :------: | :--: | ------------------------ |
+|                      HM                       |      1.89180 `3-1-2`       |          |      |                          |
+|                   ARIMA(C)                    |                            |          |      |                          |
+|                    XGBoost                    | 1.93168 `10-12-0` 部分搜索 |          |      |                          |
+|                     GBRT                      |                            |          |      |                          |
+|                ST_MGCN (G/DCI)                |                            |          |      |                          |
+|                 DCRNN(G/D C)                  |                            |          |      |                          |
+|                   LSTM (C)                    |          1.98866           |          |      | 14.87 hour / 986 epochs  |
+|                TMeta-LSTM-GAL                 |          1.81819           |          |      | 361 epochs               |
+|               AMulti-GCLSTM-V1                |                            |          |      |                          |
+|               AMulti-GCLSTM-V2                |          1.67336           |          |      | 84.40 hour / 6088 epochs |
+|               AMulti-GCLSTM-V3                |          1.65351           |          |      | 26.27 hour / 930 epochs  |
 
 
 
-| <font color='red'>**Fitness: 30 mins**</font> |          NYC           | Chicago |  DC  | Converged Time            |
-| :-------------------------------------------: | :--------------------: | :-----: | :--: | ------------------------- |
-|                      HM                       |    2.68564 `2-1-2`     |         |      |                           |
-|                   ARIMA(C)                    |        3.17849         |         |      |                           |
-|                    XGBoost                    | 2.70377 `12-8-1-36-3`  |         |      |                           |
-|                     GBRT                      | 2.68164 `12-10-0-72-4` |         |      |                           |
-|                ST_MGCN (G/DCI)                |        2.51288         |         |      | 24.25 hour / 183 epochs   |
-|                 DCRNN(G/D C)                  |        2.61848         |         |      | 56.82 hour / 10034 epochs |
-|                   LSTM (C)                    |        3.01836         |         |      | 93.77 hour / 14343 epochs |
-|                TMeta-LSTM-GAL                 |        2.51124         |         |      | 10839 epochs              |
-|               AMulti-GCLSTM-V1                |        2.40976         |         |      | 6764 epochs               |
-|               AMulti-GCLSTM-V2                |        2.41088         |         |      | 7100 epochs               |
-|               AMulti-GCLSTM-V3                |        2.41109         |         |      | 244.95 hour / 2848 epochs |
+| <font color='red'>**Fitness: 30 mins**</font> |          NYCⅠ          | ChicagoⅡ | DCⅢ  | Converged Time            |
+| :-------------------------------------------: | :--------------------: | :------: | :--: | ------------------------- |
+|                      HM                       |    2.68564 `2-1-2`     |          |      |                           |
+|                   ARIMA(C)                    |        3.17849         |          |      |                           |
+|                    XGBoost                    | 2.70377 `12-8-1-36-3`  |          |      |                           |
+|                     GBRT                      | 2.68164 `12-10-0-72-4` |          |      |                           |
+|                ST_MGCN (G/DCI)                |        2.51288         |          |      | 24.25 hour / 183 epochs   |
+|                 DCRNN(G/D C)                  |        2.61848         |          |      | 56.82 hour / 10034 epochs |
+|                   LSTM (C)                    |        3.01836         |          |      | 93.77 hour / 14343 epochs |
+|                TMeta-LSTM-GAL                 |        2.51124         |          |      | 10839 epochs              |
+|               AMulti-GCLSTM-V1                |        2.40976         |          |      | 6764 epochs               |
+|               AMulti-GCLSTM-V2                |        2.41088         |          |      | 7100 epochs               |
+|               AMulti-GCLSTM-V3                |        2.41109         |          |      | 244.95 hour / 2848 epochs |
 
 
 
-| <font color='red'>**Fitness: 60 mins**</font> |          NYC           |         Chicago         |           DC            | Converged Time             |
-| :-------------------------------------------: | :--------------------: | :---------------------: | :---------------------: | -------------------------- |
-|                      HM                       |    3.99224 `1-1-3`     |     2.97693 `1-1-2`     |     2.63165 `2-1-3`     |                            |
-|                   ARIMA(C)                    |        5.60928         |         3.83584         |         3.60450         |                            |
-|                    XGBoost                    | 4.12407 `12-10-0-20-5` |  2.92569 `9-7-0-20-5`   | 2.65671 `12-14-2-20-5`  |                            |
-|                     GBRT                      | 3.99907 `12-7-4-100-5` | 2.84257 `12-14-2-100-5` | 2.61768 `12-14-2-100-5` |                            |
-|                ST_MGCN (G/DCI)                |        3.72337         |                         |                         | 15.00 hour / 207 epochs    |
-|                 DCRNN(G/D C)                  |        4.18666         |                         |                         |                            |
-|                   LSTM (C)                    |        5.16719         |                         |                         |                            |
-|                TMeta-LSTM-GAL                 |        3.73916         |                         |                         | 115.19 hour / 16343 epochs |
-|               AMulti-GCLSTM-V1                |        3.51827         |                         |                         | 5930 epochs                |
-|               AMulti-GCLSTM-V2                |        3.50671         |                         |                         | 15000 epochs               |
-|               AMulti-GCLSTM-V3                |                        |                         |                         |                            |
+| <font color='red'>**Fitness: 60 mins**</font> |          NYCⅠ          |        ChicagoⅡ         |           DCⅢ           | Converged Time                                             |
+| :-------------------------------------------: | :--------------------: | :---------------------: | :---------------------: | ---------------------------------------------------------- |
+|                      HM                       |    3.99224 `1-1-3`     |     2.97693 `1-1-2`     |     2.63165 `2-1-3`     |                                                            |
+|                   ARIMA(C)                    |        5.60928         |         3.83584         |         3.60450         |                                                            |
+|                    XGBoost                    | 4.12407 `12-10-0-20-5` |  2.92569 `9-7-0-20-5`   | 2.65671 `12-14-2-20-5`  |                                                            |
+|                     GBRT                      | 3.99907 `12-7-4-100-5` | 2.84257 `12-14-2-100-5` | 2.61768 `12-14-2-100-5` |                                                            |
+|                ST_MGCN (G/DCI)                |        3.72337         |                         |                         | 15.00 hour / 207 epochsⅠ                                   |
+|                 DCRNN(G/D C)                  |        4.18666         |                         |                         |                                                            |
+|                   LSTM (C)                    |        5.16719         |                         |         3.23409         | <br /><br />2.94 hour / 1783 epochsⅢ                       |
+|                TMeta-LSTM-GAL                 |        3.73916         |                         |         2.55653         | 115.19 hour / 16343 epochsⅠ<br />28.50 hour / 7194 epochsⅢ |
+|               AMulti-GCLSTM-V1                |        3.51827         |                         |                         | 5930 epochsⅠ                                               |
+|               AMulti-GCLSTM-V2                |        3.50671         |                         |                         | 15000 epochsⅠ                                              |
+|               AMulti-GCLSTM-V3                |        3.52124         |                         |                         | 7438 epochsⅠ                                               |
 
 
 
 ## Results on DiDi
+
+#### Xi'an
 
 | <font color='red'>**City: Xi'an <br />Fitness: 15 mins**</font> |       Params       |  val-rmse   |  test-rmse  | # Params |      Converged Time       |
 | :----------------------------------------------------------: | :----------------: | :---------: | :---------: | :------: | :-----------------------: |
@@ -105,9 +107,62 @@
 |                   AMulti-GCLSTM-V2(G/DCI)                    | `1-1-1-64-32-2-64` |   7.35794   | **5.82891** |          | 2.52 hour / 2956 epochs  |
 |                   AMulti-GCLSTM-V3(G/DCI)                    |                    |   7.14426   |   5.90812   |          | 3.37 hour / 2393 epochs  |
 
+#### Chengdu
+
+| <font color='red'>**City: Chengdu  Fitness: 15 mins**</font> |       Params       | val-rmse |  test-rmse  | # Params |      Converged Time       |
+| :----------------------------------------------------------: | :----------------: | :------: | :---------: | :------: | :-----------------------: |
+|                              HM                              |      `5-0-4`       |          |             |   ---    |            ---            |
+|                           ARIMA(C)                           |         --         |          |             |    --    |            --             |
+|                           XGBoost                            |   `7-14-0-10-4`    | 2.75455  |   2.79919   |   ---    |            ---            |
+|                             GBRT                             |   `11-2-2-45-3`    |          |   2.77484   |   ---    |            ---            |
+|                          ST-ResNet                           |      `待补充`      |          |   2.71872   | `待补充` |         0.29 hour         |
+|                       ST_MGCN (G/DCI)                        |      `待补充`      |          |   2.71417   |  248985  |  4.78 hour / 290 epochs   |
+|                        DCRNN (G/D C)                         |                    | 2.35779  |   2.88934   |  50368   | 90.71 hour / 10000 epochs |
+|                           LSTM(C)                            |   `1-64-32-2-64`   | 2.58331  |   3.05138   |          |  6.01 hour / 8600 epochs  |
+|                          TMeta(TM)                           |                    | 2.39823  |   2.91712   |          |   0.86 hour / 7 epochs    |
+|                   AMulti-GCLSTM-V1 (G/DCI)                   | `1-1-1-64-32-2-64` | 2.45115  |   2.65320   |          | 24.12 hour / 7082 epochs  |
+|                   AMulti-GCLSTM-V2(G/DCI)                    | `1-1-1-64-32-2-64` | 2.35982  | **2.63673** |          |  8.34 hour / 2778 epochs  |
+|                   AMulti-GCLSTM-V3(G/DCI)                    |                    | 2.40360  |   2.64849   |          |  6.50 hour / 941 epochs   |
+
+
+
+| <font color='red'>**City: Chengdu  Fitness: 30 mins**</font> |       Params       | val-rmse | test-rmse | # Params |      Converged Time       |
+| :----------------------------------------------------------: | :----------------: | :------: | :-------: | :------: | :-----------------------: |
+|                              HM                              |      `2-0-2`       |          |           |   ---    |            ---            |
+|                           ARIMA(C)                           |         --         |          |           |    --    |            --             |
+|                           XGBoost                            |    `9-0-2-25-3`    |          |           |   ---    |            ---            |
+|                             GBRT                             |    `9-0-2-80-3`    |          |           |   ---    |            ---            |
+|                          ST-ResNet                           |   `4-64-3-32-6`    |          |           | `待补充` |                           |
+|                       ST_MGCN (G/DCI)                        |                    |          |           |  248985  |                           |
+|                        DCRNN (G/D C)                         |                    |          |           |  50368   |                           |
+|                           LSTM(C)                            |   `1-64-32-2-64`   | 5.86460  |  6.44397  |          | 11.24 hour / 50000 epochs |
+|                            TMeta                             |                    | 4.20394  |  4.67784  |          |  2.17 hour / 3919 epochs  |
+|                   AMulti-GCLSTM-V1 (G/DCI)                   | `1-1-1-64-32-2-64` | 4.18897  |  4.64988  |          |  5.25 hour / 2649 epochs  |
+|                   AMulti-GCLSTM-V2(G/DCI)                    | `1-1-1-64-32-2-64` | 4.10975  |  4.61277  |          |  2.79 hour / 1472 epochs  |
+|                   AMulti-GCLSTM-V3(G/DCI)                    |                    | 4.13489  |  4.63502  |          |  5.97 hour / 2398 epochs  |
+
+
+
+| <font color='red'>**City: Chengdu Fitness: 60mins**</font> |       Params       | val-rmse | test-rmse | # Params |      Converged Time      |
+| :--------------------------------------------------------: | :----------------: | :------: | :-------: | :------: | :----------------------: |
+|                             HM                             |      `1-1-2`       |          |           |   ---    |           ---            |
+|                          ARIMA(C)                          |         --         |          |           |    --    |            --            |
+|                          XGBoost                           |   `12-0-2-10-5`    |          |           |   ---    |           ---            |
+|                            GBRT                            |    `9-0-2-50-2`    |          |           |   ---    |           ---            |
+|                         ST-ResNet                          |      `待补充`      |          |           |   ---    |                          |
+|                      ST_MGCN (G/DCI)                       |      `待补充`      |          |           |          |                          |
+|                       DCRNN (G/D C)                        |                    |          |           |          |                          |
+|                          LSTM(C)                           |   `1-64-32-2-64`   | 12.69784 | 13.48316  |          | 3.48 hour / 17464 epochs |
+|                           TMeta                            |                    | 6.48812  |  6.94881  |          | 3.68 hour / 13715 epochs |
+|                  AMulti-GCLSTM-V1 (G/DCI)                  | `1-1-1-64-32-2-64` | 6.36790  |  6.85750  |          | 2.54 hour / 2285 epochs  |
+|                  AMulti-GCLSTM-V2(G/DCI)                   | `1-1-1-64-32-2-64` | 6.39528  |  6.87330  |          | 1.40 hour / 1445 epochs  |
+|                  AMulti-GCLSTM-V3(G/DCI)                   |                    | 6.30479  |  6.90394  |          | 1.76 hour / 1052 epochs  |
+
 
 
 ## Results on Metro
+
+#### Chongqing
 
 | **<font color='#ff0000'>City: Chongqing <br />Fitness: 15mins</font>** |       Params       | val-rmse | test-rmse | # Params |      Converged Time       |
 | :----------------------------------------------------------: | :----------------: | :------: | :-------: | :------: | :-----------------------: |
@@ -154,6 +209,55 @@
 |                   AMulti-GCLSTM-V1 (G/DCI)                   |  `1-1-1-64-32-2-64`  |   84.79937   |   97.87108   |  189521   | 81.89 hour / 19970 epochs |
 |                   AMulti-GCLSTM-V2 (G/DCI)                   | 未完全收敛$\Uparrow$ |   94.91725   |  106.41066   |  180561   | 69.72 hour / 20000 epochs |
 |                   AMulti-GCLSTM-V3(G/DCI)                    |                      | **88.32695** | **94.77593** |  488447   | 40.19 hour / 10004 epochs |
+
+#### Shanghai
+
+| <font color='#ff0000'>**City: Shanghai  Fitness: 15mins**</font> |       Params       | val-rmse | test-rmse | # Params | Converged Time |
+| :----------------------------------------------------------: | :----------------: | :------: | :-------: | :------: | :------------: |
+|                              HM                              |      `2-1-4`       |          |           |   ---    |      ---       |
+|                           ARIMA(C)                           |        ---         |          |           |   ---    |      ---       |
+|                           XGBoost                            |   `9-14-2-200-5`   |          |           |   ---    |      ---       |
+|                             GBRT                             |  `12-10-4-200-5`   |          |           |   ---    |      ---       |
+|                       ST_MGCN (G/DCI)                        |      `待补充`      |          |           |  248985  |                |
+|                         DCRNN(G/D C)                         |        ---         |          |           |          |                |
+|                           LSTM(C)                            |   `1-64-32-2-64`   |          |           |          |                |
+|                            TMeta                             | `1-1-1-64-32-2-64` |          |           |  62789   |                |
+|                   AMulti-GCLSTM-V1 (G/DCI)                   | `1-1-1-64-32-2-64` |          |           |  189521  |                |
+|                   AMulti-GCLSTM-V2 (G/DCI)                   |                    |          |           |  180561  |                |
+|                   AMulti-GCLSTM-V3(G/DCI)                    |                    |          |           |  488447  |                |
+
+
+
+| <font color='#ff0000'>**City: Shanghai  Fitness: 30mins**</font> |       Params       | val-rmse | test-rmse | # Params | Converged Time |
+| :----------------------------------------------------------: | :----------------: | :------: | :-------: | :------: | :------------: |
+|                              HM                              |      `2-1-4`       |          |           |   ---    |      ---       |
+|                           ARIMA(C)                           |        ---         |          |           |   ---    |      ---       |
+|                           XGBoost                            |   `9-14-2-200-5`   |          |           |   ---    |      ---       |
+|                             GBRT                             |  `12-10-4-200-5`   |          |           |   ---    |      ---       |
+|                       ST_MGCN (G/DCI)                        |      `待补充`      |          |           |  248985  |                |
+|                         DCRNN(G/D C)                         |        ---         |          |           |          |                |
+|                           LSTM(C)                            |   `1-64-32-2-64`   |          |           |          |                |
+|                            TMeta                             | `1-1-1-64-32-2-64` |          |           |  62789   |                |
+|                   AMulti-GCLSTM-V1 (G/DCI)                   | `1-1-1-64-32-2-64` |          |           |  189521  |                |
+|                   AMulti-GCLSTM-V2 (G/DCI)                   |                    |          |           |  180561  |                |
+|                   AMulti-GCLSTM-V3(G/DCI)                    |                    |          |           |  488447  |                |
+
+
+
+| <font color='#ff0000'>**City: Shanghai  Fitness: 60mins**</font> |       Params       | val-rmse | test-rmse | # Params | Converged Time |
+| :----------------------------------------------------------: | :----------------: | :------: | :-------: | :------: | :------------: |
+|                              HM                              |      `2-1-4`       |          |           |   ---    |      ---       |
+|                           ARIMA(C)                           |        ---         |          |           |   ---    |      ---       |
+|                           XGBoost                            |   `9-14-2-200-5`   |          |           |   ---    |      ---       |
+|                             GBRT                             |  `12-10-4-200-5`   |          |           |   ---    |      ---       |
+|                       ST_MGCN (G/DCI)                        |      `待补充`      |          |           |  248985  |                |
+|                         DCRNN(G/D C)                         |        ---         |          |           |          |                |
+|                           LSTM(C)                            |   `1-64-32-2-64`   |          |           |          |                |
+|                            TMeta                             | `1-1-1-64-32-2-64` |          |           |  62789   |                |
+|                   AMulti-GCLSTM-V1 (G/DCI)                   | `1-1-1-64-32-2-64` |          |           |  189521  |                |
+|                   AMulti-GCLSTM-V2 (G/DCI)                   |                    |          |           |  180561  |                |
+|                   AMulti-GCLSTM-V3(G/DCI)                    |                    |          |           |  488447  |                |
+
 
 
 ## Results on Charge-Station
