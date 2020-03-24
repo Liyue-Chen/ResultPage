@@ -32,7 +32,7 @@
 |   **City: Xian**    |        Version        |                         dim                         | val-rmse | test-rmse |      Converged Time       |
 | :-----------------: | :-------------------: | :-------------------------------------------------: | :------: | :-------: | :-----------------------: |
 | one embedding layer |      V1(one-hot)      | 63(30 weather+24 hourofday+ 7 dayofweek +2 holiday) | 7.915668 | 6.0681624 | 29.40 hour / 29326 epochs |
-| one embedding layer | V1(directly digitize) | 33(30 weather+1 hourofday+ 1 dayofweek + 1 holiday) |          |           |                           |
+| one embedding layer | V1(directly digitize) | 33(30 weather+1 hourofday+ 1 dayofweek + 1 holiday) | 8.648821 | 7.196011  |       20005 epochs        |
 
 
 
@@ -42,12 +42,26 @@
 
 ①外部特征未归一化    ②外部特征归一化    √收敛    ×未收敛，达到了最大epoch
 
-|        **City: Shanghai**        |                 Version                  |                  val-rmse                   |               test-rmse                |                        Converged Time                        |
-| :------------------------------: | :--------------------------------------: | :-----------------------------------------: | :------------------------------------: | :----------------------------------------------------------: |
-|       No external feature        |                    V1                    |                                             |                                        |                                                              |
-| 原UTCB（hour & holiday feature） |                                          |                  92.74990                   |               151.11746                |                                                              |
-|           dense layer            |                    V1                    | 139.64864①√<br />802.6042①×<br />685.7447②× | 827.4815<br />768.85956<br />536.91705 | 4.95 hour / 3938 epochs<br />24.12 hour / 20000 epochs<br />36.29 hour / 30000 epochs |
-|       one embedding layer        |                    V1                    |        148.48398①×<br />134.51851②×         |        221.04675<br />204.40411        |       82.71 hour / 69988 epochs<br />82.1460000 epochs       |
-|       classified Embedding       |                    V1                    |                123.484825​①​√                 |               177.69667                |                  19.08 hour / 15640 epochs                   |
-|        External-closeness        | V1(batch_size:32)<br />V1(batch_size:64) |         106.34441②√<br />108.24415          |        164.20714<br />158.71454        |  **9.39 hour / 3537 epochs**<br />18.75 hour / 9568 epochs   |
+|        **City: Shanghai**        |                 Version                  |                           val-rmse                           |                test-rmse                |                        Converged Time                        |
+| :------------------------------: | :--------------------------------------: | :----------------------------------------------------------: | :-------------------------------------: | :----------------------------------------------------------: |
+|       No external feature        |                    V1                    |                                                              |                                         |                                                              |
+| 原UTCB（hour & holiday feature） |                                          |                           92.74990                           |                151.11746                |                                                              |
+|           dense layer            |                    V1                    |         139.64864①√<br />802.6042①×<br />685.7447②×          | 827.4815<br />768.85956<br />536.91705  | 4.95 hour / 3938 epochs<br />24.12 hour / 20000 epochs<br />36.29 hour / 30000 epochs |
+|       one embedding layer        |                    V1                    |                 148.48398①×<br />134.51851②×                 |        221.04675<br />204.40411         |    82.71 hour / 69988 epochs<br />82.14 hour 60000 epochs    |
+|       classified Embedding       |                    V1                    | 123.484825​①​√<br />271.18738②√(lr:1e-5)<br />132.08806②×(lr:1e-4) | 177.69667<br />328.65323<br />195.32414 | 19.08 hour / 15640 epochs<br />3.55 hour / 2918 epochs<br />37.27 hour / 60000 epochs |
+|        External-closeness        | V1(batch_size:32)<br />V1(batch_size:64) |                 106.34441②√<br />108.24415②√                 |        164.20714<br />158.71454         |  **9.39 hour / 3537 epochs**<br />18.75 hour / 9568 epochs   |
 
+
+
+## Results on EV Dataset
+
+|        **City: Beijing**         | Version |               val-rmse               |        test-rmse         |                  Converged Time                  |
+| :------------------------------: | :-----: | :----------------------------------: | :----------------------: | :----------------------------------------------: |
+|       No external feature        |   V1    |               0.58684                |         0.83100          |             5.51 hour / 2648 epochs              |
+| 原UTCB（hour & holiday feature） |         |               0.57868                |         0.815518         |            26.27 hour / 20000 epochs             |
+|           dense layer            |   V1    |               3.162586               |        3.3826275         |              1.41 hour / 703 epochs              |
+|       one embedding layer        |   V1    |              3.4991612               |        3.5420315         |              1.03 hour / 519 epochs              |
+|       classified Embedding       |   V1    |              1.2894919               |         1.269317         |             5.88 hour / 2956 epochs              |
+|        External-closeness        |   V1    | 0.9059565（32）<br />0.8711627（16） | 0.8864132<br />0.8617136 | 0.25 hour / 81 epochs<br />0.50 hour / 91 epochs |
+
+大batch_size(64 32) train_loss 抖动，尝试16（16较为稳定），数据有很多有效记录值站点较少，检查减少情况。

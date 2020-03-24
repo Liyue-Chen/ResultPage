@@ -170,6 +170,7 @@
 <p><strong>只有DCRNN 60mins的实验不必重新跑</strong></p>
 <div class="section" id="results-on-bike">
 <h2>Results on Bike<a class="headerlink" href="#results-on-bike" title="Permalink to this headline">¶</a></h2>
+<p>data_range:0.25，trainday=91(只用了91天的数据进行训练)</p>
 <table border="1" class="docutils">
 <thead>
 <tr>
@@ -184,15 +185,15 @@
 <tr>
 <td align="center">HM</td>
 <td align="center">1.89180 <code>3-1-2</code></td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">1.66782<code>5-0-4</code></td>
+<td align="center">1.55471<code>3-7-4</code></td>
 <td></td>
 </tr>
 <tr>
 <td align="center">ARIMA(C)</td>
 <td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">1.78399</td>
+<td align="center">1.68858</td>
 <td></td>
 </tr>
 <tr>
@@ -211,10 +212,10 @@
 </tr>
 <tr>
 <td align="center">ST_MGCN (G/DCI)</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td></td>
+<td align="center">1.68659</td>
+<td align="center">1.64642</td>
+<td align="center">1.54455</td>
+<td>7.63 hour / 152 epochsⅠ<br />14.95 hour / 57 epochsⅡ<br />6.37 hour / 140 epochsⅢ</td>
 </tr>
 <tr>
 <td align="center">DCRNN(G/D C)</td>
@@ -226,37 +227,37 @@
 <tr>
 <td align="center">LSTM (C)</td>
 <td align="center">1.98866</td>
-<td align="center"></td>
-<td align="center"></td>
-<td>14.87 hour / 986 epochs</td>
+<td align="center">1.80222</td>
+<td align="center">1.67762</td>
+<td>14.87 hour / 986 epochsⅠ<br />15.79 hour / 9167 epochsⅡ<br />0.30 hour / 199 epochsⅢ</td>
 </tr>
 <tr>
 <td align="center">TMeta-LSTM-GAL</td>
 <td align="center">1.81819</td>
-<td align="center"></td>
-<td align="center"></td>
-<td>361 epochs</td>
+<td align="center">1.62269</td>
+<td align="center">1.54041</td>
+<td>361 epochsⅠ<br />4.50 hour / 1278 epochsⅡ<br />0.51 hour / 199 epochsⅢ</td>
 </tr>
 <tr>
 <td align="center">AMulti-GCLSTM-V1</td>
 <td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td></td>
+<td align="center">1.60743</td>
+<td align="center">1.52698</td>
+<td>11.26 hour / 775 epochsⅡ<br />26.81 hour / 2929 epochsⅢ</td>
 </tr>
 <tr>
 <td align="center">AMulti-GCLSTM-V2</td>
 <td align="center">1.67336</td>
-<td align="center"></td>
-<td align="center"></td>
-<td>84.40 hour / 6088 epochs</td>
+<td align="center">1.62883</td>
+<td align="center">1.51158</td>
+<td>84.40 hour / 6088 epochsⅠ<br />13.97 hour / 1269 epochsⅡ<br />51.15 hour / 7015 epochsⅢ</td>
 </tr>
 <tr>
 <td align="center">AMulti-GCLSTM-V3</td>
 <td align="center">1.65351</td>
-<td align="center"></td>
-<td align="center"></td>
-<td>26.27 hour / 930 epochs</td>
+<td align="center">1.60917</td>
+<td align="center">1.51720</td>
+<td>26.27 hour / 930 epochsⅠ<br />6.14 hour / 287 epochsⅡ<br />9.48 hour / 664 epochsⅢ</td>
 </tr>
 </tbody>
 </table><table border="1" class="docutils">
@@ -273,15 +274,15 @@
 <tr>
 <td align="center">HM</td>
 <td align="center">2.68564 <code>2-1-2</code></td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">2.22987<code>3-2-1</code></td>
+<td align="center">1.95601<code>3-1-4</code></td>
 <td></td>
 </tr>
 <tr>
 <td align="center">ARIMA(C)</td>
 <td align="center">3.17849</td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">2.42798</td>
+<td align="center">2.22804</td>
 <td></td>
 </tr>
 <tr>
@@ -301,54 +302,55 @@
 <tr>
 <td align="center">ST_MGCN (G/DCI)</td>
 <td align="center">2.51288</td>
-<td align="center"></td>
-<td align="center"></td>
-<td>24.25 hour / 183 epochs</td>
+<td align="center">2.17659</td>
+<td align="center">1.90305</td>
+<td>24.25 hour / 183 epochsⅠ<br />18.32 hour / 39 epochsⅡ<br />8.40 hour / 171 epochsⅢ</td>
 </tr>
 <tr>
 <td align="center">DCRNN(G/D C)</td>
 <td align="center">2.61848</td>
 <td align="center"></td>
 <td align="center"></td>
-<td>56.82 hour / 10034 epochs</td>
+<td>56.82 hour / 10034 epochsⅠ</td>
 </tr>
 <tr>
 <td align="center">LSTM (C)</td>
 <td align="center">3.01836</td>
+<td align="center">2.49270</td>
 <td align="center"></td>
-<td align="center"></td>
-<td>93.77 hour / 14343 epochs</td>
+<td>93.77 hour / 14343 epochsⅠ<br />1.56 hour / 797 epochsⅡ</td>
 </tr>
 <tr>
 <td align="center">TMeta-LSTM-GAL</td>
 <td align="center">2.51124</td>
+<td align="center">2.13333</td>
 <td align="center"></td>
-<td align="center"></td>
-<td>10839 epochs</td>
+<td>10839 epochsⅠ<br />1.01 hour / 138 epochsⅡ</td>
 </tr>
 <tr>
 <td align="center">AMulti-GCLSTM-V1</td>
 <td align="center">2.40976</td>
+<td align="center">2.17032</td>
 <td align="center"></td>
-<td align="center"></td>
-<td>6764 epochs</td>
+<td>6764 epochsⅠ<br />6.67 hour / 332 epochsⅡ</td>
 </tr>
 <tr>
 <td align="center">AMulti-GCLSTM-V2</td>
 <td align="center">2.41088</td>
+<td align="center">2.13330</td>
 <td align="center"></td>
-<td align="center"></td>
-<td>7100 epochs</td>
+<td>7100 epochsⅠ<br />5.28 hour / 310 epochsⅡ</td>
 </tr>
 <tr>
 <td align="center">AMulti-GCLSTM-V3</td>
 <td align="center">2.41109</td>
+<td align="center">2.18174</td>
 <td align="center"></td>
-<td align="center"></td>
-<td>244.95 hour / 2848 epochs</td>
+<td>244.95 hour / 2848 epochsⅠ<br />8.40 hour / 308 epochsⅡ</td>
 </tr>
 </tbody>
-</table><table border="1" class="docutils">
+</table><p>注：data_range:0.5，trainday=183(只用了183天的数据进行训练)，Bike30mins使用的是全部的数据</p>
+<table border="1" class="docutils">
 <thead>
 <tr>
 <th align="center"><font color='red'><strong>Fitness: 60 mins</strong></font></th>
@@ -362,29 +364,29 @@
 <tr>
 <td align="center">HM</td>
 <td align="center">3.99224 <code>1-1-3</code></td>
-<td align="center">2.97693 <code>1-1-2</code></td>
-<td align="center">2.63165 <code>2-1-3</code></td>
+<td align="center">3.10445<code>1-1-1</code></td>
+<td align="center">2.63169<code>2-1-3</code></td>
 <td></td>
 </tr>
 <tr>
 <td align="center">ARIMA(C)</td>
-<td align="center">5.60928</td>
-<td align="center">3.83584</td>
-<td align="center">3.60450</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
 <td></td>
 </tr>
 <tr>
 <td align="center">XGBoost</td>
-<td align="center">4.12407 <code>12-10-0-20-5</code></td>
-<td align="center">2.92569 <code>9-7-0-20-5</code></td>
-<td align="center">2.65671 <code>12-14-2-20-5</code></td>
+<td align="center">4.10211 <code>13-7-0-103-3</code></td>
+<td align="center">3.00349<code>11-8-0-35-4</code></td>
+<td align="center"></td>
 <td></td>
 </tr>
 <tr>
 <td align="center">GBRT</td>
-<td align="center">3.99907 <code>12-7-4-100-5</code></td>
-<td align="center">2.84257 <code>12-14-2-100-5</code></td>
-<td align="center">2.61768 <code>12-14-2-100-5</code></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
 <td></td>
 </tr>
 <tr>
@@ -404,23 +406,23 @@
 <tr>
 <td align="center">LSTM (C)</td>
 <td align="center">5.16719</td>
-<td align="center"></td>
+<td align="center">3.72113</td>
 <td align="center">3.23409</td>
-<td><br /><br />2.94 hour / 1783 epochsⅢ</td>
+<td><br />48.23 hour / 20000 epochsⅡ<br />2.94 hour / 1783 epochsⅢ</td>
 </tr>
 <tr>
 <td align="center">TMeta-LSTM-GAL</td>
 <td align="center">3.73916</td>
-<td align="center"></td>
+<td align="center">2.84013</td>
 <td align="center">2.55653</td>
-<td>115.19 hour / 16343 epochsⅠ<br />28.50 hour / 7194 epochsⅢ</td>
+<td>115.19 hour / 16343 epochsⅠ<br />594 epochsⅡ<br />28.50 hour / 7194 epochsⅢ</td>
 </tr>
 <tr>
 <td align="center">AMulti-GCLSTM-V1</td>
 <td align="center">3.51827</td>
-<td align="center"></td>
-<td align="center"></td>
-<td>5930 epochsⅠ</td>
+<td align="center">2.69466</td>
+<td align="center">2.40463</td>
+<td>5930 epochsⅠ<br />16.82 hour / 946 epochsⅡ<br />104.21 hour / 3875 epochsⅢ</td>
 </tr>
 <tr>
 <td align="center">AMulti-GCLSTM-V2</td>
@@ -432,14 +434,15 @@
 <tr>
 <td align="center">AMulti-GCLSTM-V3</td>
 <td align="center">3.52124</td>
+<td align="center">2.65204</td>
 <td align="center"></td>
-<td align="center"></td>
-<td>7438 epochsⅠ</td>
+<td>7438 epochsⅠ<br />4403 epochsⅡ</td>
 </tr>
 </tbody>
 </table></div>
 <div class="section" id="results-on-didi">
 <h2>Results on DiDi<a class="headerlink" href="#results-on-didi" title="Permalink to this headline">¶</a></h2>
+<p>由于这两个数据集的时间维度均较短，datarange和trainday参数均为all（全部的数据）</p>
 <div class="section" id="xi-an">
 <h3>Xi’an<a class="headerlink" href="#xi-an" title="Permalink to this headline">¶</a></h3>
 <table border="1" class="docutils">
@@ -786,25 +789,25 @@
 <tbody>
 <tr>
 <td align="center">HM</td>
-<td align="center"><code>5-0-4</code></td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center"><code>2-7-4</code></td>
+<td align="center">3.26494</td>
+<td align="center">3.34701</td>
 <td align="center">---</td>
 <td align="center">---</td>
 </tr>
 <tr>
 <td align="center">ARIMA(C)</td>
 <td align="center">--</td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">3.91984</td>
+<td align="center">3.94791</td>
 <td align="center">--</td>
 <td align="center">--</td>
 </tr>
 <tr>
 <td align="center">XGBoost</td>
 <td align="center"><code>7-14-0-10-4</code></td>
-<td align="center">2.75455</td>
-<td align="center">2.79919</td>
+<td align="center"></td>
+<td align="center"></td>
 <td align="center">---</td>
 <td align="center">---</td>
 </tr>
@@ -812,7 +815,7 @@
 <td align="center">GBRT</td>
 <td align="center"><code>11-2-2-45-3</code></td>
 <td align="center"></td>
-<td align="center">2.77484</td>
+<td align="center"></td>
 <td align="center">---</td>
 <td align="center">---</td>
 </tr>
@@ -820,65 +823,65 @@
 <td align="center">ST-ResNet</td>
 <td align="center"><code>待补充</code></td>
 <td align="center"></td>
-<td align="center">2.71872</td>
+<td align="center"></td>
 <td align="center"><code>待补充</code></td>
-<td align="center">0.29 hour</td>
+<td align="center"></td>
 </tr>
 <tr>
 <td align="center">ST_MGCN (G/DCI)</td>
 <td align="center"><code>待补充</code></td>
 <td align="center"></td>
-<td align="center">2.71417</td>
+<td align="center"></td>
 <td align="center">248985</td>
-<td align="center">4.78 hour / 290 epochs</td>
+<td align="center"></td>
 </tr>
 <tr>
 <td align="center">DCRNN (G/D C)</td>
 <td align="center"></td>
-<td align="center">2.35779</td>
-<td align="center">2.88934</td>
+<td align="center"></td>
+<td align="center"></td>
 <td align="center">50368</td>
-<td align="center">90.71 hour / 10000 epochs</td>
+<td align="center"></td>
 </tr>
 <tr>
 <td align="center">LSTM(C)</td>
 <td align="center"><code>1-64-32-2-64</code></td>
-<td align="center">2.58331</td>
-<td align="center">3.05138</td>
+<td align="center">3.30852</td>
+<td align="center">3.88830</td>
 <td align="center"></td>
-<td align="center">6.01 hour / 8600 epochs</td>
+<td align="center">21.24 hour / 40609 epochs</td>
 </tr>
 <tr>
 <td align="center">TMeta(TM)</td>
 <td align="center"></td>
-<td align="center">2.39823</td>
-<td align="center">2.91712</td>
+<td align="center">2.81329</td>
+<td align="center">3.28553</td>
 <td align="center"></td>
-<td align="center">0.86 hour / 7 epochs</td>
+<td align="center">2.48 hour / 2244 epochs</td>
 </tr>
 <tr>
 <td align="center">AMulti-GCLSTM-V1 (G/DCI)</td>
 <td align="center"><code>1-1-1-64-32-2-64</code></td>
-<td align="center">2.45115</td>
-<td align="center">2.65320</td>
+<td align="center">2.75397</td>
+<td align="center">3.24408</td>
 <td align="center"></td>
-<td align="center">24.12 hour / 7082 epochs</td>
+<td align="center">7.10 hour / 1940 epochs</td>
 </tr>
 <tr>
 <td align="center">AMulti-GCLSTM-V2(G/DCI)</td>
 <td align="center"><code>1-1-1-64-32-2-64</code></td>
-<td align="center">2.35982</td>
-<td align="center"><strong>2.63673</strong></td>
+<td align="center">2.75898</td>
+<td align="center">3.24125</td>
 <td align="center"></td>
-<td align="center">8.34 hour / 2778 epochs</td>
+<td align="center">6.88 hour / 2060 epochs</td>
 </tr>
 <tr>
 <td align="center">AMulti-GCLSTM-V3(G/DCI)</td>
 <td align="center"></td>
-<td align="center">2.40360</td>
-<td align="center">2.64849</td>
+<td align="center">2.75049</td>
+<td align="center">3.25353</td>
 <td align="center"></td>
-<td align="center">6.50 hour / 941 epochs</td>
+<td align="center">5.23 hour / 802 epochs</td>
 </tr>
 </tbody>
 </table><table border="1" class="docutils">
@@ -895,17 +898,17 @@
 <tbody>
 <tr>
 <td align="center">HM</td>
-<td align="center"><code>2-0-2</code></td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center"><code>1-7-4</code></td>
+<td align="center">4.64020</td>
+<td align="center">4.85059</td>
 <td align="center">---</td>
 <td align="center">---</td>
 </tr>
 <tr>
 <td align="center">ARIMA(C)</td>
 <td align="center">--</td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">6.55123</td>
+<td align="center">6.61832</td>
 <td align="center">--</td>
 <td align="center">--</td>
 </tr>
@@ -1004,17 +1007,17 @@
 <tbody>
 <tr>
 <td align="center">HM</td>
-<td align="center"><code>1-1-2</code></td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center"><code>0-7-4</code></td>
+<td align="center">6.91252</td>
+<td align="center">7.51214</td>
 <td align="center">---</td>
 <td align="center">---</td>
 </tr>
 <tr>
 <td align="center">ARIMA(C)</td>
 <td align="center">--</td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">13.01862</td>
+<td align="center">13.25890</td>
 <td align="center">--</td>
 <td align="center">--</td>
 </tr>
@@ -1535,8 +1538,8 @@
 <tr>
 <td align="center">ARIMA(C)</td>
 <td align="center">---</td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">211.57993</td>
+<td align="center">212.00777</td>
 <td align="center">---</td>
 <td align="center">---</td>
 </tr>
@@ -1627,25 +1630,25 @@
 <tbody>
 <tr>
 <td align="center">HM</td>
-<td align="center"><code>2-1-4</code></td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center"><code>0-0-4</code></td>
+<td align="center">130.82704</td>
+<td align="center">172.54974</td>
 <td align="center">---</td>
 <td align="center">---</td>
 </tr>
 <tr>
 <td align="center">ARIMA(C)</td>
 <td align="center">---</td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">667.09467</td>
+<td align="center">676.78754</td>
 <td align="center">---</td>
 <td align="center">---</td>
 </tr>
 <tr>
 <td align="center">XGBoost</td>
-<td align="center"><code>9-14-2-200-5</code></td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center"><code>3-7-0-50-5</code></td>
+<td align="center">112.991356</td>
+<td align="center">160.37798</td>
 <td align="center">---</td>
 <td align="center">---</td>
 </tr>
