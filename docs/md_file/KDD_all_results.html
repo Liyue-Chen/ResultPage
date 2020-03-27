@@ -191,21 +191,21 @@
 </tr>
 <tr>
 <td align="center">ARIMA(C)</td>
-<td align="center"></td>
+<td align="center">1.87415</td>
 <td align="center">1.78399</td>
 <td align="center">1.68858</td>
 <td></td>
 </tr>
 <tr>
 <td align="center">XGBoost</td>
-<td align="center">1.93168 <code>10-12-0</code> 部分搜索</td>
+<td align="center"></td>
 <td align="center"></td>
 <td align="center"></td>
 <td></td>
 </tr>
 <tr>
 <td align="center">GBRT</td>
-<td align="center"></td>
+<td align="center">1.70757<code>7-13-4-144-1</code></td>
 <td align="center"></td>
 <td align="center"></td>
 <td></td>
@@ -219,10 +219,10 @@
 </tr>
 <tr>
 <td align="center">DCRNN(G/D C)</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td></td>
+<td align="center">1.71223</td>
+<td align="center">1.71789</td>
+<td align="center">1.59412</td>
+<td>25.89 hour / 9999 epochsⅠ<br />0.86 hour / 542 epochsⅡ<br />12.72 hour / 9999 epochsⅢ</td>
 </tr>
 <tr>
 <td align="center">LSTM (C)</td>
@@ -260,7 +260,11 @@
 <td>26.27 hour / 930 epochsⅠ<br />6.14 hour / 287 epochsⅡ<br />9.48 hour / 664 epochsⅢ</td>
 </tr>
 </tbody>
-</table><table border="1" class="docutils">
+</table><p>basic conclusion:</p>
+<ol class="simple">
+<li><p>粒度较短时（15mins）,HM等常规方baseline和state-of-the-art的模型相差不大，STMeta方法准确率更高一些，但提升的幅度不大。</p></li>
+</ol>
+<table border="1" class="docutils">
 <thead>
 <tr>
 <th align="center"><font color='red'><strong>Fitness: 30 mins</strong></font></th>
@@ -295,7 +299,7 @@
 <tr>
 <td align="center">GBRT</td>
 <td align="center">2.68164 <code>12-10-0-72-4</code></td>
-<td align="center"></td>
+<td align="center">2.35532<code>9-13-2-91-2</code></td>
 <td align="center"></td>
 <td></td>
 </tr>
@@ -317,15 +321,15 @@
 <td align="center">LSTM (C)</td>
 <td align="center">3.01836</td>
 <td align="center">2.49270</td>
-<td align="center"></td>
-<td>93.77 hour / 14343 epochsⅠ<br />1.56 hour / 797 epochsⅡ</td>
+<td align="center">2.21191</td>
+<td>93.77 hour / 14343 epochsⅠ<br />1.56 hour / 797 epochsⅡ<br />0.61 hour / 18 epochsⅢ</td>
 </tr>
 <tr>
 <td align="center">TMeta-LSTM-GAL</td>
 <td align="center">2.51124</td>
 <td align="center">2.13333</td>
-<td align="center"></td>
-<td>10839 epochsⅠ<br />1.01 hour / 138 epochsⅡ</td>
+<td align="center">1.92748</td>
+<td>10839 epochsⅠ<br />1.01 hour / 138 epochsⅡ<br />26.25 hour / 3224 epochsⅢ</td>
 </tr>
 <tr>
 <td align="center">AMulti-GCLSTM-V1</td>
@@ -370,23 +374,23 @@
 </tr>
 <tr>
 <td align="center">ARIMA(C)</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">5.28928</td>
+<td align="center">3.74440</td>
+<td align="center">3.18296</td>
 <td></td>
 </tr>
 <tr>
 <td align="center">XGBoost</td>
 <td align="center">4.10211 <code>13-7-0-103-3</code></td>
 <td align="center">3.00349<code>11-8-0-35-4</code></td>
-<td align="center"></td>
+<td align="center">2.64322<code>11-9-5-28-3</code></td>
 <td></td>
 </tr>
 <tr>
 <td align="center">GBRT</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">4.03881<code>12-6-1-58-5</code></td>
+<td align="center">2.98366<code>11-8-1-92-5</code></td>
+<td align="center">2.61127<code>11-8-5-54-3</code></td>
 <td></td>
 </tr>
 <tr>
@@ -428,8 +432,8 @@
 <td align="center">AMulti-GCLSTM-V2</td>
 <td align="center">3.50671</td>
 <td align="center"></td>
-<td align="center"></td>
-<td>15000 epochsⅠ</td>
+<td align="center">2.40387</td>
+<td>15000 epochsⅠ<br />99.59 hour / 4087 epochsⅢ</td>
 </tr>
 <tr>
 <td align="center">AMulti-GCLSTM-V3</td>
