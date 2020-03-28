@@ -167,7 +167,7 @@
   <div class="section" id="results-on-different-datasets-kdd">
 <h1>Results on Different Datasets(KDD)<a class="headerlink" href="#results-on-different-datasets-kdd" title="Permalink to this headline">¶</a></h1>
 <p><strong>使用到External Feature的方法有:ST_MGCN, ST_ResNet, 以及STMeta的全部实验</strong></p>
-<p><strong>只有DCRNN 60mins的实验不必重新跑</strong></p>
+<p><strong>只有DCRNN 60mins的实验不必重新跑</strong>(重新跑60mins，结果会有细微的区别)</p>
 <div class="section" id="results-on-bike">
 <h2>Results on Bike<a class="headerlink" href="#results-on-bike" title="Permalink to this headline">¶</a></h2>
 <p>data_range:0.25，trainday=91(只用了91天的数据进行训练)</p>
@@ -199,14 +199,14 @@
 <tr>
 <td align="center">XGBoost</td>
 <td align="center">1.71216<code>8-14-4-32-2</code></td>
-<td align="center"></td>
+<td align="center">1.67219<code>11-13-4-28-2</code></td>
 <td align="center"></td>
 <td></td>
 </tr>
 <tr>
 <td align="center">GBRT</td>
 <td align="center">1.70757<code>7-13-4-144-1</code></td>
-<td align="center"></td>
+<td align="center">1.66691<code>7-15-4-101-2</code></td>
 <td align="center"></td>
 <td></td>
 </tr>
@@ -313,9 +313,9 @@
 <tr>
 <td align="center">DCRNN(G/D C)</td>
 <td align="center">2.61848</td>
-<td align="center"></td>
-<td align="center"></td>
-<td>56.82 hour / 10034 epochsⅠ</td>
+<td align="center">2.24642</td>
+<td align="center">2.11771</td>
+<td>56.82 hour / 10034 epochsⅠ<br />16.44 hour / 10000 epochsⅡ<br />8.98 hour / 6077 epochsⅢ</td>
 </tr>
 <tr>
 <td align="center">LSTM (C)</td>
@@ -403,9 +403,9 @@
 <tr>
 <td align="center">DCRNN(G/D C)</td>
 <td align="center">4.18666</td>
-<td align="center"></td>
-<td align="center"></td>
-<td></td>
+<td align="center">3.08066<code>重新运行的结果</code></td>
+<td align="center">3.01575<code>重新运行的结果</code></td>
+<td>15.32 hourⅡ<br />0.36 hourⅢ</td>
 </tr>
 <tr>
 <td align="center">LSTM (C)</td>
@@ -497,7 +497,7 @@
 <td align="center">ST-ResNet</td>
 <td align="center"><code>待补充</code></td>
 <td align="center"><strong>2.34799</strong></td>
-<td align="center">2.71872</td>
+<td align="center">2.68641</td>
 <td align="center"><code>待补充</code></td>
 <td align="center">0.29 hour</td>
 </tr>
@@ -826,10 +826,10 @@
 <tr>
 <td align="center">ST-ResNet</td>
 <td align="center"><code>待补充</code></td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">2.78433</td>
+<td align="center">3.31394</td>
 <td align="center"><code>待补充</code></td>
-<td align="center"></td>
+<td align="center">0.38 hour</td>
 </tr>
 <tr>
 <td align="center">ST_MGCN (G/DCI)</td>
@@ -935,10 +935,10 @@
 <tr>
 <td align="center">ST-ResNet</td>
 <td align="center"><code>4-64-3-32-6</code></td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">4.17125</td>
+<td align="center">4.67278</td>
 <td align="center"><code>待补充</code></td>
-<td align="center"></td>
+<td align="center">0.24 hour</td>
 </tr>
 <tr>
 <td align="center">ST_MGCN (G/DCI)</td>
@@ -1044,10 +1044,10 @@
 <tr>
 <td align="center">ST-ResNet</td>
 <td align="center"><code>待补充</code></td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">6.46632</td>
+<td align="center">7.15462</td>
 <td align="center">---</td>
-<td align="center"></td>
+<td align="center">0.19 hour</td>
 </tr>
 <tr>
 <td align="center">ST_MGCN (G/DCI)</td>
