@@ -8,19 +8,19 @@
 
 data_range:0.25，trainday=91(只用了91天的数据进行训练)
 
-| <font color='red'>**Fitness: 15 mins**</font> |         NYCⅠ          |       ChicagoⅡ        |      DCⅢ       | Converged Time                                               |
-| :-------------------------------------------: | :-------------------: | :-------------------: | :------------: | ------------------------------------------------------------ |
-|                      HM                       |    1.89180 `3-1-2`    |    1.66782`5-0-4`     | 1.55471`3-7-4` |                                                              |
-|                   ARIMA(C)                    |        1.87415        |        1.78399        |    1.68858     |                                                              |
-|                    XGBoost                    | 1.71216`8-14-4-32-2`  | 1.67219`11-13-4-28-2` |                |                                                              |
-|                     GBRT                      | 1.70757`7-13-4-144-1` | 1.66691`7-15-4-101-2` |                |                                                              |
-|                ST_MGCN (G/DCI)                |        1.68659        |        1.64642        |    1.54455     | 7.63 hour / 152 epochsⅠ<br />14.95 hour / 57 epochsⅡ<br />6.37 hour / 140 epochsⅢ |
-|                 DCRNN(G/D C)                  |        1.71223        |        1.71789        |    1.59412     | 25.89 hour / 9999 epochsⅠ<br />0.86 hour / 542 epochsⅡ<br />12.72 hour / 9999 epochsⅢ |
-|                   LSTM (C)                    |        1.98866        |        1.80222        |    1.67762     | 14.87 hour / 986 epochsⅠ<br />15.79 hour / 9167 epochsⅡ<br />0.30 hour / 199 epochsⅢ |
-|                TMeta-LSTM-GAL                 |        1.81819        |        1.62269        |    1.54041     | 361 epochsⅠ<br />4.50 hour / 1278 epochsⅡ<br />0.51 hour / 199 epochsⅢ |
-|               AMulti-GCLSTM-V1                |                       |        1.60743        |    1.52698     | 11.26 hour / 775 epochsⅡ<br />26.81 hour / 2929 epochsⅢ      |
-|               AMulti-GCLSTM-V2                |        1.67336        |        1.62883        |    1.51158     | 84.40 hour / 6088 epochsⅠ<br />13.97 hour / 1269 epochsⅡ<br />51.15 hour / 7015 epochsⅢ |
-|               AMulti-GCLSTM-V3                |        1.65351        |        1.60917        |    1.51720     | 26.27 hour / 930 epochsⅠ<br />6.14 hour / 287 epochsⅡ<br />9.48 hour / 664 epochsⅢ |
+| <font color='red'>**Fitness: 15 mins**</font> |         NYCⅠ          |       ChicagoⅡ        |          DCⅢ          | Converged Time                                               |
+| :-------------------------------------------: | :-------------------: | :-------------------: | :-------------------: | ------------------------------------------------------------ |
+|                      HM                       |    1.89180 `3-1-2`    |    1.66782`5-0-4`     |    1.55471`3-7-4`     |                                                              |
+|                   ARIMA(C)                    |        1.87415        |        1.78399        |        1.68858        |                                                              |
+|                    XGBoost                    | 1.71216`8-14-4-32-2`  | 1.67219`11-13-4-28-2` | 1.55872`4-14-4-27-2`  |                                                              |
+|                     GBRT                      | 1.70757`7-13-4-144-1` | 1.66691`7-15-4-101-2` | 1.55246`8-11-5-101-2` |                                                              |
+|                ST_MGCN (G/DCI)                |        1.68659        |        1.64642        |        1.54455        | 7.63 hour / 152 epochsⅠ<br />14.95 hour / 57 epochsⅡ<br />6.37 hour / 140 epochsⅢ |
+|                 DCRNN(G/D C)                  |        1.71223        |        1.71789        |        1.59412        | 25.89 hour / 9999 epochsⅠ<br />0.86 hour / 542 epochsⅡ<br />12.72 hour / 9999 epochsⅢ |
+|                   LSTM (C)                    |        1.98866        |        1.80222        |        1.67762        | 14.87 hour / 986 epochsⅠ<br />15.79 hour / 9167 epochsⅡ<br />0.30 hour / 199 epochsⅢ |
+|                TMeta-LSTM-GAL                 |        1.81819        |        1.62269        |        1.54041        | 361 epochsⅠ<br />4.50 hour / 1278 epochsⅡ<br />0.51 hour / 199 epochsⅢ |
+|               AMulti-GCLSTM-V1                |                       |        1.60743        |        1.52698        | 11.26 hour / 775 epochsⅡ<br />26.81 hour / 2929 epochsⅢ      |
+|               AMulti-GCLSTM-V2                |        1.67336        |        1.62883        |        1.51158        | 84.40 hour / 6088 epochsⅠ<br />13.97 hour / 1269 epochsⅡ<br />51.15 hour / 7015 epochsⅢ |
+|               AMulti-GCLSTM-V3                |        1.65351        |        1.60917        |        1.51720        | 26.27 hour / 930 epochsⅠ<br />6.14 hour / 287 epochsⅡ<br />9.48 hour / 664 epochsⅢ |
 
 basic conclusion:
 
