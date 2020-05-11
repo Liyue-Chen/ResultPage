@@ -87,6 +87,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#results-on-bike-dataset">Results on Bike Dataset</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#results-on-didi-dataset">Results on DiDi Dataset</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#one-hot-vs-directly-digitize">one-hot VS directly digitize</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#external-ablation">external ablation</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#results-on-metro-dataset">Results on Metro Dataset</a><ul>
@@ -94,9 +95,13 @@
 <li class="toctree-l3"><a class="reference internal" href="#different-temporal-position-embedding-size-default-batch-size-8-weather-emb-10">different temporal position embedding size（default batch_size: 8，weather_emb:10）</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#different-weather-embedding-size-default-batch-size-8-tp-emb-6">different weather embedding size（default batch_size: 8 tp_emb:6）</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#different-batch-effect">different batch effect</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#abalation-experiment">Abalation Experiment</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#results-on-ev-dataset">Results on EV Dataset</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#results-on-ev-dataset">Results on EV Dataset</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id2">Abalation Experiment</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="KDD_all_results.html">Results on Different Datasets(KDD)</a></li>
@@ -201,9 +206,9 @@
 <tr>
 <td align="center">STMeta-Concat</td>
 <td align="center">V1</td>
-<td align="center">3.38520</td>
+<td align="center">3.37618</td>
 <td align="center">---</td>
-<td align="center">214.70 hour / 7757 epochs</td>
+<td align="center">144.60 hour / 5362 epochs</td>
 </tr>
 <tr>
 <td align="center">STMeta-Emb</td>
@@ -215,9 +220,16 @@
 <tr>
 <td align="center">STMeta-Multi-Emb</td>
 <td align="center">V1</td>
-<td align="center">3.39106</td>
+<td align="center">3.38418</td>
 <td align="center">---</td>
-<td align="center">227.71 hour / 9155 epochs</td>
+<td align="center">153.24 hour / 4638 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-adding</td>
+<td align="center">V1</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
 </tr>
 <tr>
 <td align="center">STMeta-Gating</td>
@@ -285,6 +297,13 @@
 <td align="center"><strong>0.83 hour / 383 epochs</strong></td>
 </tr>
 <tr>
+<td align="center">STMeta-adding</td>
+<td align="center">V1</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
 <td align="center">STMeta-Gating</td>
 <td align="center">V1</td>
 <td align="center">6.626533</td>
@@ -322,6 +341,49 @@
 <td align="center">8.648821</td>
 <td align="center">7.196011</td>
 <td align="center">20005 epochs</td>
+</tr>
+</tbody>
+</table></div>
+<div class="section" id="external-ablation">
+<h3>external ablation<a class="headerlink" href="#external-ablation" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th align="center"><strong>City: DiDi</strong></th>
+<th align="center">external feature</th>
+<th align="center">val-rmse</th>
+<th align="center">test-rmse</th>
+<th align="center">Converged Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">STMeta</td>
+<td align="center">not use</td>
+<td align="center">7.62051</td>
+<td align="center">5.82054</td>
+<td align="center">3.68 hour / 4367 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">weather</td>
+<td align="center">6.56913</td>
+<td align="center">6.14120</td>
+<td align="center">13.27 hour / 7498 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">holiday</td>
+<td align="center">7.54557</td>
+<td align="center">5.78980</td>
+<td align="center">3.27 hour / 1608 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">temporal position</td>
+<td align="center">6.53068</td>
+<td align="center">5.68496</td>
+<td align="center">8.61 hour / 4878 epochs</td>
 </tr>
 </tbody>
 </table></div>
@@ -381,6 +443,13 @@
 <td align="center">106.34441②√<br />108.24415②√</td>
 <td align="center">164.20714<br />158.71454</td>
 <td align="center"><strong>9.39 hour / 3537 epochs</strong><br />18.75 hour / 9568 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-adding</td>
+<td align="center">V1</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
 </tr>
 <tr>
 <td align="center">STMeta-Gating</td>
@@ -576,6 +645,49 @@
 </tr>
 </tbody>
 </table></div>
+<div class="section" id="abalation-experiment">
+<h3>Abalation Experiment<a class="headerlink" href="#abalation-experiment" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th align="center"><strong>City: Shanghai</strong></th>
+<th align="center">external feature</th>
+<th align="center">val-rmse</th>
+<th align="center">test-rmse</th>
+<th align="center">Converged Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">STMeta</td>
+<td align="center">not use</td>
+<td align="center">108.01402</td>
+<td align="center">154.47606</td>
+<td align="center">5.01 hour / 4661 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">weather</td>
+<td align="center">111.37406</td>
+<td align="center">170.38507</td>
+<td align="center">2.43 hour / 1057 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">holiday</td>
+<td align="center">102.33872</td>
+<td align="center">155.98723</td>
+<td align="center">15.34 hour / 7944 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">temporal position</td>
+<td align="center">97.73984</td>
+<td align="center">131.662</td>
+<td align="center">36.09 hour / 19476 epochs</td>
+</tr>
+</tbody>
+</table></div>
 </div>
 <div class="section" id="results-on-ev-dataset">
 <h2>Results on EV Dataset<a class="headerlink" href="#results-on-ev-dataset" title="Permalink to this headline">¶</a></h2>
@@ -633,6 +745,13 @@
 <td align="center">0.25 hour / 81 epochs<br />0.50 hour / 91 epochs</td>
 </tr>
 <tr>
+<td align="center">STMeta-adding</td>
+<td align="center">V1</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
 <td align="center">STMeta-Gating</td>
 <td align="center">V1（bs:32）</td>
 <td align="center">0.74789</td>
@@ -641,6 +760,49 @@
 </tr>
 </tbody>
 </table><p>默认bs:64</p>
+<div class="section" id="id2">
+<h3>Abalation Experiment<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th align="center"><strong>City: Beijing</strong></th>
+<th align="center">external feature</th>
+<th align="center">val-rmse</th>
+<th align="center">test-rmse</th>
+<th align="center">Converged Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">STMeta</td>
+<td align="center">not use</td>
+<td align="center">0.79145</td>
+<td align="center">0.81805</td>
+<td align="center">10.58 hour / 6205 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">weather</td>
+<td align="center">0.76781</td>
+<td align="center">0.81634</td>
+<td align="center">25.75 hour / 13129 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">holiday</td>
+<td align="center">0.75004</td>
+<td align="center">0.78205</td>
+<td align="center">18.80 hour / 9315 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">temporal position</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table></div>
 </div>
 </div>
 
