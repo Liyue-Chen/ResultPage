@@ -141,4 +141,4 @@
 |      STMeta       |      not use      | 0.79145  |  0.81805  | 10.58 hour / 6205 epochs  |
 |   STMeta-Gating   |      weather      | 0.76781  |  0.81634  | 25.75 hour / 13129 epochs |
 |   STMeta-Gating   |      holiday      | 0.75004  |  0.78205  | 18.80 hour / 9315 epochs  |
-|   STMeta-Gating   | temporal position |          |           |                           |
+|   STMeta-Gating   | temporal position | 0.74307  |  0.80274  | 32.46 hour / 18586 epochs |
