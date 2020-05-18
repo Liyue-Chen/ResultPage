@@ -17,7 +17,6 @@
 |              STMeta-Concat              |   V1    |  3.37618  |   ---    | 144.60 hour / 5362 epochs |
 |               STMeta-Emb                |   V1    |  3.38310  |          | 127.81 hour / 4876 epochs |
 |            STMeta-Multi-Emb             |   V1    |  3.38418  |   ---    | 153.24 hour / 4638 epochs |
-|              STMeta-adding              |   V1    |           |          |                           |
 |              STMeta-Gating              |   V1    |  3.37795  |          | 120.89 hour / 4043 epochs |
 
 ## Results on DiDi Dataset
@@ -32,7 +31,6 @@
 |            STMeta-Emb            | V1（bs:8 ,emb:6） | 6.5101748 | 5.818601  |  4.33 hour / 4536 epochs   |
 |         STMeta-Multi-Emb         |        V1         |  7.01359  |  5.82937  |  4.40 hour / 4688 epochs   |
 |        External-closeness        |        V1         | 7.9909368 | 5.8367977 | **0.83 hour / 383 epochs** |
-|          STMeta-adding           |        V1         |           |           |                            |
 |          STMeta-Gating           |        V1         | 6.626533  | 5.8011427 |   1.57 hour / 410 epochs   |
 
 注：默认lr为1e-5
@@ -67,7 +65,6 @@
 |            STMeta-Emb            |            V1（bs:8,emb:10）             |          110.38365           |        154.38785         |                  7.39 hour / 3280 epochs                  |
 |         STMeta-Multi-Emb         |                V1(10-1-6)                |          113.25427           |        156.60223         |                  10.11 hour / 927 epochs                  |
 |        External-closeness        | V1(batch_size:32)<br />V1(batch_size:64) | 106.34441②√<br />108.24415②√ | 164.20714<br />158.71454 | **9.39 hour / 3537 epochs**<br />18.75 hour / 9568 epochs |
-|          STMeta-adding           |                    V1                    |                              |                          |                                                           |
 |          STMeta-Gating           |            V1（bs:8 lr:5e-5）            |          106.15893           |        145.45236         |                  6.00 hour / 2563 epochs                  |
 
 ##### different embedding size（default batch_size: 4）
@@ -129,7 +126,6 @@
 |            STMeta-Emb            |     V1      |               0.75199                |         0.78521          |             15.59 hour / 9970 epochs             |
 |         STMeta-Multi-Emb         |     V1      |               0.75170                |         0.79257          |            16.18 hour / 10332 epochs             |
 |        External-closeness        |     V1      | 0.9059565（32）<br />0.8711627（16） | 0.8864132<br />0.8617136 | 0.25 hour / 81 epochs<br />0.50 hour / 91 epochs |
-|          STMeta-adding           |     V1      |                                      |                          |                                                  |
 |          STMeta-Gating           | V1（bs:32） |               0.74789                |         0.78317          |             9.68 hour / 4563 epochs              |
 
 默认bs:64 
