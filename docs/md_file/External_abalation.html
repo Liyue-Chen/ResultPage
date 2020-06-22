@@ -1,0 +1,769 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>External Feature Ablation Results &mdash; ResultPage  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Results on Different Datasets(KDD)" href="KDD_all_results.html" />
+    <link rel="prev" title="15&amp;30 mins External Results" href="External_15_30mins.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> ResultPage
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="External_60mins.html">60 mins External Results</a></li>
+<li class="toctree-l1"><a class="reference internal" href="External_15_30mins.html">15&amp;30 mins External Results</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">External Feature Ablation Results</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#results-on-bike-dataset">Results on Bike Dataset</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#results-on-didi-dataset">Results on DiDi Dataset</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#results-on-metro-dataset">Results on Metro Dataset</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#results-on-ev-dataset">Results on EV Dataset</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="KDD_all_results.html">Results on Different Datasets(KDD)</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">ResultPage</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>External Feature Ablation Results</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/md_file/External_abalation.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="external-feature-ablation-results">
+<h1>External Feature Ablation Results<a class="headerlink" href="#external-feature-ablation-results" title="Permalink to this headline">¶</a></h1>
+<p>Default granularity is 60 mins.</p>
+<div class="section" id="results-on-bike-dataset">
+<h2>Results on Bike Dataset<a class="headerlink" href="#results-on-bike-dataset" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th align="center"><strong>City: NYC</strong></th>
+<th align="center">external feature</th>
+<th align="center">val-rmse</th>
+<th align="center">test-rmse</th>
+<th align="center">Converged Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">STMeta</td>
+<td align="center">not use</td>
+<td align="center">-</td>
+<td align="center">3.51827</td>
+<td align="center">5930 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">weather</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">holiday</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">temporal position</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">weather-holiday</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">weather-tp</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">holiday-tp</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">all</td>
+<td align="center">-</td>
+<td align="center">3.37795</td>
+<td align="center">120.89 hour / 4043 epochs</td>
+</tr>
+</tbody>
+</table><table border="1" class="docutils">
+<thead>
+<tr>
+<th align="center"><strong>City: Chicago</strong></th>
+<th align="center">external feature</th>
+<th align="center">val-rmse</th>
+<th align="center">test-rmse</th>
+<th align="center">Converged Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">STMeta</td>
+<td align="center">not use</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">weather</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">holiday</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">temporal position</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">weather-holiday</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">weather-tp</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">holiday-tp</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">all</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table><table border="1" class="docutils">
+<thead>
+<tr>
+<th align="center"><strong>City: DC</strong></th>
+<th align="center">external feature</th>
+<th align="center">val-rmse</th>
+<th align="center">test-rmse</th>
+<th align="center">Converged Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">STMeta</td>
+<td align="center">not use</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">weather</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">holiday</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">temporal position</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">weather-holiday</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">weather-tp</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">holiday-tp</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">all</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table></div>
+<div class="section" id="results-on-didi-dataset">
+<h2>Results on DiDi Dataset<a class="headerlink" href="#results-on-didi-dataset" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th align="center"><strong>City: Xian</strong></th>
+<th align="center">external feature</th>
+<th align="center">val-rmse</th>
+<th align="center">test-rmse</th>
+<th align="center">Converged Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">STMeta</td>
+<td align="center">not use</td>
+<td align="center">7.62051</td>
+<td align="center">5.82054</td>
+<td align="center">3.68 hour / 4367 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">weather</td>
+<td align="center">6.56913</td>
+<td align="center">6.14120</td>
+<td align="center">13.27 hour / 7498 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">holiday</td>
+<td align="center">7.54557</td>
+<td align="center">5.78980</td>
+<td align="center">3.27 hour / 1608 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">temporal position</td>
+<td align="center">6.53068</td>
+<td align="center">5.68496</td>
+<td align="center">8.61 hour / 4878 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">weather-holiday</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">weather-tp</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">holiday-tp</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">all</td>
+<td align="center">6.626533</td>
+<td align="center">5.8011427</td>
+<td align="center">1.57 hour / 410 epochs</td>
+</tr>
+</tbody>
+</table><table border="1" class="docutils">
+<thead>
+<tr>
+<th align="center"><strong>City: Chengdu</strong></th>
+<th align="center">external feature</th>
+<th align="center">val-rmse</th>
+<th align="center">test-rmse</th>
+<th align="center">Converged Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">STMeta</td>
+<td align="center">not use</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">weather</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">holiday</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">temporal position</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">weather-holiday</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">weather-tp</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">holiday-tp</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">all</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table></div>
+<div class="section" id="results-on-metro-dataset">
+<h2>Results on Metro Dataset<a class="headerlink" href="#results-on-metro-dataset" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th align="center"><strong>City: Shanghai</strong></th>
+<th align="center">external feature</th>
+<th align="center">val-rmse</th>
+<th align="center">test-rmse</th>
+<th align="center">Converged Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">STMeta</td>
+<td align="center">not use</td>
+<td align="center">108.01402</td>
+<td align="center">154.47606</td>
+<td align="center">5.01 hour / 4661 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">weather</td>
+<td align="center">111.37406</td>
+<td align="center">170.38507</td>
+<td align="center">2.43 hour / 1057 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">holiday</td>
+<td align="center">102.33872</td>
+<td align="center">155.98723</td>
+<td align="center">15.34 hour / 7944 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">temporal position</td>
+<td align="center">97.73984</td>
+<td align="center">131.662</td>
+<td align="center">36.09 hour / 19476 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">weather-holiday</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">weather-tp</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">holiday-tp</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">all</td>
+<td align="center">106.15893</td>
+<td align="center">145.45236</td>
+<td align="center">6.00 hour / 2563 epochs</td>
+</tr>
+</tbody>
+</table><table border="1" class="docutils">
+<thead>
+<tr>
+<th align="center"><strong>City: Chongqing</strong></th>
+<th align="center">external feature</th>
+<th align="center">val-rmse</th>
+<th align="center">test-rmse</th>
+<th align="center">Converged Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">STMeta</td>
+<td align="center">not use</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">weather</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">holiday</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">temporal position</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">weather-holiday</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">weather-tp</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">holiday-tp</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">all</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table></div>
+<div class="section" id="results-on-ev-dataset">
+<h2>Results on EV Dataset<a class="headerlink" href="#results-on-ev-dataset" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th align="center"><strong>City: Beijing</strong></th>
+<th align="center">external feature</th>
+<th align="center">val-rmse</th>
+<th align="center">test-rmse</th>
+<th align="center">Converged Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">STMeta</td>
+<td align="center">not use</td>
+<td align="center">0.79145</td>
+<td align="center">0.81805</td>
+<td align="center">10.58 hour / 6205 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">weather</td>
+<td align="center">0.76781</td>
+<td align="center">0.81634</td>
+<td align="center">25.75 hour / 13129 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">holiday</td>
+<td align="center">0.75004</td>
+<td align="center">0.78205</td>
+<td align="center">18.80 hour / 9315 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">temporal position</td>
+<td align="center">0.74307</td>
+<td align="center">0.80274</td>
+<td align="center">32.46 hour / 18586 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">weather-holiday</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">weather-tp</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">holiday-tp</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">all</td>
+<td align="center">0.74789</td>
+<td align="center">0.78317</td>
+<td align="center">9.68 hour / 4563 epochs</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="KDD_all_results.html" class="btn btn-neutral float-right" title="Results on Different Datasets(KDD)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="External_15_30mins.html" class="btn btn-neutral float-left" title="15&amp;30 mins External Results" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, UCTB group
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,833 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>60 mins External Results &mdash; ResultPage  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="15&amp;30 mins External Results" href="External_15_30mins.html" />
+    <link rel="prev" title="Welcome to UCTB’s Result Pages!" href="../index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> ResultPage
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">60 mins External Results</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id1">一些经验</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#results-on-bike-dataset">Results on Bike Dataset</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#results-on-didi-dataset">Results on DiDi Dataset</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#results-on-metro-dataset">Results on Metro Dataset</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#results-on-ev-dataset">Results on EV Dataset</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="External_15_30mins.html">15&amp;30 mins External Results</a></li>
+<li class="toctree-l1"><a class="reference internal" href="External_abalation.html">External Feature Ablation Results</a></li>
+<li class="toctree-l1"><a class="reference internal" href="KDD_all_results.html">Results on Different Datasets(KDD)</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">ResultPage</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>60 mins External Results</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/md_file/External_60mins.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="mins-external-results">
+<h1>60 mins External Results<a class="headerlink" href="#mins-external-results" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id1">
+<h2>一些经验<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p>1.虽然小batch_size容易抖动，但速度快，效果甚至更好，尽量不要实验太大的batch，如64。</p>
+<p>2.可以先用大lr，小batch，训练至快收敛，然后换小lr，大batch。</p>
+</div>
+<div class="section" id="results-on-bike-dataset">
+<h2>Results on Bike Dataset<a class="headerlink" href="#results-on-bike-dataset" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th align="center"><strong>City: NYC</strong></th>
+<th align="center">Version</th>
+<th align="center">test-rmse</th>
+<th align="center">Converged Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">STMeta</td>
+<td align="center">V1</td>
+<td align="center">3.51827</td>
+<td align="center">5930 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-Concat</td>
+<td align="center">V1</td>
+<td align="center">3.37618</td>
+<td align="center">144.60 hour / 5362 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-Emb</td>
+<td align="center">V1</td>
+<td align="center">3.38310</td>
+<td align="center">127.81 hour / 4876 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-Multi-Emb</td>
+<td align="center">V1</td>
+<td align="center">3.38418</td>
+<td align="center">153.24 hour / 4638 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">V1</td>
+<td align="center">3.37795</td>
+<td align="center">120.89 hour / 4043 epochs</td>
+</tr>
+</tbody>
+</table><table border="1" class="docutils">
+<thead>
+<tr>
+<th align="center"><strong>City: Chicago</strong></th>
+<th align="center">Version</th>
+<th align="center">test-rmse</th>
+<th align="center">Converged Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">STMeta</td>
+<td align="center">V1</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-Concat</td>
+<td align="center">V1</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-Emb</td>
+<td align="center">V1</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-Multi-Emb</td>
+<td align="center">V1</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">V1</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table><table border="1" class="docutils">
+<thead>
+<tr>
+<th align="center"><strong>City: DC</strong></th>
+<th align="center">Version</th>
+<th align="center">test-rmse</th>
+<th align="center">Converged Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">STMeta</td>
+<td align="center">V1</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-Concat</td>
+<td align="center">V1</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-Emb</td>
+<td align="center">V1</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-Multi-Emb</td>
+<td align="center">V1</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">V1</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table></div>
+<div class="section" id="results-on-didi-dataset">
+<h2>Results on DiDi Dataset<a class="headerlink" href="#results-on-didi-dataset" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th align="center"><strong>City: Xian</strong></th>
+<th align="center">Version</th>
+<th align="center">val-rmse</th>
+<th align="center">test-rmse</th>
+<th align="center">Converged Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">STMeta</td>
+<td align="center">V1</td>
+<td align="center">7.62051</td>
+<td align="center">5.82054</td>
+<td align="center">3.68 hour / 4367 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-Concat</td>
+<td align="center">V1</td>
+<td align="center">15.56313</td>
+<td align="center">5.93437</td>
+<td align="center">5.10 hour / 6029 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-Emb</td>
+<td align="center">V1（bs:8 ,emb:6）</td>
+<td align="center">6.51017</td>
+<td align="center">5.81860</td>
+<td align="center">4.33 hour / 4536 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-Multi-Emb</td>
+<td align="center">V1</td>
+<td align="center">7.01359</td>
+<td align="center">5.82937</td>
+<td align="center">4.40 hour / 4688 epochs</td>
+</tr>
+<tr>
+<td align="center">External-LSTM</td>
+<td align="center">V1</td>
+<td align="center">7.99094</td>
+<td align="center">5.83680</td>
+<td align="center"><strong>0.83 hour / 383 epochs</strong></td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">V1</td>
+<td align="center">6.62653</td>
+<td align="center">5.80114</td>
+<td align="center">1.57 hour / 410 epochs</td>
+</tr>
+</tbody>
+</table><table border="1" class="docutils">
+<thead>
+<tr>
+<th align="center"><strong>City: Chengdu</strong></th>
+<th align="center">Version</th>
+<th align="center">val-rmse</th>
+<th align="center">test-rmse</th>
+<th align="center">Converged Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">STMeta</td>
+<td align="center">V1</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-Concat</td>
+<td align="center">V1</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-Emb</td>
+<td align="center">V1</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-Multi-Emb</td>
+<td align="center">V1</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">External-LSTM</td>
+<td align="center">V1</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">V1</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table><p>注：默认lr为1e-5</p>
+<p><strong>One-hot VS Directly digitize</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th align="center"><strong>City: Xian</strong></th>
+<th align="center">Version</th>
+<th align="center">dim</th>
+<th align="center">val-rmse</th>
+<th align="center">test-rmse</th>
+<th align="center">Converged Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">one embedding layer</td>
+<td align="center">V1(one-hot)</td>
+<td align="center">63(30 weather+24 hourofday+ 7 dayofweek +2 holiday)</td>
+<td align="center">7.91567</td>
+<td align="center">6.06816</td>
+<td align="center">29.40 hour / 29326 epochs</td>
+</tr>
+<tr>
+<td align="center">one embedding layer</td>
+<td align="center">V1(directly digitize)</td>
+<td align="center">33(30 weather+1 hourofday+ 1 dayofweek + 1 holiday)</td>
+<td align="center">8.64882</td>
+<td align="center">7.19601</td>
+<td align="center">20005 epochs</td>
+</tr>
+</tbody>
+</table></div>
+<div class="section" id="results-on-metro-dataset">
+<h2>Results on Metro Dataset<a class="headerlink" href="#results-on-metro-dataset" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th align="center"><strong>City: Shanghai</strong></th>
+<th align="center">Version</th>
+<th align="center">val-rmse</th>
+<th align="center">test-rmse</th>
+<th align="center">Converged Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">STMeta</td>
+<td align="center">V1</td>
+<td align="center">108.01402</td>
+<td align="center">154.47606</td>
+<td align="center">5.01 hour / 4661 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-Concat</td>
+<td align="center">V1（bs:8）</td>
+<td align="center">130.72882</td>
+<td align="center">173.28693</td>
+<td align="center">1.87 hour / 593 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-Emb</td>
+<td align="center">V1（bs:8,emb:10）</td>
+<td align="center">110.38365</td>
+<td align="center">154.38785</td>
+<td align="center">7.39 hour / 3280 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-Multi-Emb</td>
+<td align="center">V1(10-1-6)</td>
+<td align="center">113.25427</td>
+<td align="center">156.60223</td>
+<td align="center">10.11 hour / 927 epochs</td>
+</tr>
+<tr>
+<td align="center">External-LSTM</td>
+<td align="center">V1(batch_size:64)</td>
+<td align="center">108.24415</td>
+<td align="center">158.71454</td>
+<td align="center">18.75 hour / 9568 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">V1（bs:8 lr:5e-5）</td>
+<td align="center">106.15893</td>
+<td align="center">145.45236</td>
+<td align="center">6.00 hour / 2563 epochs</td>
+</tr>
+</tbody>
+</table><table border="1" class="docutils">
+<thead>
+<tr>
+<th align="center"><strong>City: Chongqing</strong></th>
+<th align="center">Version</th>
+<th align="center">val-rmse</th>
+<th align="center">test-rmse</th>
+<th align="center">Converged Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">STMeta</td>
+<td align="center">V1</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-Concat</td>
+<td align="center">V1</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-Emb</td>
+<td align="center">V1</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-Multi-Emb</td>
+<td align="center">V1</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">External-LSTM</td>
+<td align="center">V1</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">V1</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table><p><strong>Different embedding size</strong>（default batch_size: 4）</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th align="center"><strong>City: Shanghai</strong></th>
+<th align="center">embedding size</th>
+<th align="center">val-rmse</th>
+<th align="center">test-rmse</th>
+<th align="center">Converged Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">STMeta-Emb</td>
+<td align="center">6</td>
+<td align="center">121.75984</td>
+<td align="center">204.3386</td>
+<td align="center">0.71 hour / 74 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-Emb</td>
+<td align="center">8</td>
+<td align="center">115.21622</td>
+<td align="center">180.94931</td>
+<td align="center">1.00 hour / 194 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-Emb</td>
+<td align="center">10</td>
+<td align="center">114.94099</td>
+<td align="center">170.57361</td>
+<td align="center">1.26 hour / 265 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-Emb</td>
+<td align="center">12</td>
+<td align="center">135.88895</td>
+<td align="center">188.44237</td>
+<td align="center">1.01 hour / 200 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-Emb</td>
+<td align="center">14</td>
+<td align="center">112.71642</td>
+<td align="center">175.08072</td>
+<td align="center">2.41 hour / 511 epochs</td>
+</tr>
+</tbody>
+</table><p><strong>Different temporal position embedding size</strong>（default batch_size: 8，weather_emb:10）</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th align="center"><strong>City: Shanghai</strong></th>
+<th align="center">embedding size</th>
+<th align="center">val-rmse</th>
+<th align="center">test-rmse</th>
+<th align="center">Converged Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">STMeta-Multi-Emb</td>
+<td align="center">4</td>
+<td align="center">114.76000</td>
+<td align="center">171.56076</td>
+<td align="center">1.94 hour / 280 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-Multi-Emb</td>
+<td align="center">6</td>
+<td align="center">113.25427</td>
+<td align="center">156.60223</td>
+<td align="center">10.11 hour / 927 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-Multi-Emb</td>
+<td align="center">8</td>
+<td align="center">115.36623</td>
+<td align="center">180.37663</td>
+<td align="center">1.21 hour / 534 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-Multi-Emb</td>
+<td align="center">10</td>
+<td align="center">112.31456</td>
+<td align="center">177.23885</td>
+<td align="center">1.43 hour / 620 epochs</td>
+</tr>
+</tbody>
+</table><p><strong>Different weather embedding size</strong>（default batch_size: 8 tp_emb:6）</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th align="center"><strong>City: Shanghai</strong></th>
+<th align="center">embedding size</th>
+<th align="center">val-rmse</th>
+<th align="center">test-rmse</th>
+<th align="center">Converged Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">STMeta-Multi-Emb</td>
+<td align="center">4</td>
+<td align="center">109.41055</td>
+<td align="center">171.02711</td>
+<td align="center">0.80 hour / 348 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-Multi-Emb</td>
+<td align="center">6</td>
+<td align="center">123.74634</td>
+<td align="center">166.39934</td>
+<td align="center">1.34 hour / 683 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-Multi-Emb</td>
+<td align="center">8</td>
+<td align="center">123.71514</td>
+<td align="center">182.98827</td>
+<td align="center">0.93 hour / 418 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-Multi-Emb</td>
+<td align="center">10</td>
+<td align="center">121.60524</td>
+<td align="center">179.5985</td>
+<td align="center">0.85 hour / 398 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-Multi-Emb</td>
+<td align="center">12</td>
+<td align="center">115.26234</td>
+<td align="center">171.73476</td>
+<td align="center">1.35 hour / 718 epochs</td>
+</tr>
+</tbody>
+</table><p>**Different batch effect **</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th align="center"><strong>City: Shanghai</strong></th>
+<th align="center">batch</th>
+<th align="center">val-rmse</th>
+<th align="center">test-rmse</th>
+<th align="center">Converged Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">STMeta-Multi-Emb</td>
+<td align="center">16</td>
+<td align="center">113.86533</td>
+<td align="center">181.91652</td>
+<td align="center">1.39 hour / 498 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-Multi-Emb</td>
+<td align="center">8</td>
+<td align="center">123.13991</td>
+<td align="center">181.91342</td>
+<td align="center">4.90 hour / 2032 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-Multi-Emb</td>
+<td align="center">4</td>
+<td align="center">122.49625</td>
+<td align="center">179.65306</td>
+<td align="center">1.01 hour / 242 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-Multi-Emb</td>
+<td align="center">2</td>
+<td align="center">112.73404</td>
+<td align="center">178.33081</td>
+<td align="center">1.67 hour / 290 epochs</td>
+</tr>
+</tbody>
+</table></div>
+<div class="section" id="results-on-ev-dataset">
+<h2>Results on EV Dataset<a class="headerlink" href="#results-on-ev-dataset" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th align="center"><strong>City: Beijing</strong></th>
+<th align="center">Version</th>
+<th align="center">val-rmse</th>
+<th align="center">test-rmse</th>
+<th align="center">Converged Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">STMeta</td>
+<td align="center">V1（bs:64）</td>
+<td align="center">0.79145</td>
+<td align="center">0.81805</td>
+<td align="center">10.58 hour / 6205 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-Concat</td>
+<td align="center">V1（bs:32）</td>
+<td align="center">0.74699</td>
+<td align="center">0.78338</td>
+<td align="center">9.13 hour / 4339 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-Emb</td>
+<td align="center">V1</td>
+<td align="center">0.75199</td>
+<td align="center">0.78521</td>
+<td align="center">15.59 hour / 9970 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-Multi-Emb</td>
+<td align="center">V1</td>
+<td align="center">0.75170</td>
+<td align="center">0.79257</td>
+<td align="center">16.18 hour / 10332 epochs</td>
+</tr>
+<tr>
+<td align="center">External-LSTM</td>
+<td align="center">V1（bs:16）</td>
+<td align="center">0.87116</td>
+<td align="center">0.86171</td>
+<td align="center">0.50 hour / 91 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">V1（bs:32）</td>
+<td align="center">0.74789</td>
+<td align="center">0.78317</td>
+<td align="center">9.68 hour / 4563 epochs</td>
+</tr>
+</tbody>
+</table><p>默认bs:64</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="External_15_30mins.html" class="btn btn-neutral float-right" title="15&amp;30 mins External Results" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../index.html" class="btn btn-neutral float-left" title="Welcome to UCTB’s Result Pages!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, UCTB group
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

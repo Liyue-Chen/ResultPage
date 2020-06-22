@@ -11,7 +11,11 @@ Welcome to UCTB's Result Pages!
    :caption: Contents:
 
 
-   md_file/embeddingResult.md
+   md_file/External_60mins.md
+
+   md_file/External_15_30mins.md
+
+   md_file/External_abalation.md
 
    md_file/KDD_all_results.md
 
