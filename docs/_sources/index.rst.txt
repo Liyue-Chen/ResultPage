@@ -19,3 +19,5 @@ Welcome to UCTB's Result Pages!
 
    md_file/KDD_all_results.md
 
+   md_file/SingleGraph_60mins.md
+
