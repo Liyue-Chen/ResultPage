@@ -23,7 +23,7 @@
 | Only Interaction/Same-line |   V3    |          |           |                |
 |    Aggregation Together    |   V3    |          |  2.42338  |                |
 
-## Results on DiDi Dataset
+## Results on DiDi Dataset（云上运行）
 
 |       **City: Xian**       | Version | val-rmse | test-rmse |     Converged Time      |
 | :------------------------: | :-----: | :------: | :-------: | :---------------------: |
@@ -43,19 +43,19 @@
 
 |     **City: Shanghai**     | Version | val-rmse  | test-rmse |      Converged Time       |
 | :------------------------: | :-----: | :-------: | :-------: | :-----------------------: |
-|     Only Functionality     |   V3    |           |           |                           |
-|       Only Proximity       |   V3    |           |           |                           |
-| Only Interaction/Same-line |   V3    |           |           |                           |
+|     Only Functionality     |   V3    | 125.55458 | 148.25241 | 6.86 hour / 20000 epochs  |
+|       Only Proximity       |   V3    | 127.04750 | 153.98045 | 6.77 hour / 20000 epochs  |
+| Only Interaction/Same-line |   V3    | 123.43643 | 151.37936 | 7.05 hour / 20000 epochs  |
 |    Aggregation Together    |   V3    | 117.82761 | 143.18166 | 30.38 hour / 20000 epochs |
 
-|    **City: Chongqing**     | Version | val-rmse | test-rmse |      Converged Time       |
-| :------------------------: | :-----: | :------: | :-------: | :-----------------------: |
-|     Only Functionality     |   V3    |          |           |                           |
-|       Only Proximity       |   V3    |          |           |                           |
-| Only Interaction/Same-line |   V3    |          |           |                           |
-|    Aggregation Together    |   V3    | 88.32695 | 94.77593  | 40.19 hour / 10004 epochs |
+|    **City: Chongqing**     | Version | val-rmse  | test-rmse |      Converged Time       |
+| :------------------------: | :-----: | :-------: | :-------: | :-----------------------: |
+|     Only Functionality     |   V3    | 129.72735 | 114.56845 | 8.66 hour / 10000 epochs  |
+|       Only Proximity       |   V3    | 144.16608 | 106.26378 | 8.67 hour / 10000 epochs  |
+| Only Interaction/Same-line |   V3    | 150.75353 | 110.13376 | 8.38 hour / 10000 epochs  |
+|    Aggregation Together    |   V3    | 88.32695  | 94.77593  | 40.19 hour / 10004 epochs |
 
-## Results on EV Dataset
+## Results on EV Dataset（云上运行）
 
 |     **City: Beijing**      | Version | val-rmse | test-rmse |      Converged Time       |
 | :------------------------: | :-----: | :------: | :-------: | :-----------------------: |

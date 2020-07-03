@@ -57,14 +57,14 @@
 
 ### 15 mins
 
-| **City: Xian 15 mins** | Version | val-rmse  |     test-rmse     |      Converged Time      |
-| :--------------------: | :-----: | :-------: | :---------------: | :----------------------: |
-|         STMeta         |   V1    |           |                   |                          |
-|     STMeta-Concat      |   V1    | 2.7330105 | 2.695909572100526 | 28.49 hour / 8977 epochs |
-|       STMeta-Emb       |   V1    |           |                   |                          |
-|    STMeta-Multi-Emb    |   V1    |           |                   |                          |
-|     External-LSTM      |   V1    |           |                   |                          |
-|     STMeta-Gating      |   V1    | 2.597505  | 2.657274926526184 | 14.29 hour / 1158 epochs |
+| **City: Xian 15 mins** | Version | val-rmse | test-rmse |      Converged Time      |
+| :--------------------: | :-----: | :------: | :-------: | :----------------------: |
+|         STMeta         |   V1    |          |           |                          |
+|     STMeta-Concat      |   V1    | 2.73301  |  2.69591  | 28.49 hour / 8977 epochs |
+|       STMeta-Emb       |   V1    |          |           |                          |
+|    STMeta-Multi-Emb    |   V1    |          |           |                          |
+|     External-LSTM      |   V1    |          |           |                          |
+|     STMeta-Gating      |   V1    | 2.59751  |  2.65727  | 14.29 hour / 1158 epochs |
 
 | **City: Chengdu 15 mins** | Version | val-rmse | test-rmse | Converged Time |
 | :-----------------------: | :-----: | :------: | :-------: | :------------: |
@@ -80,11 +80,11 @@
 | **City: Xian 30 mins** | Version | val-rmse | test-rmse |      Converged Time      |
 | :--------------------: | :-----: | :------: | :-------: | :----------------------: |
 |         STMeta         |   V1    |          |           |                          |
-|     STMeta-Concat      |   V1    | 5.065921 | 3.886654  | 15.84 hour / 9540 epochs |
+|     STMeta-Concat      |   V1    | 5.06592  |  3.88665  | 15.84 hour / 9540 epochs |
 |       STMeta-Emb       |   V1    |          |           |                          |
 |    STMeta-Multi-Emb    |   V1    |          |           |                          |
 |     External-LSTM      |   V1    |          |           |                          |
-|     STMeta-Gating      |   V1    | 4.067857 | 3.8383965 | 9.65 hour / 1748 epochs  |
+|     STMeta-Gating      |   V1    | 4.06786  |  3.83840  | 9.65 hour / 1748 epochs  |
 
 | **City: Chengdu 30 mins** | Version | val-rmse | test-rmse | Converged Time |
 | :-----------------------: | :-----: | :------: | :-------: | :------------: |
@@ -152,12 +152,12 @@
 
 ### 30 mins
 
-| **City: Beijing 30 mins** | Version | val-rmse | test-rmse | Converged Time |
-| :-----------------------: | :-----: | :------: | :-------: | :------------: |
-|          STMeta           |   V1    |          |           |                |
-|       STMeta-Concat       |   V1    |          |           |                |
-|        STMeta-Emb         |   V1    |          |           |                |
-|     STMeta-Multi-Emb      |   V1    |          |           |                |
-|       External-LSTM       |   V1    |          |           |                |
-|       STMeta-Gating       |   V1    |          |           |                |
+| **City: Beijing 30 mins** | Version | val-rmse | test-rmse |      Converged Time       |
+| :-----------------------: | :-----: | :------: | :-------: | :-----------------------: |
+|          STMeta           |   V1    |          |           |                           |
+|       STMeta-Concat       |   V1    | 0.61911  |  0.65943  | 37.11 hour / 10206 epochs |
+|        STMeta-Emb         |   V1    |          |           |                           |
+|     STMeta-Multi-Emb      |   V1    |          |           |                           |
+|       External-LSTM       |   V1    |          |           |                           |
+|       STMeta-Gating       |   V1    |          |           |                           |
 
