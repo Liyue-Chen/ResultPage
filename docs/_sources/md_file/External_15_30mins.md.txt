@@ -139,17 +139,6 @@
 
 ## Results on EV Dataset
 
-### 15 mins
-
-| **City: Beijing 15 mins** | Version | val-rmse | test-rmse | Converged Time |
-| :-----------------------: | :-----: | :------: | :-------: | :------------: |
-|          STMeta           |   V1    |          |           |                |
-|       STMeta-Concat       |   V1    |          |           |                |
-|        STMeta-Emb         |   V1    |          |           |                |
-|     STMeta-Multi-Emb      |   V1    |          |           |                |
-|       External-LSTM       |   V1    |          |           |                |
-|       STMeta-Gating       |   V1    |          |           |                |
-
 ### 30 mins
 
 | **City: Beijing 30 mins** | Version | val-rmse | test-rmse |      Converged Time       |
@@ -159,5 +148,5 @@
 |        STMeta-Emb         |   V1    |          |           |                           |
 |     STMeta-Multi-Emb      |   V1    |          |           |                           |
 |       External-LSTM       |   V1    |          |           |                           |
-|       STMeta-Gating       |   V1    |          |           |                           |
+|       STMeta-Gating       |   V1    | 0.61833  |  0.66038  | 27.23 hour / 7167 epochs  |
 

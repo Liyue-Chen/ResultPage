@@ -17,25 +17,25 @@
 |    Aggregation Together    |   V3    |    -     |  2.65204  |  4403 epochs   |
 
 |        **City: DC**        | Version | val-rmse | test-rmse | Converged Time |
-| :------------------------: | :-----: | -------- | :-------: | :------------: |
+| :------------------------: | :-----: | :------: | :-------: | :------------: |
 |     Only Functionality     |   V3    |          |           |                |
 |       Only Proximity       |   V3    |          |           |                |
 | Only Interaction/Same-line |   V3    |          |           |                |
-|    Aggregation Together    |   V3    |          |  2.42338  |                |
+|    Aggregation Together    |   V3    |    -     |  2.42338  |                |
 
 ## Results on DiDi Dataset（云上运行）
 
-|       **City: Xian**       | Version | val-rmse | test-rmse |     Converged Time      |
-| :------------------------: | :-----: | :------: | :-------: | :---------------------: |
-|     Only Functionality     |   V3    |          |           |                         |
-|       Only Proximity       |   V3    |          |           |                         |
-| Only Interaction/Same-line |   V3    |          |           |                         |
-|    Aggregation Together    |   V3    | 7.14426  |  5.90812  | 3.37 hour / 2393 epochs |
+|       **City: Xian**       | Version | val-rmse | test-rmse |      Converged Time      |
+| :------------------------: | :-----: | :------: | :-------: | :----------------------: |
+|     Only Functionality     |   V3    | 7.23334  |  5.80516  | 2.33 hour / 7982 epochs  |
+|       Only Proximity       |   V3    | 7.07511  |  5.78975  | 6.31 hour / 46461 epochs |
+| Only Interaction/Same-line |   V3    |          |           |                          |
+|    Aggregation Together    |   V3    | 7.14426  |  5.90812  | 3.37 hour / 2393 epochs  |
 
 |     **City: Chengdu**      | Version | val-rmse | test-rmse |     Converged Time      |
 | :------------------------: | :-----: | :------: | :-------: | :---------------------: |
-|     Only Functionality     |   V3    |          |           |                         |
-|       Only Proximity       |   V3    |          |           |                         |
+|     Only Functionality     |   V3    | 6.36493  |  6.87754  | 0.69 hour / 1869 epochs |
+|       Only Proximity       |   V3    | 6.43997  |  6.91376  | 0.76 hour / 2075 epochs |
 | Only Interaction/Same-line |   V3    |          |           |                         |
 |    Aggregation Together    |   V3    | 6.30479  |  6.90394  | 1.76 hour / 1052 epochs |
 
@@ -60,7 +60,7 @@
 |     **City: Beijing**      | Version | val-rmse | test-rmse |      Converged Time       |
 | :------------------------: | :-----: | :------: | :-------: | :-----------------------: |
 |     Only Functionality     |   V3    |          |           |                           |
-|       Only Proximity       |   V3    |          |           |                           |
+|       Only Proximity       |   V3    | 0.60764  | 0.8350366 | 12.69 hour / 15189 epochs |
 | Only Interaction/Same-line |   V3    |    -     |     -     |             -             |
 |    Aggregation Together    |   V3    | 0.57685  |  0.80259  | 23.76 hour / 10497 epochs |
 
