@@ -184,10 +184,11 @@ data_range:0.25，trainday=91(只用了91天的数据进行训练)
 |                         DCRNN(G/D C)                         |        ---         |   30.53014   |   37.06903   |          | 149.65 hour / 8784 epochs  |
 |                           LSTM(C)                            |   `1-64-32-2-64`   |  44.7920197  |   55.36633   |          | 70.41 hour / 20000 epochs  |
 |                            TMeta                             | `1-1-1-64-32-2-64` |   30.03605   |   33.34361   |  62789   | 190.09 hour / 19897 epochs |
-|                   AMulti-GCLSTM-V1 (G/DCI)                   | `1-1-1-64-32-2-64` |   26.21625   | **31.39239** |  189521  | 138.15 hour / 8515 epochs  |
-|                   AMulti-GCLSTM-V2 (G/DCI)                   |                    |   31.00440   |   38.20912   |  180561  |  55.86 hour / 3981 epochs  |
+|                   AMulti-GCLSTM-V1 (G/DCI)                   | `1-1-1-64-32-2-64` |   26.21625   |   31.39239   |  189521  | 138.15 hour / 8515 epochs  |
+|                   AMulti-GCLSTM-V2 (G/DCI)                   |    patience 200    |   31.00440   |   38.20912   |  180561  |  55.86 hour / 3981 epochs  |
+|                   AMulti-GCLSTM-V2 (G/DCI)                   |    patience 400    |   30.05590   |   31.54766   |          | 138.45 hour / 10000 epochs |
 |                   AMulti-GCLSTM-V3(G/DCI)                    |    patience 200    |   32.89818   |   36.90250   |  488447  |  18.62 hour / 1990 epochs  |
-|                   AMulti-GCLSTM-V3(G/DCI)                    |    patience 400    |   28.75334   |   31.23663   |          |  84.73 hour / 6355 epochs  |
+|                   AMulti-GCLSTM-V3(G/DCI)                    |    patience 400    |   28.75334   | **31.23663** |          |  84.73 hour / 6355 epochs  |
 
 
 

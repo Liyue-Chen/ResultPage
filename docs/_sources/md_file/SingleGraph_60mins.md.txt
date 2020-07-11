@@ -16,12 +16,15 @@
 | Only Interaction/Same-line |   V3    | 1.22759  |   2.71795   | 86.25 hour / 20000 epochs |
 |    Aggregation Together    |   V3    |    -     | **2.65204** |        4403 epochs        |
 
-|        **City: DC**        | Version |  val-rmse  |  test-rmse  |      Converged Time       |
-| :------------------------: | :-----: | :--------: | :---------: | :-----------------------: |
-|     Only Functionality     |   V3    |  1.66894   |   2.44463   | 74.57 hour / 19882 epochs |
-|       Only Proximity       |   V3    |  1.67569   |   2.44057   | 70.80 hour / 17702 epochs |
-| Only Interaction/Same-line |   V3    | 1.64629695 | **2.41991** | 59.54 hour / 14425 epochs |
-|    Aggregation Together    |   V3    |     -      |   2.42338   |                           |
+|        **City: DC**        | Version | val-rmse |  test-rmse  |      Converged Time       |
+| :------------------------: | :-----: | :------: | :---------: | :-----------------------: |
+|     Only Functionality     |   V3    | 1.66894  |   2.44463   | 74.57 hour / 19882 epochs |
+|     Only Functionality     |   V3    | 1.39069  |   2.46760   | 13.74 hour / 20000 epochs |
+|       Only Proximity       |   V3    | 1.67569  |   2.44057   | 70.80 hour / 17702 epochs |
+|       Only Proximity       |   V3    | 1.44417  |   2.51054   |  0.35 hour / 441 epochs   |
+| Only Interaction/Same-line |   V3    | 1.64630  | **2.41991** | 59.54 hour / 14425 epochs |
+| Only Interaction/Same-line |   V3    | 1.44852  |   2.52103   |  0.17 hour / 153 epochs   |
+|    Aggregation Together    |   V3    |    -     |   2.42338   |                           |
 
 ## Results on DiDi Dataset
 
