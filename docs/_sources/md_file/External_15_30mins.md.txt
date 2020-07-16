@@ -15,18 +15,18 @@
 | **City: Chicago 15 mins** | Version | test-rmse |     Converged Time      |
 | :-----------------------: | :-----: | :-------: | :---------------------: |
 |          STMeta           |   V1    |  1.60743  | 11.26 hour / 775 epochs |
-|       STMeta-Concat       |   V1    |           |                         |
+|       STMeta-Concat       |   V1    |  1.59956  | 12.18 hour / 812 epochs |
 |        STMeta-Emb         |   V1    |           |                         |
 |     STMeta-Multi-Emb      |   V1    |           |                         |
-|       STMeta-Gating       |   V1    |           |                         |
+|       STMeta-Gating       |   V1    |  1.60033  | 6.89 hour / 405 epochs  |
 
 | **City: DC 15 mins** | Version | test-rmse |      Converged Time      |
 | :------------------: | :-----: | :-------: | :----------------------: |
 |        STMeta        |   V1    |  1.52698  | 26.81 hour / 2929 epochs |
-|    STMeta-Concat     |   V1    |           |                          |
+|    STMeta-Concat     |   V1    |  1.54041  | 59.64 hour / 5149 epochs |
 |      STMeta-Emb      |   V1    |           |                          |
 |   STMeta-Multi-Emb   |   V1    |           |                          |
-|    STMeta-Gating     |   V1    |           |                          |
+|    STMeta-Gating     |   V1    |  1.52386  | 15.97 hour / 1211 epochs |
 
 ### 30 mins
 
@@ -38,21 +38,21 @@
 |   STMeta-Multi-Emb    |   V1    |           |                |
 |     STMeta-Gating     |   V1    |           |                |
 
-| **City: Chicago 30 mins** | Version | test-rmse |     Converged Time     |
-| :-----------------------: | :-----: | :-------: | :--------------------: |
-|          STMeta           |   V1    |  2.17032  | 6.67 hour / 332 epochs |
-|       STMeta-Concat       |   V1    |           |                        |
-|        STMeta-Emb         |   V1    |           |                        |
-|     STMeta-Multi-Emb      |   V1    |           |                        |
-|       STMeta-Gating       |   V1    |           |                        |
+| **City: Chicago 30 mins** | Version | test-rmse |      Converged Time      |
+| :-----------------------: | :-----: | :-------: | :----------------------: |
+|          STMeta           |   V1    |  2.17032  |  6.67 hour / 332 epochs  |
+|       STMeta-Concat       |   V1    |  2.22892  | 31.58 hour / 1822 epochs |
+|        STMeta-Emb         |   V1    |           |                          |
+|     STMeta-Multi-Emb      |   V1    |           |                          |
+|       STMeta-Gating       |   V1    |  2.17295  |  9.93 hour / 505 epochs  |
 
 | **City: DC 30 mins** | Version | test-rmse |      Converged Time       |
 | :------------------: | :-----: | :-------: | :-----------------------: |
 |        STMeta        |   V1    |  1.85628  | 192.52 hour / 4576 epochs |
-|    STMeta-Concat     |   V1    |           |                           |
+|    STMeta-Concat     |   V1    |  1.88718  | 71.17 hour / 4681 epochs  |
 |      STMeta-Emb      |   V1    |           |                           |
 |   STMeta-Multi-Emb   |   V1    |           |                           |
-|    STMeta-Gating     |   V1    |           |                           |
+|    STMeta-Gating     |   V1    |  1.86528  |  15.86 hour / 992 epoch   |
 ## Results on DiDi Dataset
 
 ### 15 mins

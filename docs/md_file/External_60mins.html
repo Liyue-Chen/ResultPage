@@ -88,11 +88,13 @@
 <li class="toctree-l2"><a class="reference internal" href="#results-on-didi-dataset">Results on DiDi Dataset</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#results-on-metro-dataset">Results on Metro Dataset</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#results-on-ev-dataset">Results on EV Dataset</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#lstm-windows-size">LSTM Windows Size</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="External_15_30mins.html">15&amp;30 mins External Results</a></li>
 <li class="toctree-l1"><a class="reference internal" href="External_abalation.html">External Feature Ablation Results</a></li>
 <li class="toctree-l1"><a class="reference internal" href="KDD_all_results.html">Results on Different Datasets(KDD)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SingleGraph_60mins.html">60 mins Single Graph</a></li>
 </ul>
 
             
@@ -199,6 +201,12 @@
 <td align="center">V1</td>
 <td align="center">3.38418</td>
 <td align="center">153.24 hour / 4638 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-LSTM</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
 </tr>
 <tr>
 <td align="center">STMeta-Gating</td>
@@ -332,7 +340,7 @@
 <td align="center">4.40 hour / 4688 epochs</td>
 </tr>
 <tr>
-<td align="center">External-LSTM</td>
+<td align="center">STMeta-LSTM</td>
 <td align="center">V1</td>
 <td align="center">7.99094</td>
 <td align="center">5.83680</td>
@@ -386,7 +394,7 @@
 <td align="center"></td>
 </tr>
 <tr>
-<td align="center">External-LSTM</td>
+<td align="center">STMeta-LSTM</td>
 <td align="center">V1</td>
 <td align="center"></td>
 <td align="center"></td>
@@ -474,7 +482,7 @@
 <td align="center">10.11 hour / 927 epochs</td>
 </tr>
 <tr>
-<td align="center">External-LSTM</td>
+<td align="center">STMeta-LSTM</td>
 <td align="center">V1(batch_size:64)</td>
 <td align="center">108.24415</td>
 <td align="center">158.71454</td>
@@ -528,7 +536,7 @@
 <td align="center"></td>
 </tr>
 <tr>
-<td align="center">External-LSTM</td>
+<td align="center">STMeta-LSTM</td>
 <td align="center">V1</td>
 <td align="center"></td>
 <td align="center"></td>
@@ -763,7 +771,7 @@
 <td align="center">16.18 hour / 10332 epochs</td>
 </tr>
 <tr>
-<td align="center">External-LSTM</td>
+<td align="center">STMeta-LSTM</td>
 <td align="center">V1（bs:16）</td>
 <td align="center">0.87116</td>
 <td align="center">0.86171</td>
@@ -779,6 +787,103 @@
 </tbody>
 </table><p>默认bs:64</p>
 </div>
+<div class="section" id="lstm-windows-size">
+<h2>LSTM Windows Size<a class="headerlink" href="#lstm-windows-size" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th align="center"><strong>City: Xian</strong></th>
+<th align="center">window size</th>
+<th align="center">val-rmse</th>
+<th align="center">test-rmse</th>
+<th align="center">Converged Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">STMeta</td>
+<td align="center">-</td>
+<td align="center">7.62051</td>
+<td align="center">5.82054</td>
+<td align="center">3.68 hour / 4367 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">-</td>
+<td align="center">6.62653</td>
+<td align="center">5.80114</td>
+<td align="center">1.57 hour / 410 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-LSTM</td>
+<td align="center">4</td>
+<td align="center">6.78389</td>
+<td align="center"><strong>5.72379</strong></td>
+<td align="center">7.68 hour / 8414 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-LSTM</td>
+<td align="center">6</td>
+<td align="center">6.43401</td>
+<td align="center">5.84958</td>
+<td align="center">14.54 hour / 16399 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-LSTM</td>
+<td align="center">8</td>
+<td align="center">6.70062</td>
+<td align="center">5.78989</td>
+<td align="center">8.51 hour / 9635 epochs</td>
+</tr>
+</tbody>
+</table><table border="1" class="docutils">
+<thead>
+<tr>
+<th align="center"><strong>City: Beijing</strong></th>
+<th align="center">window size</th>
+<th align="center">val-rmse</th>
+<th align="center">test-rmse</th>
+<th align="center">Converged Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">STMeta</td>
+<td align="center">-</td>
+<td align="center">0.79145</td>
+<td align="center">0.81805</td>
+<td align="center">10.58 hour / 6205 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">-</td>
+<td align="center">0.74789</td>
+<td align="center">0.78317</td>
+<td align="center">9.68 hour / 4563 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-LSTM</td>
+<td align="center">4</td>
+<td align="center">0.73958</td>
+<td align="center"><strong>0.78238</strong></td>
+<td align="center">16.63 hour / 9336 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-LSTM</td>
+<td align="center">6</td>
+<td align="center">0.74820</td>
+<td align="center">0.78632</td>
+<td align="center">15.00 hour / 8452 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-LSTM</td>
+<td align="center">8</td>
+<td align="center">0.74523</td>
+<td align="center">0.78896</td>
+<td align="center">17.14 hour / 9717 epochs</td>
+</tr>
+</tbody>
+</table></div>
 </div>
 
 

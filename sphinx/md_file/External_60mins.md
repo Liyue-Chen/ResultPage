@@ -14,6 +14,7 @@
 |  STMeta-Concat   |   V1    |  3.37618  | 144.60 hour / 5362 epochs |
 |    STMeta-Emb    |   V1    |  3.38310  | 127.81 hour / 4876 epochs |
 | STMeta-Multi-Emb |   V1    |  3.38418  | 153.24 hour / 4638 epochs |
+|   STMeta-LSTM    |         |           |                           |
 |  STMeta-Gating   |   V1    |  3.37795  | 120.89 hour / 4043 epochs |
 
 | **City: Chicago** | Version | test-rmse | Converged Time |
@@ -40,7 +41,7 @@
 |  STMeta-Concat   |        V1         | 15.56313 |  5.93437  |  5.10 hour / 6029 epochs   |
 |    STMeta-Emb    | V1（bs:8 ,emb:6） | 6.51017  |  5.81860  |  4.33 hour / 4536 epochs   |
 | STMeta-Multi-Emb |        V1         | 7.01359  |  5.82937  |  4.40 hour / 4688 epochs   |
-|  External-LSTM   |        V1         | 7.99094  |  5.83680  | **0.83 hour / 383 epochs** |
+|   STMeta-LSTM    |        V1         | 7.99094  |  5.83680  | **0.83 hour / 383 epochs** |
 |  STMeta-Gating   |        V1         | 6.62653  |  5.80114  |   1.57 hour / 410 epochs   |
 
 | **City: Chengdu** | Version | val-rmse | test-rmse | Converged Time |
@@ -49,7 +50,7 @@
 |   STMeta-Concat   |   V1    |          |           |                |
 |    STMeta-Emb     |   V1    |          |           |                |
 | STMeta-Multi-Emb  |   V1    |          |           |                |
-|   External-LSTM   |   V1    |          |           |                |
+|    STMeta-LSTM    |   V1    |          |           |                |
 |   STMeta-Gating   |   V1    |          |           |                |
 
 注：默认lr为1e-5
@@ -69,7 +70,7 @@
 |   STMeta-Concat    |     V1（bs:8）     | 130.72882 | 173.28693 |  1.87 hour / 593 epochs  |
 |     STMeta-Emb     | V1（bs:8,emb:10）  | 110.38365 | 154.38785 | 7.39 hour / 3280 epochs  |
 |  STMeta-Multi-Emb  |     V1(10-1-6)     | 113.25427 | 156.60223 | 10.11 hour / 927 epochs  |
-|   External-LSTM    | V1(batch_size:64)  | 108.24415 | 158.71454 | 18.75 hour / 9568 epochs |
+|    STMeta-LSTM     | V1(batch_size:64)  | 108.24415 | 158.71454 | 18.75 hour / 9568 epochs |
 |   STMeta-Gating    | V1（bs:8 lr:5e-5） | 106.15893 | 145.45236 | 6.00 hour / 2563 epochs  |
 
 | **City: Chongqing** | Version | val-rmse | test-rmse | Converged Time |
@@ -78,7 +79,7 @@
 |    STMeta-Concat    |   V1    |          |           |                |
 |     STMeta-Emb      |   V1    |          |           |                |
 |  STMeta-Multi-Emb   |   V1    |          |           |                |
-|    External-LSTM    |   V1    |          |           |                |
+|     STMeta-LSTM     |   V1    |          |           |                |
 |    STMeta-Gating    |   V1    |          |           |                |
 
 **Different embedding size**（default batch_size: 4）
@@ -127,7 +128,27 @@
 |   STMeta-Concat   | V1（bs:32） | 0.74699  |  0.78338  |  9.13 hour / 4339 epochs  |
 |    STMeta-Emb     |     V1      | 0.75199  |  0.78521  | 15.59 hour / 9970 epochs  |
 | STMeta-Multi-Emb  |     V1      | 0.75170  |  0.79257  | 16.18 hour / 10332 epochs |
-|   External-LSTM   | V1（bs:16） | 0.87116  |  0.86171  |   0.50 hour / 91 epochs   |
+|    STMeta-LSTM    | V1（bs:16） | 0.87116  |  0.86171  |   0.50 hour / 91 epochs   |
 |   STMeta-Gating   | V1（bs:32） | 0.74789  |  0.78317  |  9.68 hour / 4563 epochs  |
 
 默认bs:64 
+
+## LSTM Windows Size
+
+| **City: Xian** | window size | val-rmse |  test-rmse  |      Converged Time       |
+| :------------: | :---------: | :------: | :---------: | :-----------------------: |
+|     STMeta     |      -      | 7.62051  |   5.82054   |  3.68 hour / 4367 epochs  |
+| STMeta-Gating  |      -      | 6.62653  |   5.80114   |  1.57 hour / 410 epochs   |
+|  STMeta-LSTM   |      4      | 6.78389  | **5.72379** |  7.68 hour / 8414 epochs  |
+|  STMeta-LSTM   |      6      | 6.43401  |   5.84958   | 14.54 hour / 16399 epochs |
+|  STMeta-LSTM   |      8      | 6.70062  |   5.78989   |  8.51 hour / 9635 epochs  |
+
+
+
+| **City: Beijing** | window size | val-rmse |  test-rmse  |      Converged Time      |
+| :---------------: | :---------: | :------: | :---------: | :----------------------: |
+|      STMeta       |      -      | 0.79145  |   0.81805   | 10.58 hour / 6205 epochs |
+|   STMeta-Gating   |      -      | 0.74789  |   0.78317   | 9.68 hour / 4563 epochs  |
+|    STMeta-LSTM    |      4      | 0.73958  | **0.78238** | 16.63 hour / 9336 epochs |
+|    STMeta-LSTM    |      6      | 0.74820  |   0.78632   | 15.00 hour / 8452 epochs |
+|    STMeta-LSTM    |      8      | 0.74523  |   0.78896   | 17.14 hour / 9717 epochs |
