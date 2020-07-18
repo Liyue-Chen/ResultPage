@@ -73,14 +73,14 @@
 |    STMeta-LSTM     | V1(batch_size:64)  | 108.24415 | 158.71454 | 18.75 hour / 9568 epochs |
 |   STMeta-Gating    | V1（bs:8 lr:5e-5） | 106.15893 | 145.45236 | 6.00 hour / 2563 epochs  |
 
-| **City: Chongqing** | Version | val-rmse | test-rmse | Converged Time |
-| :-----------------: | :-----: | :------: | :-------: | :------------: |
-|       STMeta        |   V1    |          |           |                |
-|    STMeta-Concat    |   V1    |          |           |                |
-|     STMeta-Emb      |   V1    |          |           |                |
-|  STMeta-Multi-Emb   |   V1    |          |           |                |
-|     STMeta-LSTM     |   V1    |          |           |                |
-|    STMeta-Gating    |   V1    |          |           |                |
+| **City: Chongqing** | Version | val-rmse | test-rmse |      Converged Time       |
+| :-----------------: | :-----: | :------: | :-------: | :-----------------------: |
+|       STMeta        |   V1    |          |           |                           |
+|    STMeta-Concat    |   V1    | 90.67642 | 90.54800  | 38.79 hour / 10000 epochs |
+|     STMeta-Emb      |   V1    |          |           |                           |
+|  STMeta-Multi-Emb   |   V1    |          |           |                           |
+|     STMeta-LSTM     |   V1    |          |           |                           |
+|    STMeta-Gating    |   V1    | 94.25858 | 87.03069  | 39.27 hour / 10000 epochs |
 
 **Different embedding size**（default batch_size: 4）
 

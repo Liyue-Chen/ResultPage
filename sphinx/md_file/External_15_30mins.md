@@ -7,10 +7,10 @@
 | **City: NYC 15 mins** | Version | test-rmse |      Converged Time      |
 | :-------------------: | :-----: | :-------: | :----------------------: |
 |        STMeta         |   V1    |  1.65939  | 49.28 hour / 2280 epochs |
-|     STMeta-Concat     |   V1    |           |                          |
+|     STMeta-Concat     |   V1    |  1.63254  | 71.23 hour / 3326 epochs |
 |      STMeta-Emb       |   V1    |           |                          |
 |   STMeta-Multi-Emb    |   V1    |           |                          |
-|     STMeta-Gating     |   V1    |           |                          |
+|     STMeta-Gating     |   V1    |  1.62798  | 25.35 hour / 1115 epochs |
 
 | **City: Chicago 15 mins** | Version | test-rmse |     Converged Time      |
 | :-----------------------: | :-----: | :-------: | :---------------------: |
@@ -30,13 +30,13 @@
 
 ### 30 mins
 
-| **City: NYC 30 mins** | Version | test-rmse | Converged Time |
-| :-------------------: | :-----: | :-------: | :------------: |
-|        STMeta         |   V1    |  2.40976  |  6764 epochs   |
-|     STMeta-Concat     |   V1    |           |                |
-|      STMeta-Emb       |   V1    |           |                |
-|   STMeta-Multi-Emb    |   V1    |           |                |
-|     STMeta-Gating     |   V1    |           |                |
+| **City: NYC 30 mins** | Version | test-rmse |      Converged Time      |
+| :-------------------: | :-----: | :-------: | :----------------------: |
+|        STMeta         |   V1    |  2.40976  |       6764 epochs        |
+|     STMeta-Concat     |   V1    |  2.55894  | 65.41 hour / 2578 epochs |
+|      STMeta-Emb       |   V1    |           |                          |
+|   STMeta-Multi-Emb    |   V1    |           |                          |
+|     STMeta-Gating     |   V1    |  2.47428  | 18.95 hour / 647 epochs  |
 
 | **City: Chicago 30 mins** | Version | test-rmse |      Converged Time      |
 | :-----------------------: | :-----: | :-------: | :----------------------: |
