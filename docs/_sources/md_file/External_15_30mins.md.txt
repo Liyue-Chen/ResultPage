@@ -2,6 +2,8 @@
 
 ## Results on Bike Dataset
 
+注：15 mins 暂时不跑，30mins 的跑Chicago/Chengdu
+
 ### 15 mins
 
 | **City: NYC 15 mins** | Version | test-rmse |      Converged Time      |
@@ -108,14 +110,14 @@
 |       External-LSTM        |   V1    |          |           |                           |
 |       STMeta-Gating        |   V1    | 35.95238 | 42.11205  | 18.62 hour / 1529 epochs  |
 
-| **City: Chongqing 15 mins** | Version | val-rmse |  test-rmse   |      Converged Time       |
-| :-------------------------: | :-----: | :------: | :----------: | :-----------------------: |
-|           STMeta            |   V1    | 26.21625 | **31.39239** | 138.15 hour / 8515 epochs |
-|        STMeta-Concat        |   V1    |          |              |                           |
-|         STMeta-Emb          |   V1    |          |              |                           |
-|      STMeta-Multi-Emb       |   V1    |          |              |                           |
-|        External-LSTM        |   V1    |          |              |                           |
-|        STMeta-Gating        |   V1    |          |              |                           |
+| **City: Chongqing 15 mins** | Version | val-rmse |   test-rmse   |       Converged Time       |
+| :-------------------------: | :-----: | :------: | :-----------: | :------------------------: |
+|           STMeta            |   V1    | 26.21625 | **31.39239**  | 138.15 hour / 8515 epochs  |
+|        STMeta-Concat        |   V1    | 30.35257 |   31.36279    | 164.13 hour / 10000 epochs |
+|         STMeta-Emb          |   V1    |          |               |                            |
+|      STMeta-Multi-Emb       |   V1    |          |               |                            |
+|        External-LSTM        |   V1    |          |               |                            |
+|        STMeta-Gating        |   V1    | 30.37934 | 31.4809276004 |  97.41 hour / 6514 epochs  |
 
 ### 30 mins
 
@@ -128,14 +130,14 @@
 |       External-LSTM        |   V1    |          |           |                           |
 |       STMeta-Gating        |   V1    | 62.23307 | 75.05776  |  5.34 hour / 763 epochs   |
 
-| **City: Chongqing 30 mins** | Version | val-rmse | test-rmse |      Converged Time       |
-| :-------------------------: | :-----: | :------: | :-------: | :-----------------------: |
-|           STMeta            |   V1    | 42.03588 | 49.46800  | 84.38 hour / 10387 epochs |
-|        STMeta-Concat        |   V1    |          |           |                           |
-|         STMeta-Emb          |   V1    |          |           |                           |
-|      STMeta-Multi-Emb       |   V1    |          |           |                           |
-|        External-LSTM        |   V1    |          |           |                           |
-|        STMeta-Gating        |   V1    |          |           |                           |
+| **City: Chongqing 30 mins** | Version |   val-rmse   | test-rmse |      Converged Time       |
+| :-------------------------: | :-----: | :----------: | :-------: | :-----------------------: |
+|           STMeta            |   V1    |   42.03588   | 49.46800  | 84.38 hour / 10387 epochs |
+|        STMeta-Concat        |   V1    |   46.38776   | 49.06065  | 74.54 hour / 10000 epochs |
+|         STMeta-Emb          |   V1    |              |           |                           |
+|      STMeta-Multi-Emb       |   V1    |              |           |                           |
+|        External-LSTM        |   V1    |              |           |                           |
+|        STMeta-Gating        |   V1    | 47.083429625 | 49.07846  |  4.82 hour / 6166 epochs  |
 
 ## Results on EV Dataset
 

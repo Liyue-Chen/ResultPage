@@ -50,16 +50,16 @@ Default granularity is 60 mins.
 | STMeta-Gating  |    holiday-tp     | 6.75393  |  5.69865  | 11.33 hour / 6350 epochs |
 | STMeta-Gating  |        all        | 6.62653  |  5.80114  |  1.57 hour / 410 epochs  |
 
-| **City: Chengdu** | external feature  | val-rmse | test-rmse | Converged Time |
-| :---------------: | :---------------: | :------: | :-------: | :------------: |
-|      STMeta       |      not use      |          |           |                |
-|   STMeta-Gating   |      weather      |          |           |                |
-|   STMeta-Gating   |      holiday      |          |           |                |
-|   STMeta-Gating   | temporal position |          |           |                |
-|   STMeta-Gating   |  weather-holiday  |          |           |                |
-|   STMeta-Gating   |    weather-tp     |          |           |                |
-|   STMeta-Gating   |    holiday-tp     |          |           |                |
-|   STMeta-Gating   |        all        |          |           |                |
+| **City: Chengdu** | external feature  | val-rmse | test-rmse |     Converged Time      |
+| :---------------: | :---------------: | :------: | :-------: | :---------------------: |
+|      STMeta       |      not use      |          |           |                         |
+|   STMeta-Gating   |      weather      | 7.06867  |  6.98848  | 1.19 hour / 184 epochs  |
+|   STMeta-Gating   |      holiday      | 6.78676  |  6.84083  | 3.87 hour / 2778 epochs |
+|   STMeta-Gating   | temporal position | 6.77283  |  6.96706  | 9.08 hour / 6428 epochs |
+|   STMeta-Gating   |  weather-holiday  | 6.90914  |  6.89400  | 1.30 hour / 477 epochs  |
+|   STMeta-Gating   |    weather-tp     | 6.88513  |  6.96674  | 1.63 hour / 816 epochs  |
+|   STMeta-Gating   |    holiday-tp     | 6.67799  |  6.92909  | 3.57 hour / 2278 epochs |
+|   STMeta-Gating   |        all        |          |           |                         |
 
 ## Results on Metro Dataset
 

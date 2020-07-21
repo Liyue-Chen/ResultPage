@@ -1,0 +1,966 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Results on DiDiTTI Datasets &mdash; ResultPage  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> ResultPage
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="External_60mins.html">60 mins External Results</a></li>
+<li class="toctree-l1"><a class="reference internal" href="External_15_30mins.html">15&amp;30 mins External Results</a></li>
+<li class="toctree-l1"><a class="reference internal" href="External_abalation.html">External Feature Ablation Results</a></li>
+<li class="toctree-l1"><a class="reference internal" href="KDD_all_results.html">Results on Different Datasets(KDD)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SingleGraph_60mins.html">60 mins Single Graph</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">ResultPage</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Results on DiDiTTI Datasets</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/md_file/DiDiTTI_ReciResult.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="results-on-diditti-datasets">
+<h1>Results on DiDiTTI Datasets<a class="headerlink" href="#results-on-diditti-datasets" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="search-space">
+<h2>Search Space<a class="headerlink" href="#search-space" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th align="center">Model</th>
+<th align="center">Search Space</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">HM</td>
+<td align="center"><code>CT: 0~6</code>, <code>PT: 0~7</code>, <code>TT: 0~4</code></td>
+</tr>
+<tr>
+<td align="center">ARIMA</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">ST_ResNet</td>
+<td align="center"><code>待补充</code></td>
+</tr>
+<tr>
+<td align="center">XGBoost</td>
+<td align="center"><code>CT: 0~12</code>, <code>PT: 0~14</code>, <code>TT: 0~4</code>, <code>estimater: 10~200</code>, <code>depth: 2~10</code></td>
+</tr>
+<tr>
+<td align="center">GBRT</td>
+<td align="center"><code>CT: 0~12</code>, <code>PT: 0~14</code>, <code>TT: 0~4</code>, <code>estimater: 10~200</code>, <code>depth: 2~10</code></td>
+</tr>
+<tr>
+<td align="center">LSTM</td>
+<td align="center"><code>lstm_layers: 1~3</code>, <code>lstm_hidden_units: 32~128</code>, <code>dense_units: 32~128</code>, <code>temp_merge_heads: 2~4</code>, <code>temp_merge_units: 32~128</code></td>
+</tr>
+<tr>
+<td align="center">STMeta-GCLSTM-V1</td>
+<td align="center"><code>gcn_k: 1~3</code>, <code>gcn_l: 1~3</code> <code>gclstm_layers: 1~3</code>, <code>lstm_hidden_units: 64~256</code>, <code>dense_units: 32~128</code>, <code>temp_merge_heads: 2~4</code>, <code>temp_merge_units: 32~128</code></td>
+</tr>
+</tbody>
+</table><p>原始数据为六个城市一年的数据，仅使用半年的数据进行实验，data_range参数为[59,273]</p>
+<p>Note that C represent Correlation graph and R represent Road-distance graph(in previous experiment, we call it distant graph).</p>
+<div class="section" id="results-on-chengdu-dataset">
+<h3>Results on Chengdu Dataset<a class="headerlink" href="#results-on-chengdu-dataset" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th align="center"><strong>City: Chengdu</strong></th>
+<th align="center">Params</th>
+<th align="center">val-rmse</th>
+<th align="center">test-rmse</th>
+<th align="center"># Params</th>
+<th align="center">Converged Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">ARIMA(TC)</td>
+<td align="center">---</td>
+<td align="center">0.07955</td>
+<td align="center">0.08409</td>
+<td align="center">---</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">SARIMA(TC)</td>
+<td align="center">3-1-1-0-0-0-24</td>
+<td align="center">0.07860</td>
+<td align="center">0.08309</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">LSTM(TC)</td>
+<td align="center"></td>
+<td align="center">0.20943</td>
+<td align="center">0.21869</td>
+<td align="center">---</td>
+<td align="center">---</td>
+</tr>
+<tr>
+<td align="center">HM(TM)</td>
+<td align="center">1-3-2✅</td>
+<td align="center">0.05889</td>
+<td align="center">0.06369</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">XGBoost(TM)</td>
+<td align="center">14-5-2-161-2✅</td>
+<td align="center">0.05721</td>
+<td align="center">0.06155</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">GBRT(TM)</td>
+<td align="center">13-4-1-52-4✅</td>
+<td align="center">0.05590</td>
+<td align="center">0.06008</td>
+<td align="center">---</td>
+<td align="center">---</td>
+</tr>
+<tr>
+<td align="center">TMeta-LSTM-GAL (TM)</td>
+<td align="center"><code>待补充</code></td>
+<td align="center">0.05738</td>
+<td align="center">0.06041</td>
+<td align="center"></td>
+<td align="center">31.28 hour / 4146 epochs</td>
+</tr>
+<tr>
+<td align="center">DCRNN (TC+SP)</td>
+<td align="center"></td>
+<td align="center">0.05965</td>
+<td align="center">0.06520</td>
+<td align="center"></td>
+<td align="center">164.13 hour / 9717 epochs</td>
+</tr>
+<tr>
+<td align="center">ST-MGCN (TM+SM)</td>
+<td align="center"><code>1-64-32-2-64</code></td>
+<td align="center">0.056217</td>
+<td align="center">0.05928</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-V1-C</td>
+<td align="center"><code>1-1-1-64-32-2-64</code></td>
+<td align="center">0.05720</td>
+<td align="center">0.06048</td>
+<td align="center"></td>
+<td align="center">64.47 hour / 4685 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-V1-R</td>
+<td align="center"></td>
+<td align="center">0.05416</td>
+<td align="center">0.05738</td>
+<td align="center"></td>
+<td align="center">372.21 hour / 45398 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-V1-CR</td>
+<td align="center"></td>
+<td align="center">0.05391</td>
+<td align="center">0.05694</td>
+<td align="center"></td>
+<td align="center">378.97 hour / 15068 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-V2-CR</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-V3-CR</td>
+<td align="center"></td>
+<td align="center">0.05465</td>
+<td align="center">0.05770</td>
+<td align="center"></td>
+<td align="center">246.00 hour / 10000 epochs</td>
+</tr>
+</tbody>
+</table></div>
+<div class="section" id="results-on-haikou-dataset">
+<h3>Results on Haikou Dataset<a class="headerlink" href="#results-on-haikou-dataset" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th align="center"><strong>City: Haikou</strong></th>
+<th align="center">Params</th>
+<th align="center">val-rmse</th>
+<th align="center">test-rmse</th>
+<th align="center"># Params</th>
+<th align="center">Converged Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">ARIMA(TC)</td>
+<td align="center">---</td>
+<td align="center">0.07348</td>
+<td align="center">0.07942</td>
+<td align="center">---</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">SARIMA(TC)</td>
+<td align="center">sp=24</td>
+<td align="center">0.06424</td>
+<td align="center">0.07058</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">LSTM(TC)</td>
+<td align="center"></td>
+<td align="center">0.11948</td>
+<td align="center">0.12639</td>
+<td align="center">---</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">HM(TM)</td>
+<td align="center">1-2-2✅</td>
+<td align="center">0.05619</td>
+<td align="center">0.06277</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">XGBoost(TM)</td>
+<td align="center">`16-8-0-128-2✅</td>
+<td align="center">0.05470</td>
+<td align="center">0.06092</td>
+<td align="center">---</td>
+<td align="center">---</td>
+</tr>
+<tr>
+<td align="center">GBRT(TM)</td>
+<td align="center"><code>13-6-1-69-4</code>✅</td>
+<td align="center">0.05355</td>
+<td align="center">0.05958</td>
+<td align="center">--</td>
+<td align="center">---</td>
+</tr>
+<tr>
+<td align="center">TMeta-LSTM-GAL (TM)</td>
+<td align="center"><code>待补充</code></td>
+<td align="center">0.05481</td>
+<td align="center">0.06087</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">DCRNN (TC+SP)</td>
+<td align="center"></td>
+<td align="center">0.06884</td>
+<td align="center">0.07410</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">ST-MGCN (TM+SM)</td>
+<td align="center"></td>
+<td align="center">0.05410</td>
+<td align="center">0.05983</td>
+<td align="center"></td>
+<td align="center">3.74 hour / 386 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-V1-C</td>
+<td align="center"><code>1-1-1-64-32-2-64</code></td>
+<td align="center">0.05317</td>
+<td align="center">0.05798</td>
+<td align="center"></td>
+<td align="center">3.30 hour / 1940 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-V1-R</td>
+<td align="center"></td>
+<td align="center">0.05385</td>
+<td align="center">0.05908</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-V1-CR</td>
+<td align="center"></td>
+<td align="center">0.05449</td>
+<td align="center">0.06011</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-V2-C</td>
+<td align="center"></td>
+<td align="center">0.05436</td>
+<td align="center">0.06009</td>
+<td align="center"></td>
+<td align="center">12.04 hour / 7020 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-V2-R</td>
+<td align="center"></td>
+<td align="center">0.05420</td>
+<td align="center">0.05955</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-V2-CR</td>
+<td align="center"></td>
+<td align="center">0.05390</td>
+<td align="center">0.05939</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-V3</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table></div>
+<div class="section" id="results-on-jinan-dataset">
+<h3>Results on Jinan Dataset<a class="headerlink" href="#results-on-jinan-dataset" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th align="center"><strong>City: Jinan</strong></th>
+<th align="center">Params</th>
+<th align="center">val-rmse</th>
+<th align="center">test-rmse</th>
+<th align="center"># Params</th>
+<th align="center">Converged Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">ARIMA(TC)</td>
+<td align="center">---</td>
+<td align="center">0.07471</td>
+<td align="center">0.08329</td>
+<td align="center">---</td>
+<td align="center">---</td>
+</tr>
+<tr>
+<td align="center">SARIMA(TC)</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">LSTM(TC)</td>
+<td align="center"></td>
+<td align="center">0.12365</td>
+<td align="center">0.13262</td>
+<td align="center">---</td>
+<td align="center">---</td>
+</tr>
+<tr>
+<td align="center">HM(TM)</td>
+<td align="center">1-2-2✅</td>
+<td align="center">0.05546</td>
+<td align="center">0.06323</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">XGBoost(TM)</td>
+<td align="center"><code>9-7-1-39-3</code>✅</td>
+<td align="center">0.05277</td>
+<td align="center">0.06171</td>
+<td align="center">---</td>
+<td align="center">---</td>
+</tr>
+<tr>
+<td align="center">GBRT(TM)</td>
+<td align="center">13-7-1-59-4✅</td>
+<td align="center">0.05164</td>
+<td align="center">0.06046</td>
+<td align="center">---</td>
+<td align="center">---</td>
+</tr>
+<tr>
+<td align="center">TMeta-LSTM-GAL (TM)</td>
+<td align="center"><code>待补充</code></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">DCRNN (TC+SP)</td>
+<td align="center"></td>
+<td align="center">0.07140</td>
+<td align="center">0.06583</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">ST-MGCN (TM+SM)</td>
+<td align="center"><code>1-64-32-2-64</code></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-V1</td>
+<td align="center"><code>1-1-1-64-32-2-64</code></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-V2</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-V3</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table></div>
+<div class="section" id="results-on-shenzhen-dataset">
+<h3>Results on Shenzhen Dataset<a class="headerlink" href="#results-on-shenzhen-dataset" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th align="center"><strong>City: Shenzhen</strong></th>
+<th align="center">Params</th>
+<th align="center">val-rmse</th>
+<th align="center">test-rmse</th>
+<th align="center"># Params</th>
+<th align="center">Converged Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">ARIMA(TC)</td>
+<td align="center">3-1-1</td>
+<td align="center">0.08054</td>
+<td align="center">0.09018</td>
+<td align="center">---</td>
+<td align="center">---</td>
+</tr>
+<tr>
+<td align="center">SARIMA(TC)</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">LSTM(TC)</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">---</td>
+<td align="center">---</td>
+</tr>
+<tr>
+<td align="center">HM(TM)</td>
+<td align="center">1-2-3✅</td>
+<td align="center">0.065712</td>
+<td align="center">0.08016</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">XGBoost(TM)</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">---</td>
+<td align="center">---</td>
+</tr>
+<tr>
+<td align="center">GBRT(TM)</td>
+<td align="center"><code>13-2-3-121-3</code>✅</td>
+<td align="center">0.06230</td>
+<td align="center">0.07569</td>
+<td align="center">---</td>
+<td align="center">---</td>
+</tr>
+<tr>
+<td align="center">TMeta-LSTM-GAL (TM)</td>
+<td align="center"><code>待补充</code></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">DCRNN (TC+SP)</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">ST-ResNet (TM+SP)</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">ST-MGCN (TM+SM)</td>
+<td align="center"><code>1-64-32-2-64</code></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-V1</td>
+<td align="center"><code>1-1-1-64-32-2-64</code></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-V2</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-V3</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table></div>
+<div class="section" id="results-on-suzhou-dataset">
+<h3>Results on Suzhou Dataset<a class="headerlink" href="#results-on-suzhou-dataset" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th align="center"><strong>City: Suzhou</strong></th>
+<th align="center">Params</th>
+<th align="center">val-rmse</th>
+<th align="center">test-rmse</th>
+<th align="center"># Params</th>
+<th align="center">Converged Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">ARIMA(TC)</td>
+<td align="center">---</td>
+<td align="center">0.06605</td>
+<td align="center">0.07136</td>
+<td align="center">---</td>
+<td align="center">---</td>
+</tr>
+<tr>
+<td align="center">SARIMA(TC)</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">LSTM(TC)</td>
+<td align="center"></td>
+<td align="center">0.10589</td>
+<td align="center">0.11267</td>
+<td align="center">---</td>
+<td align="center">2.87 hour / 43 epochs</td>
+</tr>
+<tr>
+<td align="center">HM(TM)</td>
+<td align="center">1-2-3✅</td>
+<td align="center">0.05105</td>
+<td align="center">0.05481</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">XGBoost(TM)</td>
+<td align="center">12-9-0-78-2✅</td>
+<td align="center">0.05008</td>
+<td align="center">0.05408</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">GBRT(TM)</td>
+<td align="center"><code>12-11-1-43-4</code>✅</td>
+<td align="center">0.04928</td>
+<td align="center">0.05336</td>
+<td align="center">---</td>
+<td align="center">---</td>
+</tr>
+<tr>
+<td align="center">TMeta-LSTM-GAL (TM)</td>
+<td align="center"><code>待补充</code></td>
+<td align="center">0.05010</td>
+<td align="center">0.05322</td>
+<td align="center"></td>
+<td align="center">60.64 hour / 10000 epochs</td>
+</tr>
+<tr>
+<td align="center">DCRNN (TC+SP)</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">ST-MGCN (TM+SM)</td>
+<td align="center"><code>1-64-32-2-64</code></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-V1</td>
+<td align="center"><code>1-1-1-64-32-2-64</code></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-V2</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-V3</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table></div>
+<div class="section" id="results-on-xi-an-dataset">
+<h3>Results on Xi’an Dataset<a class="headerlink" href="#results-on-xi-an-dataset" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th align="center"><strong>City: Xi'an</strong></th>
+<th align="center">Params</th>
+<th align="center">val-rmse</th>
+<th align="center">test-rmse</th>
+<th align="center"># Params</th>
+<th align="center">Converged Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">ARIMA(TC)</td>
+<td align="center">---</td>
+<td align="center">0.07680</td>
+<td align="center">0.08594</td>
+<td align="center">---</td>
+<td align="center">---</td>
+</tr>
+<tr>
+<td align="center">SARIMA(TC)</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">LSTM(TC)</td>
+<td align="center"></td>
+<td align="center">0.07173</td>
+<td align="center">0.08033</td>
+<td align="center">---</td>
+<td align="center">16.24 hour / 10000 epochs</td>
+</tr>
+<tr>
+<td align="center">HM(TM)</td>
+<td align="center">1-2-2✅</td>
+<td align="center">0.05381</td>
+<td align="center">0.06193</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">XGBoost(TM)</td>
+<td align="center">9-12-0-41-3✅</td>
+<td align="center">0.05234</td>
+<td align="center">0.06031</td>
+<td align="center">---</td>
+<td align="center">---</td>
+</tr>
+<tr>
+<td align="center">GBRT(TM)</td>
+<td align="center">13-4-2-64-4✅</td>
+<td align="center">0.05080</td>
+<td align="center">0.05867</td>
+<td align="center">---</td>
+<td align="center">---</td>
+</tr>
+<tr>
+<td align="center">TMeta-LSTM-GAL (TM)</td>
+<td align="center"></td>
+<td align="center">0.05227</td>
+<td align="center">0.05940</td>
+<td align="center"></td>
+<td align="center">38.09 hour / 10000 epochs</td>
+</tr>
+<tr>
+<td align="center">DCRNN (TC+SP)</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">ST-MGCN (TM+SM)</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-V1</td>
+<td align="center"></td>
+<td align="center">0.05014</td>
+<td align="center">0.05616</td>
+<td align="center"></td>
+<td align="center">102.62 hour / 10000 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-V2</td>
+<td align="center"></td>
+<td align="center">0.05091</td>
+<td align="center">0.05715</td>
+<td align="center"></td>
+<td align="center">83.07 hour / 10000 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-V3</td>
+<td align="center"></td>
+<td align="center">0.04974</td>
+<td align="center">0.05558</td>
+<td align="center"></td>
+<td align="center">118.74 hour / 10000 epochs</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, UCTB group
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
