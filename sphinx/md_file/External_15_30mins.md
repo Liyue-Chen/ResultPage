@@ -2,7 +2,7 @@
 
 ## Results on Bike Dataset
 
-注：15 mins 暂时不跑，30mins 的跑Chicago/Chengdu
+注：15 mins 暂时不跑，30mins 的跑Chicago/Chengdu/Shanghai/Beijing
 
 ### 15 mins
 
