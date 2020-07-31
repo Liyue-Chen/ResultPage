@@ -7,10 +7,10 @@ Default granularity is 60 mins.
 | **City: NYC** | external feature  | val-rmse | test-rmse |      Converged Time       |
 | :-----------: | :---------------: | :------: | :-------: | :-----------------------: |
 |    STMeta     |      not use      |    -     |  3.51827  |        5930 epochs        |
-| STMeta-Gating |      weather      |          |           |                           |
-| STMeta-Gating |      holiday      |          |           |                           |
-| STMeta-Gating | temporal position |          |           |                           |
-| STMeta-Gating |  weather-holiday  |          |           |                           |
+| STMeta-Gating |      weather      | 3.17885  |  3.45162  | 266.52 hour / 8060 epochs |
+| STMeta-Gating |      holiday      | 3.18443  |  3.51716  | 292.43 hour / 9057 epochs |
+| STMeta-Gating | temporal position | 3.03264  |  3.40923  | 40.62 hour / 1142 epochs  |
+| STMeta-Gating |  weather-holiday  | 3.23032  |  3.45488  |  30.39 hour / 736 epochs  |
 | STMeta-Gating |    weather-tp     |          |           |                           |
 | STMeta-Gating |    holiday-tp     |          |           |                           |
 | STMeta-Gating |        all        |    -     |  3.37795  | 120.89 hour / 4043 epochs |
@@ -26,16 +26,16 @@ Default granularity is 60 mins.
 |   STMeta-Gating   |    holiday-tp     | 2.04882  |  2.55389  |  6.93 hour / 315 epochs  |
 |   STMeta-Gating   |        all        |    -     |  2.59783  | 67.95 hour / 3888 epochs |
 
-| **City: DC**  | external feature  | val-rmse | test-rmse |      Converged Time      |
-| :-----------: | :---------------: | :------: | :-------: | :----------------------: |
-|    STMeta     |      not use      |          |           |                          |
-| STMeta-Gating |      weather      | 2.64569  |  2.44860  | 20.68 hour / 1267 epochs |
-| STMeta-Gating |      holiday      |          |           |                          |
-| STMeta-Gating | temporal position |          |           |                          |
-| STMeta-Gating |  weather-holiday  |          |           |                          |
-| STMeta-Gating |    weather-tp     |          |           |                          |
-| STMeta-Gating |    holiday-tp     |          |           |                          |
-| STMeta-Gating |        all        | 2.54658  |  2.43501  | 54.22 hour / 3563 epochs |
+| **City: DC**  | external feature  |    val-rmse    |   test-rmse   |      Converged Time      |
+| :-----------: | :---------------: | :------------: | :-----------: | :----------------------: |
+|    STMeta     |      not use      |       -        |    2.44287    | 78.61 hour / 5750 epochs |
+| STMeta-Gating |      weather      |    2.64569     |    2.44860    | 20.68 hour / 1267 epochs |
+| STMeta-Gating |      holiday      |    2.59700     |    2.45220    | 56.99 hour / 3534 epochs |
+| STMeta-Gating | temporal position |    2.50228     |    2.39943    | 31.97 hour / 1840 epochs |
+| STMeta-Gating |  weather-holiday  |   2.61706239   |  2.441081673  | 39.66 hour / 2299 epochs |
+| STMeta-Gating |    weather-tp     | 2.543635427396 |  2.408363829  | 25.07 hour / 1420 epochs |
+| STMeta-Gating |    holiday-tp     |  2.508210127   | 2.40522472707 | 28.31 hour / 1607 epochs |
+| STMeta-Gating |        all        |    2.54658     |    2.43501    | 54.22 hour / 3563 epochs |
 
 ## Results on DiDi Dataset
 
@@ -74,16 +74,16 @@ Default granularity is 60 mins.
 |   STMeta-Gating    |    holiday-tp     | 96.05388  | **124.23711** | 41.68 hour / 20000 epochs |
 |   STMeta-Gating    |        all        | 106.15893 |   145.45236   |  6.00 hour / 2563 epochs  |
 
-| **City: Chongqing** | external feature  | val-rmse | test-rmse | Converged Time |
-| :-----------------: | :---------------: | :------: | :-------: | :------------: |
-|       STMeta        |      not use      |          |           |                |
-|    STMeta-Gating    |      weather      |          |           |                |
-|    STMeta-Gating    |      holiday      |          |           |                |
-|    STMeta-Gating    | temporal position |          |           |                |
-|    STMeta-Gating    |  weather-holiday  |          |           |                |
-|    STMeta-Gating    |    weather-tp     |          |           |                |
-|    STMeta-Gating    |    holiday-tp     |          |           |                |
-|    STMeta-Gating    |        all        |          |           |                |
+| **City: Chongqing** | external feature  | val-rmse | test-rmse |      Converged Time       |
+| :-----------------: | :---------------: | :------: | :-------: | :-----------------------: |
+|       STMeta        |      not use      | 96.49490 | 92.83833  | 108.53 hour / 9808 epochs |
+|    STMeta-Gating    |      weather      | 97.45921 | 108.59510 | 91.03 hour / 10000 epochs |
+|    STMeta-Gating    |      holiday      |          |           |                           |
+|    STMeta-Gating    | temporal position |          |           |                           |
+|    STMeta-Gating    |  weather-holiday  |          |           |                           |
+|    STMeta-Gating    |    weather-tp     |          |           |                           |
+|    STMeta-Gating    |    holiday-tp     |          |           |                           |
+|    STMeta-Gating    |        all        | 94.25858 | 87.03069  | 39.27 hour / 10000 epochs |
 
 ## Results on EV Dataset
 
