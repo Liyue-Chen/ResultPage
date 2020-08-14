@@ -10,7 +10,7 @@
 
 |  **City: NYC**   | Version |  test-rmse  |      Converged Time       |
 | :--------------: | :-----: | :---------: | :-----------------------: |
-|      STMeta      |   V1    |   3.51827   |        5930 epochs        |
+|      STMeta      |   V1    |   3.60479   | 74.15 hour / 2307 epochs  |
 |  STMeta-Concat   |   V1    | **3.37618** | 144.60 hour / 5362 epochs |
 |    STMeta-Emb    |   V1    |   3.38310   | 127.81 hour / 4876 epochs |
 | STMeta-Multi-Emb |   V1    |   3.38418   | 153.24 hour / 4638 epochs |
@@ -38,7 +38,7 @@
 |   STMeta-Concat   |   V1    |   2.66504   | 165.83 hour / 9360 epochs |
 |    STMeta-Emb     |   V1    |   2.62967   |  12.22 hour / 718 epochs  |
 | STMeta-Multi-Emb  |   V1    | **2.59255** |  13.46 hour / 783 epochs  |
-|    STMeta-Add     |   V1    |   running   |                           |
+|    STMeta-Add     |   V1    |   2.63242   | 103.44 hour / 6511 epochs |
 |    STMeta-LSTM    |   V1    | **2.58002** | 53.36 hour / 3226 epochs  |
 |   STMeta-Gating   |   V1    |   2.59783   | 67.95 hour / 3888 epochs  |
 
@@ -62,7 +62,7 @@
 |  STMeta-Concat   |   V1    |  2.40469  | 66.71 hour / 4361 epochs |
 |    STMeta-Emb    |   V1    |  2.42240  | 72.54 hour / 5321 epochs |
 | STMeta-Multi-Emb |   V1    |  2.42558  | 55.53 hour / 4023 epochs |
-|    STMeta-Add    |   V1    |  running  |                          |
+|    STMeta-Add    |   V1    |  2.44094  | 70.82 hour / 5269 epochs |
 |   STMeta-LSTM    |   V1    |  2.42381  | 19.98 hour / 1367 epochs |
 |  STMeta-Gating   |   V1    |  2.43501  | 54.22 hour / 3563 epochs |
 
@@ -93,17 +93,17 @@
 |  STMeta-Gating   |   V1    | 6.62653  | **5.80114** |   1.57 hour / 410 epochs   |
 
 | **City: Xian** |   **System B**   | **P-Value** |   **System A**   |   **System B**   | **P-Value** |
-| :------------: | :--------------: | :---------: | :--------------: | :--------------: | ----------- |
-|     STMeta     |  STMeta-Concat   |             |    STMeta-Emb    | STMeta-Multi-Emb |             |
-|     STMeta     |    STMeta-Emb    |             |    STMeta-Emb    |    STMeta-Add    |             |
-|     STMeta     | STMeta-Multi-Emb |             |    STMeta-Emb    |   STMeta-LSTM    |             |
-|     STMeta     |    STMeta-Add    |             |    STMeta-Emb    |  STMeta-Gating   |             |
+| :------------: | :--------------: | :---------: | :--------------: | :--------------: | :---------: |
+|     STMeta     |  STMeta-Concat   |     >>      |    STMeta-Emb    | STMeta-Multi-Emb |     >>      |
+|     STMeta     |    STMeta-Emb    |     <<      |    STMeta-Emb    |    STMeta-Add    |             |
+|     STMeta     | STMeta-Multi-Emb |     >>      |    STMeta-Emb    |   STMeta-LSTM    |             |
+|     STMeta     |    STMeta-Add    |     <<      |    STMeta-Emb    |  STMeta-Gating   |             |
 |     STMeta     |   STMeta-LSTM    |             | STMeta-Multi-Emb |    STMeta-Add    |             |
 |     STMeta     |  STMeta-Gating   |             | STMeta-Multi-Emb |   STMeta-LSTM    |             |
 | STMeta-Concat  |    STMeta-Emb    |             | STMeta-Multi-Emb |  STMeta-Gating   |             |
 | STMeta-Concat  | STMeta-Multi-Emb |             |    STMeta-Add    |   STMeta-LSTM    |             |
 | STMeta-Concat  |    STMeta-Add    |             |    STMeta-Add    |  STMeta-Gating   |             |
-| STMeta-Concat  |   STMeta-LSTM    |             |   STMeta-LSTM    |  STMeta-Gating   |             |
+| STMeta-Concat  |   STMeta-LSTM    |             |   STMeta-LSTM    |  STMeta-Gating   |     <<      |
 | STMeta-Concat  |  STMeta-Gating   |             |                  |                  |             |
 
 | **City: Chengdu** | Version | val-rmse | test-rmse |     Converged Time      |
@@ -169,11 +169,11 @@
 | :-----------------: | :-----: | :-------: | :----------: | :-----------------------: |
 |       STMeta        |   V1    | 96.49490  |   92.83833   | 108.53 hour / 9808 epochs |
 |    STMeta-Concat    |   V1    | 90.67642  |   90.54800   | 38.79 hour / 10000 epochs |
-|     STMeta-Emb      |   V1    | 92.784904 | **84.36934** | 74.88 hour / 6481 epochs  |
-|  STMeta-Multi-Emb   |   V1    |  running  |   running    |                           |
+|     STMeta-Emb      |   V1    | 92.78490  | **84.36934** | 74.88 hour / 6481 epochs  |
+|  STMeta-Multi-Emb   |   V1    | 88.46373  | **86.56753** | 129.20 hour / 9958 epochs |
 |     STMeta-Add      |         | 92.31516  |   90.19092   | 61.63 hour / 10000 epochs |
 |     STMeta-LSTM     |   V1    | 101.02728 |   93.65583   | 29.31 hour / 4357 epochs  |
-|    STMeta-Gating    |   V1    | 94.25858  | **87.03069** | 39.27 hour / 10000 epochs |
+|    STMeta-Gating    |   V1    | 94.25858  |   87.03069   | 39.27 hour / 10000 epochs |
 
 | **City: Chongqing** |   **System B**   | **P-Value** |   **System A**   |   **System B**   | **P-Value** |
 | :-----------------: | :--------------: | :---------: | :--------------: | :--------------: | ----------- |
@@ -248,7 +248,7 @@
 |      STMeta       |   STMeta-LSTM    |   0.0002    | STMeta-Multi-Emb |    STMeta-Add    |   0.0000    |
 |      STMeta       |  STMeta-Gating   |   0.0000    | STMeta-Multi-Emb |   STMeta-LSTM    |   0.0000    |
 |   STMeta-Concat   |    STMeta-Emb    |   0.0000    | STMeta-Multi-Emb |  STMeta-Gating   |   0.0000    |
-|   STMeta-Concat   | STMeta-Multi-Emb |   0.0000    |    STMeta-Add    |   STMeta-LSTM    |   0.0000    |
+|   STMeta-Concat   | STMeta-Multi-Emb |   0.0000    |    STMeta-Add    |   STMeta-LSTM    |  0.0000<<   |
 |   STMeta-Concat   |    STMeta-Add    |   0.0000    |    STMeta-Add    |  STMeta-Gating   |   0.0000    |
 |   STMeta-Concat   |   STMeta-LSTM    |   0.0000    |   STMeta-LSTM    |  STMeta-Gating   |   0.0000    |
 |   STMeta-Concat   |  STMeta-Gating   |   0.0000    |                  |                  |             |

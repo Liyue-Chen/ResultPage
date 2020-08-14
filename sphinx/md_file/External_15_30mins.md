@@ -42,7 +42,7 @@
 
 | **City: Chicago 30 mins** | Version |  test-rmse  |      Converged Time      |
 | :-----------------------: | :-----: | :---------: | :----------------------: |
-|          STMeta           |   V1    |   2.17032   |  6.67 hour / 332 epochs  |
+|          STMeta           |   V1    |   2.17036   |  6.24 hour / 282 epochs  |
 |       STMeta-Concat       |   V1    |   2.22892   | 31.58 hour / 1822 epochs |
 |        STMeta-Emb         |   V1    |   2.19917   | 24.60 hour / 1429 epochs |
 |     STMeta-Multi-Emb      |   V1    |   2.13325   | 15.22 hour / 836 epochs  |
@@ -83,13 +83,13 @@
 
 | **City: Xian 30 mins** | Version | val-rmse | test-rmse |      Converged Time      |
 | :--------------------: | :-----: | :------: | :-------: | :----------------------: |
-|         STMeta         |   V1    | 4.00090  |  3.80812  | 16.23 hour / 9331 epochs |
-|     STMeta-Concat      |   V1    | 5.06592  |  3.88665  | 15.84 hour / 9540 epochs |
-|       STMeta-Emb       |   V1    |          |           |                          |
-|    STMeta-Multi-Emb    |   V1    |          |           |                          |
-|       STMeta-Add       |   V1    |          |           |                          |
-|     External-LSTM      |   V1    |          |           |                          |
-|     STMeta-Gating      |   V1    | 4.06786  |  3.83840  | 9.65 hour / 1748 epochs  |
+|         STMeta         |   V1    | 4.36484  |  3.79985  | 2.92 hour / 1308 epochs  |
+|     STMeta-Concat      |   V1    | 4.18382  |  3.90704  | 15.14 hour / 8650 epochs |
+|       STMeta-Emb       |   V1    | 4.17580  |  3.79393  | 5.76 hour / 2998 epochs  |
+|    STMeta-Multi-Emb    |   V1    | 4.18736  |  3.85414  | 2.86 hour / 1172 epochs  |
+|       STMeta-Add       |   V1    | 10.49953 |  3.90578  | 4.18 hour / 1882 epochs  |
+|     External-LSTM      |   V1    | 4.11285  |  3.76667  | 7.82 hour / 3371 epochs  |
+|     STMeta-Gating      |   V1    | 4.01627  |  3.82246  | 4.02 hour / 2040 epochs  |
 
 | **City: Chengdu 30 mins** | Version | val-rmse | test-rmse |      Converged Time      |
 | :-----------------------: | :-----: | :------: | :-------: | :----------------------: |
@@ -127,7 +127,7 @@
 
 | **City: Shanghai 30 mins** | Version | val-rmse |  test-rmse   |      Converged Time       |
 | :------------------------: | :-----: | :------: | :----------: | :-----------------------: |
-|           STMeta           |   V1    | 64.99845 |   75.36282   | 39.91 hour / 20000 epochs |
+|           STMeta           |   V1    | 62.62244 |   78.23737   |  7.01 hour / 2702 epochs  |
 |       STMeta-Concat        |   V1    | 72.80131 |   90.50749   | 26.67 hour / 12928 epochs |
 |         STMeta-Emb         |   V1    | 65.11606 |   77.34818   |  8.98 hour / 1008 epochs  |
 |      STMeta-Multi-Emb      |   V1    | 68.61551 |   78.90988   | 10.14 hour / 3672 epochs  |
@@ -150,7 +150,7 @@
 
 | **City: Beijing 30 mins** | Version | val-rmse |  test-rmse  |      Converged Time       |
 | :-----------------------: | :-----: | :------: | :---------: | :-----------------------: |
-|          STMeta           |   V1    | 0.46154  |   0.66985   | 16.48 hour / 4242 epochs  |
+|          STMeta           |   V1    | 0.63202  |   0.66399   | 32.46 hour / 10000 epochs |
 |       STMeta-Concat       |   V1    | 0.61911  |   0.65943   | 37.11 hour / 10206 epochs |
 |        STMeta-Emb         |   V1    | 0.61829  | **0.65479** | 21.51 hour / 5783 epochs  |
 |     STMeta-Multi-Emb      |   V1    | 0.62408  |   0.72312   | 24.78 hour / 6663 epochs  |
