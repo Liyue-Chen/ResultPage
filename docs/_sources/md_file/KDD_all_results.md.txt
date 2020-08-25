@@ -1,4 +1,4 @@
-# Results on Different Datasets(KDD)
+# Results on Different Datasets
 
 **使用到External Feature的方法有:ST_MGCN, ST_ResNet, 以及STMeta的全部实验**
 
