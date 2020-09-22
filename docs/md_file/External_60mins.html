@@ -1,8 +1,7 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8">
   
@@ -12,12 +11,18 @@
   
 
   
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
   
   
   
 
   
-  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -29,10 +34,6 @@
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
     
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="15&amp;30 mins External Results" href="External_15_30mins.html" />
@@ -50,7 +51,7 @@
           
 
           
-            <a href="../index.html" class="icon icon-home"> ResultPage
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> ResultPage
           
 
           
@@ -73,6 +74,7 @@
           
         </div>
 
+        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
             
@@ -88,6 +90,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#results-on-didi-dataset">Results on DiDi Dataset</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#results-on-metro-dataset">Results on Metro Dataset</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#results-on-ev-dataset">Results on EV Dataset</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#effectiveness-of-train-day-length">Effectiveness of train day length</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#lstm-windows-size">LSTM Windows Size</a></li>
 </ul>
 </li>
@@ -101,6 +104,7 @@
             
           
         </div>
+        
       </div>
     </nav>
 
@@ -139,7 +143,7 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="../index.html">Docs</a> &raquo;</li>
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
       <li>60 mins External Results</li>
     
@@ -1979,6 +1983,105 @@
 </tbody>
 </table><p>默认bs:64</p>
 </div>
+<div class="section" id="effectiveness-of-train-day-length">
+<h2>Effectiveness of train day length<a class="headerlink" href="#effectiveness-of-train-day-length" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th align="center"><strong>City: DC</strong></th>
+<th align="center">trainday length</th>
+<th align="center">val-rmse</th>
+<th align="center">test-rmse</th>
+<th align="center">Converged Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">7</td>
+<td align="center">1.74639</td>
+<td align="center">5.73942</td>
+<td align="center">0.05 hour / 433 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">28</td>
+<td align="center">3.01493</td>
+<td align="center">2.82653</td>
+<td align="center">0.72 hour / 1468 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">49</td>
+<td align="center">2.50811</td>
+<td align="center">2.66609</td>
+<td align="center">0.84 hour / 626 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">70</td>
+<td align="center">2.40444</td>
+<td align="center">2.55819</td>
+<td align="center">1.36 hour / 517 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">91</td>
+<td align="center">2.32534</td>
+<td align="center">2.53470</td>
+<td align="center">3.72 hour / 1097 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">112</td>
+<td align="center">2.47813</td>
+<td align="center">2.52416</td>
+<td align="center">4.99 hour / 1128 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">133</td>
+<td align="center">2.42334</td>
+<td align="center">2.52744</td>
+<td align="center">10.45 hour / 1968 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">154</td>
+<td align="center">2.39524</td>
+<td align="center">2.53610</td>
+<td align="center">6.91 hour / 1048 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">196</td>
+<td align="center">2.42895</td>
+<td align="center">2.51162</td>
+<td align="center">7.34 hour / 1126 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">259</td>
+<td align="center">2.50016</td>
+<td align="center">2.52670</td>
+<td align="center">12.70 hour / 1456 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">322</td>
+<td align="center">2.47781</td>
+<td align="center">2.48798</td>
+<td align="center">24.38 hour / 2259 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-Gating</td>
+<td align="center">385</td>
+<td align="center">2.43614</td>
+<td align="center">2.44860</td>
+<td align="center">26.27 hour / 2226 epochs</td>
+</tr>
+</tbody>
+</table></div>
 <div class="section" id="lstm-windows-size">
 <h2>LSTM Windows Size<a class="headerlink" href="#lstm-windows-size" title="Permalink to this headline">¶</a></h2>
 <table border="1" class="docutils">
@@ -2098,11 +2201,19 @@
 
   <div role="contentinfo">
     <p>
+        
         &copy; Copyright 2020, UCTB group
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -2113,7 +2224,6 @@
 
   </div>
   
-
 
   <script type="text/javascript">
       jQuery(function () {

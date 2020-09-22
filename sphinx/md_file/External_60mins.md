@@ -303,6 +303,23 @@
 
 默认bs:64 
 
+## Effectiveness of train day length
+
+| **City: DC**  | trainday length | val-rmse | test-rmse |      Converged Time      |
+| :-----------: | :-------------: | :------: | :-------: | :----------------------: |
+| STMeta-Gating |        7        | 1.74639  |  5.73942  |  0.05 hour / 433 epochs  |
+| STMeta-Gating |       28        | 3.01493  |  2.82653  | 0.72 hour / 1468 epochs  |
+| STMeta-Gating |       49        | 2.50811  |  2.66609  |  0.84 hour / 626 epochs  |
+| STMeta-Gating |       70        | 2.40444  |  2.55819  |  1.36 hour / 517 epochs  |
+| STMeta-Gating |       91        | 2.32534  |  2.53470  | 3.72 hour / 1097 epochs  |
+| STMeta-Gating |       112       | 2.47813  |  2.52416  | 4.99 hour / 1128 epochs  |
+| STMeta-Gating |       133       | 2.42334  |  2.52744  | 10.45 hour / 1968 epochs |
+| STMeta-Gating |       154       | 2.39524  |  2.53610  | 6.91 hour / 1048 epochs  |
+| STMeta-Gating |       196       | 2.42895  |  2.51162  | 7.34 hour / 1126 epochs  |
+| STMeta-Gating |       259       | 2.50016  |  2.52670  | 12.70 hour / 1456 epochs |
+| STMeta-Gating |       322       | 2.47781  |  2.48798  | 24.38 hour / 2259 epochs |
+| STMeta-Gating |       385       | 2.43614  |  2.44860  | 26.27 hour / 2226 epochs |
+
 ## LSTM Windows Size
 
 | **City: Xian**  | window size | val-rmse |  test-rmse  |      Converged Time       |
