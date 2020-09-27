@@ -1,8 +1,10 @@
-# 60 mins Single Graph
+# 60 mins Spatiotemporal Analysis
+
+## 60 mins Single Graph
 
 Spatial knowledge evaluation (60-minute). The base model is STMeta-DCGRU-GAL. The best result is in bold.
 
-## Results on Bike Dataset
+### Results on Bike Dataset
 
 |       **City: NYC**        | Version | val-rmse |  test-rmse  |     Converged Time      |
 | :------------------------: | :-----: | :------: | :---------: | :---------------------: |
@@ -25,7 +27,7 @@ Spatial knowledge evaluation (60-minute). The base model is STMeta-DCGRU-GAL. Th
 | Only Interaction/Same-line | patience 700 | 1.64630  | **2.41991** | 59.54 hour / 14425 epochs |
 |    Aggregation Together    |      V3      |    -     |   2.42338   |        2993 epochs        |
 
-## Results on DiDi Dataset
+### Results on DiDi Dataset
 
 |       **City: Xian**       |   Version    | val-rmse |  test-rmse  |      Converged Time      |
 | :------------------------: | :----------: | :------: | :---------: | :----------------------: |
@@ -43,7 +45,7 @@ Spatial knowledge evaluation (60-minute). The base model is STMeta-DCGRU-GAL. Th
 |    Aggregation Together    |      V3      | 6.30479  |   6.90394   | 1.76 hour / 1052 epochs  |
 |    Aggregation Together    | patience 700 | 6.37813  |   6.92010   | 2.20 hour / 1105 epochs  |
 
-## Results on Metro Dataset
+### Results on Metro Dataset
 
 |     **City: Shanghai**     | Version | val-rmse  |   test-rmse   |      Converged Time       |
 | :------------------------: | :-----: | :-------: | :-----------: | :-----------------------: |
@@ -59,7 +61,7 @@ Spatial knowledge evaluation (60-minute). The base model is STMeta-DCGRU-GAL. Th
 | Only Interaction/Same-line |   V3    | 150.75353 |  110.13376   | 8.38 hour / 10000 epochs  |
 |    Aggregation Together    |   V3    | 88.32695  | **94.77593** | 40.19 hour / 10004 epochs |
 
-## Results on EV Dataset
+### Results on EV Dataset
 
 |     **City: Beijing**      | Version | val-rmse |  test-rmse  |      Converged Time       |
 | :------------------------: | :-----: | :------: | :---------: | :-----------------------: |
@@ -68,3 +70,62 @@ Spatial knowledge evaluation (60-minute). The base model is STMeta-DCGRU-GAL. Th
 | Only Interaction/Same-line |   V3    |    -     |      -      |             -             |
 |    Aggregation Together    |   V3    | 0.57685  | **0.80259** | 23.76 hour / 10497 epochs |
 
+## 60 mins Temporal Abalation
+
+Temporal abalation evaluation (60-minute). The base model is STMeta-DCGRU-GAL. The best result is in bold.
+
+### Results on Bike Dataset
+
+|       **City: NYC**        | Version | val-rmse | test-rmse | Converged Time |
+| :------------------------: | :-----: | :------: | :-------: | :------------: |
+|       Only Closeness       |   V3    |          |           |                |
+|     Closeness & Period     |   V3    |          |           |                |
+| Closeness & Period & Trend |   V3    |    --    |  3.52124  |  7438 epochs   |
+
+|     **City: Chicago**      | Version | val-rmse |  test-rmse  | Converged Time |
+| :------------------------: | :-----: | :------: | :---------: | :------------: |
+|       Only Closeness       |   V3    |          |             |                |
+|     Closeness & Period     |   V3    |          |             |                |
+| Closeness & Period & Trend |   V3    |    -     | **2.65204** |  4403 epochs   |
+
+|       **City: DC **        | Version | val-rmse | test-rmse | Converged Time |
+| :------------------------: | :-----: | :------: | :-------: | :------------: |
+|       Only Closeness       |   V3    |          |           |                |
+|     Closeness & Period     |   V3    |          |           |                |
+| Closeness & Period & Trend |   V3    |    -     |  2.42338  |  2993 epochs   |
+
+### Results on DiDi Dataset
+
+|       **City: Xian**       |   Version    | val-rmse |  test-rmse  |      Converged Time      |
+| :------------------------: | :----------: | :------: | :---------: | :----------------------: |
+|       Only Closeness       |   V3    | 6.00043 | 6.77654 | 13.53 hour / 14464 epochs |
+|     Closeness & Period     |   V3    | 6.13271 | 6.03849 | 12.81 hour / 7437 epochs |
+| Closeness & Period & Trend | V3 patience 700 | **6.97737** |  **5.93810**  | 6.45 hour / 4560 epochs |
+
+|     **City: Chengdu**      |   Version    | val-rmse |  test-rmse  |      Converged Time      |
+| :------------------------: | :----------: | :------: | :---------: | :----------------------: |
+|       Only Closeness       |   V3    | 7.08731 | 8.38027 | 27.98 hour / 45576 epochs |
+|     Closeness & Period     |   V3    | 7.04953 | 7.51730 | 17.40 hour / 8857 epochs |
+| Closeness & Period & Trend | V3 patience 700 | **6.37813** |  **6.92010**  | 2.20 hour / 1105 epochs |
+
+### Results on Metro Dataset
+
+|     **City: Shanghai**     | Version | val-rmse  |   test-rmse   |      Converged Time       |
+| :------------------------: | :-----: | :-------: | :----------: | :-----------------------: |
+|       Only Closeness       |   V3    |          |           |                |
+|     Closeness & Period     |   V3    |          |           |                |
+| Closeness & Period & Trend |   V3    | 117.82761 | **143.18166** | 30.38 hour / 20000 epochs |
+
+|    **City: Chongqing**     | Version | val-rmse  |  test-rmse   |      Converged Time       |
+| :------------------------: | :-----: | :-------: | :----------: | :-----------------------: |
+|       Only Closeness       |   V3    |          |           |                |
+|     Closeness & Period     |   V3    |          |           |                |
+| Closeness & Period & Trend |   V3    | 88.32695 | **94.77593** | 40.19 hour / 10004 epochs |
+
+### Results on EV Dataset
+
+|     **City: Beijing**      | Version | val-rmse |  test-rmse  |      Converged Time       |
+| :------------------------: | :-----: | :------: | :---------: | :-----------------------: |
+|       Only Closeness       |   V3    |          |           |                |
+|     Closeness & Period     |   V3    |          |           |                |
+| Closeness & Period & Trend |   V3    | 0.57685  | **0.80259** | 23.76 hour / 10497 epochs |
