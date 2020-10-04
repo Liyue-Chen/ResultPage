@@ -8,21 +8,21 @@
 
 ## Results on Bike Dataset
 
-|     **City: NYC**      | Version |  test-rmse  |      Converged Time       |
-| :--------------------: | :-----: | :---------: | :-----------------------: |
-|         STMeta         |   V1    |   3.60479   | 74.15 hour / 2307 epochs  |
-|     STMeta-Concat      |   V1    | **3.37618** | 144.60 hour / 5362 epochs |
-|   STMeta-Emb-Concat    |   V1    |   3.38310   | 127.81 hour / 4876 epochs |
-| STMeta-MultiEmb-Concat |   V1    |   3.38418   | 153.24 hour / 4638 epochs |
-|       STMeta-Add       |   V1    |   3.40535   | 223.17 hour / 9094 epochs |
-|    STMeta-LSTM-Add     |   V1    |   3.39712   | 65.97 hour / 2578 epochs  |
-|     STMeta-Gating      |   V1    | **3.37795** | 120.89 hour / 4043 epochs |
-|     STMeta-Emb-Add     |   V1    |             |                           |
-|   STMeta-Emb-Gating    |   V1    |   3.41039   | 134.83 hour / 5460 epochs |
-|  STMeta-MultiEmb-Add   |   V1    |             |                           |
-| STMeta-MultiEmb-Gating |   V1    |   3.39172   | 170.83 hour / 6897 epochs |
-|   STMeta-LSTM-Concat   |   V1    |   3.39019   | 89.02 hour / 3580 epochs  |
-|   STMeta-LSTM-Gating   |   V1    |   3.36740   | 142.84 hour / 5840 epochs |
+|     **City: NYC**      | Version |  test-rmse  |       Converged Time       |
+| :--------------------: | :-----: | :---------: | :------------------------: |
+|         STMeta         |   V1    |   3.60479   |  74.15 hour / 2307 epochs  |
+|     STMeta-Concat      |   V1    | **3.37618** | 144.60 hour / 5362 epochs  |
+|   STMeta-Emb-Concat    |   V1    |   3.38310   | 127.81 hour / 4876 epochs  |
+| STMeta-MultiEmb-Concat |   V1    |   3.38418   | 153.24 hour / 4638 epochs  |
+|       STMeta-Add       |   V1    |   3.40535   | 223.17 hour / 9094 epochs  |
+|    STMeta-LSTM-Add     |   V1    |   3.39712   |  65.97 hour / 2578 epochs  |
+|     STMeta-Gating      |   V1    | **3.37795** | 120.89 hour / 4043 epochs  |
+|     STMeta-Emb-Add     |   V1    |  3.4132757  | 244.73 hour / 10000 epochs |
+|   STMeta-Emb-Gating    |   V1    |   3.41039   | 134.83 hour / 5460 epochs  |
+|  STMeta-MultiEmb-Add   |   V1    | 3.45203434  | 164.15 hour / 6655 epochs  |
+| STMeta-MultiEmb-Gating |   V1    |   3.39172   | 170.83 hour / 6897 epochs  |
+|   STMeta-LSTM-Concat   |   V1    |   3.39019   |  89.02 hour / 3580 epochs  |
+|   STMeta-LSTM-Gating   |   V1    | **3.36740** | 142.84 hour / 5840 epochs  |
 
 | **City: Chicago** | Version |  test-rmse  |      Converged Time       |
 | :---------------: | :-----: | :---------: | :-----------------------: |
@@ -33,9 +33,9 @@
 |    STMeta-Add     |   V1    |   2.63242   | 103.44 hour / 6511 epochs |
 |    STMeta-LSTM-Add    |   V1    | **2.58002** | 53.36 hour / 3226 epochs  |
 |   STMeta-Gating   |   V1    |   2.59783   | 67.95 hour / 3888 epochs  |
-|     STMeta-Emb-Add     |   V1    |             |                           |
+|     STMeta-Emb-Add     |   V1    | 2.700740582 | 146.93 hour / 9534 epochs |
 |   STMeta-Emb-Gating    |   V1    | 2.60807 | 36.35 hour / 2227 epochs |
-|  STMeta-MultiEmb-Add   |   V1    |             |                           |
+|  STMeta-MultiEmb-Add   |   V1    | 2.634200370 | 136.58 hour / 8885 epochs |
 | STMeta-MultiEmb-Gating |   V1    | 2.69037 | 85.24 hour / 5162 epochs |
 |   STMeta-LSTM-Concat   |   V1    | 2.59444 | 62.99 hour / 3974 epochs |
 |   STMeta-LSTM-Gating   |   V1    | 2.58462 | 46.48 hour / 2890 epochs |
@@ -49,9 +49,9 @@
 |    STMeta-Add     |   V1    |  2.44094  | 70.82 hour / 5269 epochs |
 |  STMeta-LSTM-Add  |   V1    |  2.42381  | 19.98 hour / 1367 epochs |
 |   STMeta-Gating   |   V1    |  2.43501  | 54.22 hour / 3563 epochs |
-|     STMeta-Emb-Add     |   V1    |             |                           |
+|     STMeta-Emb-Add     |   V1    | 2.42680735 | 59.17 hour / 4536 epochs |
 |   STMeta-Emb-Gating    |   V1    | 2.39913 | 36.75 hour / 2676 epochs |
-|  STMeta-MultiEmb-Add   |   V1    |             |                           |
+|  STMeta-MultiEmb-Add   |   V1    | 2.42924388 | 49.12 hour / 3785 epochs |
 | STMeta-MultiEmb-Gating |   V1    | 2.40581 | 24.49 hour / 1708 epochs |
 |   STMeta-LSTM-Concat   |   V1    | 2.39950 | 41.82 hour / 2991 epochs |
 |   STMeta-LSTM-Gating   |   V1    | 2.40208 | 29.91 hour / 2168 epochs |
@@ -67,9 +67,9 @@
 |    STMeta-Add     |   V1    | 7.06727  | **5.77572** |  9.46 hour / 7853 epochs   |
 |  STMeta-LSTM-Add  |   V1    | 7.99094  |   5.83680   | **0.83 hour / 383 epochs** |
 |   STMeta-Gating   |   V1    | 6.62653  | **5.80114** |   1.57 hour / 410 epochs   |
-|     STMeta-Emb-Add     |   V1    |             |                           ||
+|     STMeta-Emb-Add     |   V1    | 7.5391045 | 5.968069 |4.77 hour / 4919 epochs|
 |   STMeta-Emb-Gating    |   V1    | 7.42862 | 6.17998 |6.51 hour / 6140 epochs|
-|  STMeta-MultiEmb-Add   |   V1    |             |                           ||
+|  STMeta-MultiEmb-Add   |   V1    | 11.777396 | 6.0611196 |8.21 hour / 9008 epochs|
 | STMeta-MultiEmb-Gating |   V1    | 6.79001 | 6.13171 |7.68 hour / 8105 epochs|
 |   STMeta-LSTM-Concat   |   V1    | 7.08333 | 5.86691 |10.67 hour / 10115 epochs|
 |   STMeta-LSTM-Gating   |   V1    | 7.15130 | 6.02032 |5.56 hour / 5132 epochs|
@@ -83,9 +83,9 @@
 |    STMeta-Add     |   V1    | 6.77974  |  6.98959  | 1.53 hour / 767 epochs  |
 |  STMeta-LSTM-Add  |   V1    | 6.89801  |  7.00606  | 1.87 hour / 1187 epochs |
 |   STMeta-Gating   |   V1    | 6.84756  |  6.95486  | 1.49 hour / 1300 epochs |
-|     STMeta-Emb-Add     |   V1    |             |                           ||
+|     STMeta-Emb-Add     |   V1    | 6.9952435 | 7.038321 |1.84 hour / 1581 epochs|
 |   STMeta-Emb-Gating    |   V1    | 6.86497 | 6.95586 |9.92 hour / 9463 epochs|
-|  STMeta-MultiEmb-Add   |   V1    |             |                           ||
+|  STMeta-MultiEmb-Add   |   V1    | 7.224133 | 7.32032 |2.37 hour / 1782 epochs|
 | STMeta-MultiEmb-Gating |   V1    | 7.11000 | 7.03295 |7.76 hour / 8144 epochs|
 |   STMeta-LSTM-Concat   |   V1    | 6.88248 | 7.01486 |1.37 hour / 866 epochs|
 |   STMeta-LSTM-Gating   |   V1    | 6.91026 | 6.99974 |2.15 hour / 1566 epochs|
@@ -110,9 +110,9 @@
 |     STMeta-Add     |        V1         | 109.79260 |   162.10060   | 3.25 hour / 2174 epochs |
 |  STMeta-LSTM-Add   |        V1         | 108.04737 |   162.77530   | 5.48 hour / 3850 epochs |
 |   STMeta-Gating    |        V1         | 106.15893 | **145.45236** | 6.00 hour / 2563 epochs |
-|     STMeta-Emb-Add     |   V1    |             |                           ||
+|     STMeta-Emb-Add     |   V1    | 109.50246 | 162.56137 |6.96 hour / 6071 epochs|
 |   STMeta-Emb-Gating    |   V1    | 122.47356 | 193.16714 |1.55 hour / 1060 epochs|
-|  STMeta-MultiEmb-Add   |   V1    |             |                           ||
+|  STMeta-MultiEmb-Add   |   V1    | 116.852875 | 175.7444 |6.54 hour / 4384 epochs|
 | STMeta-MultiEmb-Gating |   V1    | 145.63090 | 231.93188 |0.96 hour / 587 epochs|
 |   STMeta-LSTM-Concat   |   V1    | 109.59708 | 163.38629 |2.82 hour / 2025 epochs|
 |   STMeta-LSTM-Gating   |   V1    | 110.60793 | 156.36403 |5.15 hour / 3723 epochs|
@@ -126,9 +126,9 @@
 |     STMeta-Add      |         | 92.31516  |   90.19092   | 61.63 hour / 10000 epochs |
 |   STMeta-LSTM-Add   |   V1    | 101.02728 |   93.65583   | 29.31 hour / 4357 epochs  |
 |    STMeta-Gating    |   V1    | 94.25858  |   87.03069   | 39.27 hour / 10000 epochs |
-|     STMeta-Emb-Add     |   V1    |             |                           ||
+|     STMeta-Emb-Add     |   V1    | 90.5653 | 87.3754609 |49.11 hour / 9974 epochs|
 |   STMeta-Emb-Gating    |   V1    | 92.22450 | 86.33407 |50.52 hour / 10000 epochs|
-|  STMeta-MultiEmb-Add   |   V1    |             |                           ||
+|  STMeta-MultiEmb-Add   |   V1    | 87.24216 | 91.136903475 |53.33 hour / 10000 epochs|
 | STMeta-MultiEmb-Gating |   V1    | 89.99853 | 89.33861 |48.82 hour / 10000 epochs|
 |   STMeta-LSTM-Concat   |   V1    | 92.33357 |   98.19508   |53.57 hour / 9618 epochs|
 |   STMeta-LSTM-Gating   |   V1    | 98.98814 | 90.47805 |39.89 hour / 7041 epochs|
@@ -182,9 +182,9 @@
 |    STMeta-Add     |     V1      | 0.76183  |   0.78709   |  9.68 hour / 5556 epochs  |
 |  STMeta-LSTM-Add  |  W_SIZE:4   | 0.73958  | **0.78238** | 16.63 hour / 9336 epochs  |
 |   STMeta-Gating   | V1（bs:32） | 0.74789  |   0.78317   |  9.68 hour / 4563 epochs  |
-|     STMeta-Emb-Add     |   V1    |             |                           ||
+|     STMeta-Emb-Add     |   V1    | 0.7383992 | 0.7883851 |16.48 hour / 9997 epochs|
 |   STMeta-Emb-Gating    |   V1    | 0.74721 | 0.78733 |11.94 hour / 7008 epochs|
-|  STMeta-MultiEmb-Add   |   V1    |             |                           ||
+|  STMeta-MultiEmb-Add   |   V1    | 0.75049156 | 0.7777612 |16.55 hour / 9986 epochs|
 | STMeta-MultiEmb-Gating |   V1    | 0.74483 | 0.77961 |16.59 hour / 10000 epochs|
 |   STMeta-LSTM-Concat   |   V1    | 0.74830 | 0.78860 |10.07 hour / 5722 epochs|
 |   STMeta-LSTM-Gating   |   V1    | 0.74321 | 0.78408 |7.15 hour / 4057 epochs|

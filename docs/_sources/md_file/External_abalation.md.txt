@@ -37,6 +37,8 @@ Default granularity is 60 mins.
 | STMeta-Gating |    holiday-tp     | 2.50821  |  2.40522  | 28.31 hour / 1607 epochs |
 | STMeta-Gating |        all        | 2.54658  |  2.43501  | 54.22 hour / 3563 epochs |
 
+DC站点的Weather特征有问题，基本全错。
+
 ## Results on DiDi Dataset
 
 | **City: Xian** | external feature  | val-rmse |  test-rmse  |      Converged Time      |

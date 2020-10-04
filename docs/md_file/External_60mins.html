@@ -1,7 +1,8 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
   
@@ -11,18 +12,12 @@
   
 
   
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-
-  
   
   
   
 
   
-  <!--[if lt IE 9]>
-    <script src="../_static/js/html5shiv.min.js"></script>
-  <![endif]-->
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -34,6 +29,10 @@
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
     
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="15&amp;30 mins External Results" href="External_15_30mins.html" />
@@ -51,7 +50,7 @@
           
 
           
-            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> ResultPage
+            <a href="../index.html" class="icon icon-home"> ResultPage
           
 
           
@@ -74,7 +73,6 @@
           
         </div>
 
-        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
             
@@ -97,14 +95,13 @@
 <li class="toctree-l1"><a class="reference internal" href="External_15_30mins.html">15&amp;30 mins External Results</a></li>
 <li class="toctree-l1"><a class="reference internal" href="External_abalation.html">External Feature Ablation Results</a></li>
 <li class="toctree-l1"><a class="reference internal" href="KDD_all_results.html">Results on Different Datasets</a></li>
-<li class="toctree-l1"><a class="reference internal" href="SingleGraph_60mins.html">60 mins Single Graph</a></li>
+<li class="toctree-l1"><a class="reference internal" href="60_mins_Spatiotemporal_Analysis.html">60 mins Spatiotemporal Analysis</a></li>
 <li class="toctree-l1"><a class="reference internal" href="KDD_METR_PEMS.html">Results on Metr&amp;PEMS Datasets</a></li>
 </ul>
 
             
           
         </div>
-        
       </div>
     </nav>
 
@@ -143,7 +140,7 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li><a href="../index.html">Docs</a> &raquo;</li>
         
       <li>60 mins External Results</li>
     
@@ -228,8 +225,8 @@
 <tr>
 <td align="center">STMeta-Emb-Add</td>
 <td align="center">V1</td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">3.4132757</td>
+<td align="center">244.73 hour / 10000 epochs</td>
 </tr>
 <tr>
 <td align="center">STMeta-Emb-Gating</td>
@@ -240,8 +237,8 @@
 <tr>
 <td align="center">STMeta-MultiEmb-Add</td>
 <td align="center">V1</td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">3.45203434</td>
+<td align="center">164.15 hour / 6655 epochs</td>
 </tr>
 <tr>
 <td align="center">STMeta-MultiEmb-Gating</td>
@@ -258,109 +255,8 @@
 <tr>
 <td align="center">STMeta-LSTM-Gating</td>
 <td align="center">V1</td>
-<td align="center">3.36740</td>
+<td align="center"><strong>3.36740</strong></td>
 <td align="center">142.84 hour / 5840 epochs</td>
-</tr>
-</tbody>
-</table><table border="1" class="docutils">
-<thead>
-<tr>
-<th align="center"><strong>City: NYC</strong></th>
-<th align="center"><strong>System B</strong></th>
-<th align="center"><strong>P-Value</strong></th>
-<th align="center"><strong>System A</strong></th>
-<th align="center"><strong>System B</strong></th>
-<th><strong>P-Value</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="center">STMeta</td>
-<td align="center">STMeta-Concat</td>
-<td align="center"></td>
-<td align="center">STMeta-Emb-Concat</td>
-<td align="center">STMeta-Multi-Emb</td>
-<td></td>
-</tr>
-<tr>
-<td align="center">STMeta</td>
-<td align="center">STMeta-Emb-Concat</td>
-<td align="center"></td>
-<td align="center">STMeta-Emb-Concat</td>
-<td align="center">STMeta-Add</td>
-<td></td>
-</tr>
-<tr>
-<td align="center">STMeta</td>
-<td align="center">STMeta-Multi-Emb</td>
-<td align="center"></td>
-<td align="center">STMeta-Emb-Concat</td>
-<td align="center">STMeta-LSTM-Add</td>
-<td></td>
-</tr>
-<tr>
-<td align="center">STMeta</td>
-<td align="center">STMeta-Add</td>
-<td align="center"></td>
-<td align="center">STMeta-Emb-Concat</td>
-<td align="center">STMeta-Gating</td>
-<td></td>
-</tr>
-<tr>
-<td align="center">STMeta</td>
-<td align="center">STMeta-LSTM-Add</td>
-<td align="center"></td>
-<td align="center">STMeta-Multi-Emb</td>
-<td align="center">STMeta-Add</td>
-<td></td>
-</tr>
-<tr>
-<td align="center">STMeta</td>
-<td align="center">STMeta-Gating</td>
-<td align="center"></td>
-<td align="center">STMeta-Multi-Emb</td>
-<td align="center">STMeta-LSTM-Add</td>
-<td></td>
-</tr>
-<tr>
-<td align="center">STMeta-Concat</td>
-<td align="center">STMeta-Emb-Concat</td>
-<td align="center"></td>
-<td align="center">STMeta-Multi-Emb</td>
-<td align="center">STMeta-Gating</td>
-<td></td>
-</tr>
-<tr>
-<td align="center">STMeta-Concat</td>
-<td align="center">STMeta-Multi-Emb</td>
-<td align="center"></td>
-<td align="center">STMeta-Add</td>
-<td align="center">STMeta-LSTM-Add</td>
-<td></td>
-</tr>
-<tr>
-<td align="center">STMeta-Concat</td>
-<td align="center">STMeta-Add</td>
-<td align="center"></td>
-<td align="center">STMeta-Add</td>
-<td align="center">STMeta-Gating</td>
-<td></td>
-</tr>
-<tr>
-<td align="center">STMeta-Concat</td>
-<td align="center">STMeta-LSTM-Add</td>
-<td align="center"></td>
-<td align="center">STMeta-LSTM-Add</td>
-<td align="center">STMeta-Gating</td>
-<td></td>
-</tr>
-<tr>
-<td align="center">STMeta-Concat</td>
-<td align="center">STMeta-Gating</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td></td>
 </tr>
 </tbody>
 </table><table border="1" class="docutils">
@@ -418,8 +314,8 @@
 <tr>
 <td align="center">STMeta-Emb-Add</td>
 <td align="center">V1</td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">2.700740582</td>
+<td align="center">146.93 hour / 9534 epochs</td>
 </tr>
 <tr>
 <td align="center">STMeta-Emb-Gating</td>
@@ -430,8 +326,8 @@
 <tr>
 <td align="center">STMeta-MultiEmb-Add</td>
 <td align="center">V1</td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">2.634200370</td>
+<td align="center">136.58 hour / 8885 epochs</td>
 </tr>
 <tr>
 <td align="center">STMeta-MultiEmb-Gating</td>
@@ -450,107 +346,6 @@
 <td align="center">V1</td>
 <td align="center">2.58462</td>
 <td align="center">46.48 hour / 2890 epochs</td>
-</tr>
-</tbody>
-</table><table border="1" class="docutils">
-<thead>
-<tr>
-<th align="center"><strong>City: Chicago</strong></th>
-<th align="center"><strong>System B</strong></th>
-<th align="center"><strong>P-Value</strong></th>
-<th align="center"><strong>System A</strong></th>
-<th align="center"><strong>System B</strong></th>
-<th><strong>P-Value</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="center">STMeta</td>
-<td align="center">STMeta-Concat</td>
-<td align="center"></td>
-<td align="center">STMeta-Emb-Concat</td>
-<td align="center">STMeta-Multi-Emb</td>
-<td></td>
-</tr>
-<tr>
-<td align="center">STMeta</td>
-<td align="center">STMeta-Emb-Concat</td>
-<td align="center"></td>
-<td align="center">STMeta-Emb-Concat</td>
-<td align="center">STMeta-Add</td>
-<td></td>
-</tr>
-<tr>
-<td align="center">STMeta</td>
-<td align="center">STMeta-Multi-Emb</td>
-<td align="center"></td>
-<td align="center">STMeta-Emb-Concat</td>
-<td align="center">STMeta-LSTM-Add</td>
-<td></td>
-</tr>
-<tr>
-<td align="center">STMeta</td>
-<td align="center">STMeta-Add</td>
-<td align="center"></td>
-<td align="center">STMeta-Emb-Concat</td>
-<td align="center">STMeta-Gating</td>
-<td></td>
-</tr>
-<tr>
-<td align="center">STMeta</td>
-<td align="center">STMeta-LSTM-Add</td>
-<td align="center"></td>
-<td align="center">STMeta-Multi-Emb</td>
-<td align="center">STMeta-Add</td>
-<td></td>
-</tr>
-<tr>
-<td align="center">STMeta</td>
-<td align="center">STMeta-Gating</td>
-<td align="center"></td>
-<td align="center">STMeta-Multi-Emb</td>
-<td align="center">STMeta-LSTM-Add</td>
-<td></td>
-</tr>
-<tr>
-<td align="center">STMeta-Concat</td>
-<td align="center">STMeta-Emb-Concat</td>
-<td align="center"></td>
-<td align="center">STMeta-Multi-Emb</td>
-<td align="center">STMeta-Gating</td>
-<td></td>
-</tr>
-<tr>
-<td align="center">STMeta-Concat</td>
-<td align="center">STMeta-Multi-Emb</td>
-<td align="center"></td>
-<td align="center">STMeta-Add</td>
-<td align="center">STMeta-LSTM-Add</td>
-<td></td>
-</tr>
-<tr>
-<td align="center">STMeta-Concat</td>
-<td align="center">STMeta-Add</td>
-<td align="center"></td>
-<td align="center">STMeta-Add</td>
-<td align="center">STMeta-Gating</td>
-<td></td>
-</tr>
-<tr>
-<td align="center">STMeta-Concat</td>
-<td align="center">STMeta-LSTM-Add</td>
-<td align="center"></td>
-<td align="center">STMeta-LSTM-Add</td>
-<td align="center">STMeta-Gating</td>
-<td></td>
-</tr>
-<tr>
-<td align="center">STMeta-Concat</td>
-<td align="center">STMeta-Gating</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td></td>
 </tr>
 </tbody>
 </table><table border="1" class="docutils">
@@ -608,8 +403,8 @@
 <tr>
 <td align="center">STMeta-Emb-Add</td>
 <td align="center">V1</td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">2.42680735</td>
+<td align="center">59.17 hour / 4536 epochs</td>
 </tr>
 <tr>
 <td align="center">STMeta-Emb-Gating</td>
@@ -620,8 +415,8 @@
 <tr>
 <td align="center">STMeta-MultiEmb-Add</td>
 <td align="center">V1</td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">2.42924388</td>
+<td align="center">49.12 hour / 3785 epochs</td>
 </tr>
 <tr>
 <td align="center">STMeta-MultiEmb-Gating</td>
@@ -640,107 +435,6 @@
 <td align="center">V1</td>
 <td align="center">2.40208</td>
 <td align="center">29.91 hour / 2168 epochs</td>
-</tr>
-</tbody>
-</table><table border="1" class="docutils">
-<thead>
-<tr>
-<th align="center"><strong>City: DC</strong></th>
-<th align="center"><strong>System B</strong></th>
-<th align="center"><strong>P-Value</strong></th>
-<th align="center"><strong>System A</strong></th>
-<th align="center"><strong>System B</strong></th>
-<th><strong>P-Value</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="center">STMeta</td>
-<td align="center">STMeta-Concat</td>
-<td align="center"></td>
-<td align="center">STMeta-Emb-Concat</td>
-<td align="center">STMeta-Multi-Emb</td>
-<td></td>
-</tr>
-<tr>
-<td align="center">STMeta</td>
-<td align="center">STMeta-Emb-Concat</td>
-<td align="center"></td>
-<td align="center">STMeta-Emb-Concat</td>
-<td align="center">STMeta-Add</td>
-<td></td>
-</tr>
-<tr>
-<td align="center">STMeta</td>
-<td align="center">STMeta-Multi-Emb</td>
-<td align="center"></td>
-<td align="center">STMeta-Emb-Concat</td>
-<td align="center">STMeta-LSTM-Add</td>
-<td></td>
-</tr>
-<tr>
-<td align="center">STMeta</td>
-<td align="center">STMeta-Add</td>
-<td align="center"></td>
-<td align="center">STMeta-Emb-Concat</td>
-<td align="center">STMeta-Gating</td>
-<td></td>
-</tr>
-<tr>
-<td align="center">STMeta</td>
-<td align="center">STMeta-LSTM-Add</td>
-<td align="center"></td>
-<td align="center">STMeta-Multi-Emb</td>
-<td align="center">STMeta-Add</td>
-<td></td>
-</tr>
-<tr>
-<td align="center">STMeta</td>
-<td align="center">STMeta-Gating</td>
-<td align="center"></td>
-<td align="center">STMeta-Multi-Emb</td>
-<td align="center">STMeta-LSTM-Add</td>
-<td></td>
-</tr>
-<tr>
-<td align="center">STMeta-Concat</td>
-<td align="center">STMeta-Emb-Concat</td>
-<td align="center"></td>
-<td align="center">STMeta-Multi-Emb</td>
-<td align="center">STMeta-Gating</td>
-<td></td>
-</tr>
-<tr>
-<td align="center">STMeta-Concat</td>
-<td align="center">STMeta-Multi-Emb</td>
-<td align="center"></td>
-<td align="center">STMeta-Add</td>
-<td align="center">STMeta-LSTM-Add</td>
-<td></td>
-</tr>
-<tr>
-<td align="center">STMeta-Concat</td>
-<td align="center">STMeta-Add</td>
-<td align="center"></td>
-<td align="center">STMeta-Add</td>
-<td align="center">STMeta-Gating</td>
-<td></td>
-</tr>
-<tr>
-<td align="center">STMeta-Concat</td>
-<td align="center">STMeta-LSTM-Add</td>
-<td align="center"></td>
-<td align="center">STMeta-LSTM-Add</td>
-<td align="center">STMeta-Gating</td>
-<td></td>
-</tr>
-<tr>
-<td align="center">STMeta-Concat</td>
-<td align="center">STMeta-Gating</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td></td>
 </tr>
 </tbody>
 </table></div>
@@ -809,9 +503,9 @@
 <tr>
 <td align="center">STMeta-Emb-Add</td>
 <td align="center">V1</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">7.5391045</td>
+<td align="center">5.968069</td>
+<td align="center">4.77 hour / 4919 epochs</td>
 </tr>
 <tr>
 <td align="center">STMeta-Emb-Gating</td>
@@ -823,9 +517,9 @@
 <tr>
 <td align="center">STMeta-MultiEmb-Add</td>
 <td align="center">V1</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">11.777396</td>
+<td align="center">6.0611196</td>
+<td align="center">8.21 hour / 9008 epochs</td>
 </tr>
 <tr>
 <td align="center">STMeta-MultiEmb-Gating</td>
@@ -847,107 +541,6 @@
 <td align="center">7.15130</td>
 <td align="center">6.02032</td>
 <td align="center">5.56 hour / 5132 epochs</td>
-</tr>
-</tbody>
-</table><table border="1" class="docutils">
-<thead>
-<tr>
-<th align="center"><strong>City: Xian</strong></th>
-<th align="center"><strong>System B</strong></th>
-<th align="center"><strong>P-Value</strong></th>
-<th align="center"><strong>System A</strong></th>
-<th align="center"><strong>System B</strong></th>
-<th align="center"><strong>P-Value</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="center">STMeta</td>
-<td align="center">STMeta-Concat</td>
-<td align="center">&gt;&gt;</td>
-<td align="center">STMeta-Emb-Concat</td>
-<td align="center">STMeta-Multi-Emb</td>
-<td align="center">&gt;&gt;</td>
-</tr>
-<tr>
-<td align="center">STMeta</td>
-<td align="center">STMeta-Emb-Concat</td>
-<td align="center">&lt;&lt;</td>
-<td align="center">STMeta-Emb-Concat</td>
-<td align="center">STMeta-Add</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">STMeta</td>
-<td align="center">STMeta-Multi-Emb</td>
-<td align="center">&gt;&gt;</td>
-<td align="center">STMeta-Emb-Concat</td>
-<td align="center">STMeta-LSTM-Add</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">STMeta</td>
-<td align="center">STMeta-Add</td>
-<td align="center">&lt;&lt;</td>
-<td align="center">STMeta-Emb-Concat</td>
-<td align="center">STMeta-Gating</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">STMeta</td>
-<td align="center">STMeta-LSTM-Add</td>
-<td align="center"></td>
-<td align="center">STMeta-Multi-Emb</td>
-<td align="center">STMeta-Add</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">STMeta</td>
-<td align="center">STMeta-Gating</td>
-<td align="center"></td>
-<td align="center">STMeta-Multi-Emb</td>
-<td align="center">STMeta-LSTM-Add</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">STMeta-Concat</td>
-<td align="center">STMeta-Emb-Concat</td>
-<td align="center"></td>
-<td align="center">STMeta-Multi-Emb</td>
-<td align="center">STMeta-Gating</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">STMeta-Concat</td>
-<td align="center">STMeta-Multi-Emb</td>
-<td align="center"></td>
-<td align="center">STMeta-Add</td>
-<td align="center">STMeta-LSTM-Add</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">STMeta-Concat</td>
-<td align="center">STMeta-Add</td>
-<td align="center"></td>
-<td align="center">STMeta-Add</td>
-<td align="center">STMeta-Gating</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">STMeta-Concat</td>
-<td align="center">STMeta-LSTM-Add</td>
-<td align="center"></td>
-<td align="center">STMeta-LSTM-Add</td>
-<td align="center">STMeta-Gating</td>
-<td align="center">&lt;&lt;</td>
-</tr>
-<tr>
-<td align="center">STMeta-Concat</td>
-<td align="center">STMeta-Gating</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
 </tr>
 </tbody>
 </table><table border="1" class="docutils">
@@ -1013,9 +606,9 @@
 <tr>
 <td align="center">STMeta-Emb-Add</td>
 <td align="center">V1</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">6.9952435</td>
+<td align="center">7.038321</td>
+<td align="center">1.84 hour / 1581 epochs</td>
 </tr>
 <tr>
 <td align="center">STMeta-Emb-Gating</td>
@@ -1027,9 +620,9 @@
 <tr>
 <td align="center">STMeta-MultiEmb-Add</td>
 <td align="center">V1</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">7.224133</td>
+<td align="center">7.32032</td>
+<td align="center">2.37 hour / 1782 epochs</td>
 </tr>
 <tr>
 <td align="center">STMeta-MultiEmb-Gating</td>
@@ -1051,107 +644,6 @@
 <td align="center">6.91026</td>
 <td align="center">6.99974</td>
 <td align="center">2.15 hour / 1566 epochs</td>
-</tr>
-</tbody>
-</table><table border="1" class="docutils">
-<thead>
-<tr>
-<th align="center"><strong>City: Chengdu</strong></th>
-<th align="center"><strong>System B</strong></th>
-<th align="center"><strong>P-Value</strong></th>
-<th align="center"><strong>System A</strong></th>
-<th align="center"><strong>System B</strong></th>
-<th><strong>P-Value</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="center">STMeta</td>
-<td align="center">STMeta-Concat</td>
-<td align="center"></td>
-<td align="center">STMeta-Emb-Concat</td>
-<td align="center">STMeta-Multi-Emb</td>
-<td></td>
-</tr>
-<tr>
-<td align="center">STMeta</td>
-<td align="center">STMeta-Emb-Concat</td>
-<td align="center"></td>
-<td align="center">STMeta-Emb-Concat</td>
-<td align="center">STMeta-Add</td>
-<td></td>
-</tr>
-<tr>
-<td align="center">STMeta</td>
-<td align="center">STMeta-Multi-Emb</td>
-<td align="center"></td>
-<td align="center">STMeta-Emb-Concat</td>
-<td align="center">STMeta-LSTM-Add</td>
-<td></td>
-</tr>
-<tr>
-<td align="center">STMeta</td>
-<td align="center">STMeta-Add</td>
-<td align="center"></td>
-<td align="center">STMeta-Emb-Concat</td>
-<td align="center">STMeta-Gating</td>
-<td></td>
-</tr>
-<tr>
-<td align="center">STMeta</td>
-<td align="center">STMeta-LSTM-Add</td>
-<td align="center"></td>
-<td align="center">STMeta-Multi-Emb</td>
-<td align="center">STMeta-Add</td>
-<td></td>
-</tr>
-<tr>
-<td align="center">STMeta</td>
-<td align="center">STMeta-Gating</td>
-<td align="center"></td>
-<td align="center">STMeta-Multi-Emb</td>
-<td align="center">STMeta-LSTM-Add</td>
-<td></td>
-</tr>
-<tr>
-<td align="center">STMeta-Concat</td>
-<td align="center">STMeta-Emb-Concat</td>
-<td align="center"></td>
-<td align="center">STMeta-Multi-Emb</td>
-<td align="center">STMeta-Gating</td>
-<td></td>
-</tr>
-<tr>
-<td align="center">STMeta-Concat</td>
-<td align="center">STMeta-Multi-Emb</td>
-<td align="center"></td>
-<td align="center">STMeta-Add</td>
-<td align="center">STMeta-LSTM-Add</td>
-<td></td>
-</tr>
-<tr>
-<td align="center">STMeta-Concat</td>
-<td align="center">STMeta-Add</td>
-<td align="center"></td>
-<td align="center">STMeta-Add</td>
-<td align="center">STMeta-Gating</td>
-<td></td>
-</tr>
-<tr>
-<td align="center">STMeta-Concat</td>
-<td align="center">STMeta-LSTM-Add</td>
-<td align="center"></td>
-<td align="center">STMeta-LSTM-Add</td>
-<td align="center">STMeta-Gating</td>
-<td></td>
-</tr>
-<tr>
-<td align="center">STMeta-Concat</td>
-<td align="center">STMeta-Gating</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td></td>
 </tr>
 </tbody>
 </table><p>注：默认lr为1e-5</p>
@@ -1251,9 +743,9 @@
 <tr>
 <td align="center">STMeta-Emb-Add</td>
 <td align="center">V1</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">109.50246</td>
+<td align="center">162.56137</td>
+<td align="center">6.96 hour / 6071 epochs</td>
 </tr>
 <tr>
 <td align="center">STMeta-Emb-Gating</td>
@@ -1265,9 +757,9 @@
 <tr>
 <td align="center">STMeta-MultiEmb-Add</td>
 <td align="center">V1</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">116.852875</td>
+<td align="center">175.7444</td>
+<td align="center">6.54 hour / 4384 epochs</td>
 </tr>
 <tr>
 <td align="center">STMeta-MultiEmb-Gating</td>
@@ -1289,107 +781,6 @@
 <td align="center">110.60793</td>
 <td align="center">156.36403</td>
 <td align="center">5.15 hour / 3723 epochs</td>
-</tr>
-</tbody>
-</table><table border="1" class="docutils">
-<thead>
-<tr>
-<th align="center"><strong>City: Shanghai</strong></th>
-<th align="center"><strong>System B</strong></th>
-<th align="center"><strong>P-Value</strong></th>
-<th align="center"><strong>System A</strong></th>
-<th align="center"><strong>System B</strong></th>
-<th><strong>P-Value</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="center">STMeta</td>
-<td align="center">STMeta-Concat</td>
-<td align="center"></td>
-<td align="center">STMeta-Emb-Concat</td>
-<td align="center">STMeta-Multi-Emb</td>
-<td></td>
-</tr>
-<tr>
-<td align="center">STMeta</td>
-<td align="center">STMeta-Emb-Concat</td>
-<td align="center"></td>
-<td align="center">STMeta-Emb-Concat</td>
-<td align="center">STMeta-Add</td>
-<td></td>
-</tr>
-<tr>
-<td align="center">STMeta</td>
-<td align="center">STMeta-Multi-Emb</td>
-<td align="center"></td>
-<td align="center">STMeta-Emb-Concat</td>
-<td align="center">STMeta-LSTM-Add</td>
-<td></td>
-</tr>
-<tr>
-<td align="center">STMeta</td>
-<td align="center">STMeta-Add</td>
-<td align="center"></td>
-<td align="center">STMeta-Emb-Concat</td>
-<td align="center">STMeta-Gating</td>
-<td></td>
-</tr>
-<tr>
-<td align="center">STMeta</td>
-<td align="center">STMeta-LSTM-Add</td>
-<td align="center"></td>
-<td align="center">STMeta-Multi-Emb</td>
-<td align="center">STMeta-Add</td>
-<td></td>
-</tr>
-<tr>
-<td align="center">STMeta</td>
-<td align="center">STMeta-Gating</td>
-<td align="center"></td>
-<td align="center">STMeta-Multi-Emb</td>
-<td align="center">STMeta-LSTM-Add</td>
-<td></td>
-</tr>
-<tr>
-<td align="center">STMeta-Concat</td>
-<td align="center">STMeta-Emb-Concat</td>
-<td align="center"></td>
-<td align="center">STMeta-Multi-Emb</td>
-<td align="center">STMeta-Gating</td>
-<td></td>
-</tr>
-<tr>
-<td align="center">STMeta-Concat</td>
-<td align="center">STMeta-Multi-Emb</td>
-<td align="center"></td>
-<td align="center">STMeta-Add</td>
-<td align="center">STMeta-LSTM-Add</td>
-<td></td>
-</tr>
-<tr>
-<td align="center">STMeta-Concat</td>
-<td align="center">STMeta-Add</td>
-<td align="center"></td>
-<td align="center">STMeta-Add</td>
-<td align="center">STMeta-Gating</td>
-<td></td>
-</tr>
-<tr>
-<td align="center">STMeta-Concat</td>
-<td align="center">STMeta-LSTM-Add</td>
-<td align="center"></td>
-<td align="center">STMeta-LSTM-Add</td>
-<td align="center">STMeta-Gating</td>
-<td></td>
-</tr>
-<tr>
-<td align="center">STMeta-Concat</td>
-<td align="center">STMeta-Gating</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td></td>
 </tr>
 </tbody>
 </table><table border="1" class="docutils">
@@ -1455,9 +846,9 @@
 <tr>
 <td align="center">STMeta-Emb-Add</td>
 <td align="center">V1</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">90.5653</td>
+<td align="center">87.3754609</td>
+<td align="center">49.11 hour / 9974 epochs</td>
 </tr>
 <tr>
 <td align="center">STMeta-Emb-Gating</td>
@@ -1469,9 +860,9 @@
 <tr>
 <td align="center">STMeta-MultiEmb-Add</td>
 <td align="center">V1</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">87.24216</td>
+<td align="center">91.136903475</td>
+<td align="center">53.33 hour / 10000 epochs</td>
 </tr>
 <tr>
 <td align="center">STMeta-MultiEmb-Gating</td>
@@ -1493,107 +884,6 @@
 <td align="center">98.98814</td>
 <td align="center">90.47805</td>
 <td align="center">39.89 hour / 7041 epochs</td>
-</tr>
-</tbody>
-</table><table border="1" class="docutils">
-<thead>
-<tr>
-<th align="center"><strong>City: Chongqing</strong></th>
-<th align="center"><strong>System B</strong></th>
-<th align="center"><strong>P-Value</strong></th>
-<th align="center"><strong>System A</strong></th>
-<th align="center"><strong>System B</strong></th>
-<th><strong>P-Value</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="center">STMeta</td>
-<td align="center">STMeta-Concat</td>
-<td align="center"></td>
-<td align="center">STMeta-Emb-Concat</td>
-<td align="center">STMeta-Multi-Emb</td>
-<td></td>
-</tr>
-<tr>
-<td align="center">STMeta</td>
-<td align="center">STMeta-Emb-Concat</td>
-<td align="center"></td>
-<td align="center">STMeta-Emb-Concat</td>
-<td align="center">STMeta-Add</td>
-<td></td>
-</tr>
-<tr>
-<td align="center">STMeta</td>
-<td align="center">STMeta-Multi-Emb</td>
-<td align="center"></td>
-<td align="center">STMeta-Emb-Concat</td>
-<td align="center">STMeta-LSTM-Add</td>
-<td></td>
-</tr>
-<tr>
-<td align="center">STMeta</td>
-<td align="center">STMeta-Add</td>
-<td align="center"></td>
-<td align="center">STMeta-Emb-Concat</td>
-<td align="center">STMeta-Gating</td>
-<td></td>
-</tr>
-<tr>
-<td align="center">STMeta</td>
-<td align="center">STMeta-LSTM-Add</td>
-<td align="center"></td>
-<td align="center">STMeta-Multi-Emb</td>
-<td align="center">STMeta-Add</td>
-<td></td>
-</tr>
-<tr>
-<td align="center">STMeta</td>
-<td align="center">STMeta-Gating</td>
-<td align="center"></td>
-<td align="center">STMeta-Multi-Emb</td>
-<td align="center">STMeta-LSTM-Add</td>
-<td></td>
-</tr>
-<tr>
-<td align="center">STMeta-Concat</td>
-<td align="center">STMeta-Emb-Concat</td>
-<td align="center"></td>
-<td align="center">STMeta-Multi-Emb</td>
-<td align="center">STMeta-Gating</td>
-<td></td>
-</tr>
-<tr>
-<td align="center">STMeta-Concat</td>
-<td align="center">STMeta-Multi-Emb</td>
-<td align="center"></td>
-<td align="center">STMeta-Add</td>
-<td align="center">STMeta-LSTM-Add</td>
-<td></td>
-</tr>
-<tr>
-<td align="center">STMeta-Concat</td>
-<td align="center">STMeta-Add</td>
-<td align="center"></td>
-<td align="center">STMeta-Add</td>
-<td align="center">STMeta-Gating</td>
-<td></td>
-</tr>
-<tr>
-<td align="center">STMeta-Concat</td>
-<td align="center">STMeta-LSTM-Add</td>
-<td align="center"></td>
-<td align="center">STMeta-LSTM-Add</td>
-<td align="center">STMeta-Gating</td>
-<td></td>
-</tr>
-<tr>
-<td align="center">STMeta-Concat</td>
-<td align="center">STMeta-Gating</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td></td>
 </tr>
 </tbody>
 </table><p><strong>Different embedding size</strong>（default batch_size: 4）</p>
@@ -1840,9 +1130,9 @@
 <tr>
 <td align="center">STMeta-Emb-Add</td>
 <td align="center">V1</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">0.7383992</td>
+<td align="center">0.7883851</td>
+<td align="center">16.48 hour / 9997 epochs</td>
 </tr>
 <tr>
 <td align="center">STMeta-Emb-Gating</td>
@@ -1854,9 +1144,9 @@
 <tr>
 <td align="center">STMeta-MultiEmb-Add</td>
 <td align="center">V1</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">0.75049156</td>
+<td align="center">0.7777612</td>
+<td align="center">16.55 hour / 9986 epochs</td>
 </tr>
 <tr>
 <td align="center">STMeta-MultiEmb-Gating</td>
@@ -1878,107 +1168,6 @@
 <td align="center">0.74321</td>
 <td align="center">0.78408</td>
 <td align="center">7.15 hour / 4057 epochs</td>
-</tr>
-</tbody>
-</table><table border="1" class="docutils">
-<thead>
-<tr>
-<th align="center"><strong>City: Beijing</strong></th>
-<th align="center"><strong>System B</strong></th>
-<th align="center"><strong>P-Value</strong></th>
-<th align="center"><strong>System A</strong></th>
-<th align="center"><strong>System B</strong></th>
-<th align="center"><strong>P-Value</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="center">STMeta</td>
-<td align="center">STMeta-Concat</td>
-<td align="center">0.0000</td>
-<td align="center">STMeta-Emb-Concat</td>
-<td align="center">STMeta-Multi-Emb</td>
-<td align="center">0.0000</td>
-</tr>
-<tr>
-<td align="center">STMeta</td>
-<td align="center">STMeta-Emb-Concat</td>
-<td align="center">0.0000</td>
-<td align="center">STMeta-Emb-Concat</td>
-<td align="center">STMeta-Add</td>
-<td align="center">0.0000</td>
-</tr>
-<tr>
-<td align="center">STMeta</td>
-<td align="center">STMeta-Multi-Emb</td>
-<td align="center">0.0000</td>
-<td align="center">STMeta-Emb-Concat</td>
-<td align="center">STMeta-LSTM-Add</td>
-<td align="center">0.0000</td>
-</tr>
-<tr>
-<td align="center">STMeta</td>
-<td align="center">STMeta-Add</td>
-<td align="center">0.0000</td>
-<td align="center">STMeta-Emb-Concat</td>
-<td align="center">STMeta-Gating</td>
-<td align="center">0.0000</td>
-</tr>
-<tr>
-<td align="center">STMeta</td>
-<td align="center">STMeta-LSTM-Add</td>
-<td align="center">0.0002</td>
-<td align="center">STMeta-Multi-Emb</td>
-<td align="center">STMeta-Add</td>
-<td align="center">0.0000</td>
-</tr>
-<tr>
-<td align="center">STMeta</td>
-<td align="center">STMeta-Gating</td>
-<td align="center">0.0000</td>
-<td align="center">STMeta-Multi-Emb</td>
-<td align="center">STMeta-LSTM-Add</td>
-<td align="center">0.0000</td>
-</tr>
-<tr>
-<td align="center">STMeta-Concat</td>
-<td align="center">STMeta-Emb-Concat</td>
-<td align="center">0.0000</td>
-<td align="center">STMeta-Multi-Emb</td>
-<td align="center">STMeta-Gating</td>
-<td align="center">0.0000</td>
-</tr>
-<tr>
-<td align="center">STMeta-Concat</td>
-<td align="center">STMeta-Multi-Emb</td>
-<td align="center">0.0000</td>
-<td align="center">STMeta-Add</td>
-<td align="center">STMeta-LSTM-Add</td>
-<td align="center">0.0000&lt;&lt;</td>
-</tr>
-<tr>
-<td align="center">STMeta-Concat</td>
-<td align="center">STMeta-Add</td>
-<td align="center">0.0000</td>
-<td align="center">STMeta-Add</td>
-<td align="center">STMeta-Gating</td>
-<td align="center">0.0000</td>
-</tr>
-<tr>
-<td align="center">STMeta-Concat</td>
-<td align="center">STMeta-LSTM-Add</td>
-<td align="center">0.0000</td>
-<td align="center">STMeta-LSTM-Add</td>
-<td align="center">STMeta-Gating</td>
-<td align="center">0.0000</td>
-</tr>
-<tr>
-<td align="center">STMeta-Concat</td>
-<td align="center">STMeta-Gating</td>
-<td align="center">0.0000</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
 </tr>
 </tbody>
 </table><p>默认bs:64</p>
@@ -2201,19 +1390,11 @@
 
   <div role="contentinfo">
     <p>
-        
         &copy; Copyright 2020, UCTB group
 
     </p>
   </div>
-    
-    
-    
-    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
-    
-    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
-    
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -2224,6 +1405,7 @@
 
   </div>
   
+
 
   <script type="text/javascript">
       jQuery(function () {

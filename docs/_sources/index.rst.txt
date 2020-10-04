@@ -19,7 +19,7 @@ Welcome to UCTB's Result Pages!
 
    md_file/KDD_all_results.md
 
-   md_file/SingleGraph_60mins.md
+   md_file/60_mins_Spatiotemporal_Analysis.md
 
    md_file/KDD_METR_PEMS.md
 
