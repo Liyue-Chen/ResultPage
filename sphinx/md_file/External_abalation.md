@@ -6,7 +6,7 @@ Default granularity is 60 mins.
 
 | **City: NYC** | external feature  | val-rmse |  test-rmse  |      Converged Time       |
 | :-----------: | :---------------: | :------: | :---------: | :-----------------------: |
-|    STMeta     |      not use      |    -     |   3.51827   |        5930 epochs        |
+|    STMeta     |      not use      |    -     |    3.605    |        5930 epochs        |
 | STMeta-Gating |      weather      | 3.17885  |   3.45162   | 266.52 hour / 8060 epochs |
 | STMeta-Gating |      holiday      | 3.18443  |   3.51716   | 292.43 hour / 9057 epochs |
 | STMeta-Gating | temporal position | 3.03264  |   3.40923   | 40.62 hour / 1142 epochs  |
@@ -96,6 +96,6 @@ DC站点的Weather特征有问题，基本全错。
 |   STMeta-Gating   |      holiday      | 0.75004  |  0.78205  | 18.80 hour / 9315 epochs  |
 |   STMeta-Gating   | temporal position | 0.74307  |  0.80274  | 32.46 hour / 18586 epochs |
 |    STMeta-Gating    |  weather-holiday  | 0.75671 | 0.79993 | 16.83 hour / 10000 epochs |
-|    STMeta-Gating    |    weather-tp     | 0.74291 | 0.78019 | 13.59 hour / 7866 epochs |
+|    STMeta-Gating    |    weather-tp     | 0.74291 | **0.78019** | 13.59 hour / 7866 epochs |
 |    STMeta-Gating    |    holiday-tp     | 0.73362 | **0.77900** | 6.93 hour / 10000 epochs |
 |    STMeta-Gating    |        all        | 0.74789 | 0.78317 | 9.68 hour / 4563 epochs |

@@ -14,9 +14,9 @@
 |                 DCRNN(G/D C)                  | 5.75337  |  6.44030  | 4.37 hour / 5254 epochs |
 |                   LSTM (C)                    | 5.36337  |  6.38015  | 9.21 hour / 8296 epochs |
 |                TMeta-LSTM-GAL                 | 5.35551  |  6.15585  | 0.96 hour / 1113 epochs |
-|               AMulti-GCLSTM-V1                | 5.40675  |  5.64445  | 2.68 hour / 3100 epochs |
-|               AMulti-GCLSTM-V2                | 5.34392  |  5.79998  | 3.10 hour / 4265 epochs |
-|               AMulti-GCLSTM-V3                | 5.42232  |  5.78807  | 1.00 hour / 1202 epochs |
+|                   STMeta-V1                   | 5.40675  |  5.64445  | 2.68 hour / 3100 epochs |
+|                   STMeta-V2                   | 5.34392  |  5.79998  | 3.10 hour / 4265 epochs |
+|                   STMeta-V3                   | 5.42232  |  5.78807  | 1.00 hour / 1202 epochs |
 
 | <font color='red'>**Fitness: 30 mins**</font> | val-rmse | test-rmse |      Converged Time      |
 | :-------------------------------------------: | :------: | :-------: | :----------------------: |
@@ -28,9 +28,9 @@
 |                 DCRNN(G/D C)                  | 7.34029  |  8.56215  | 1.99 hour / 4406 epochs  |
 |                   LSTM (C)                    | 6.26720  |  7.86569  | 5.06 hour / 10071 epochs |
 |                TMeta-LSTM-GAL                 | 6.27180  |  7.43553  | 0.78 hour / 1744 epochs  |
-|               AMulti-GCLSTM-V1                | 6.57803  |  7.15628  | 1.84 hour / 3465 epochs  |
-|               AMulti-GCLSTM-V2                | 6.10779  |  6.88889  | 4.79 hour / 10860 epochs |
-|               AMulti-GCLSTM-V3                | 6.38780  |  7.18431  | 1.40 hour / 2571 epochs  |
+|                   STMeta-V1                   | 6.57803  |  7.15628  | 1.84 hour / 3465 epochs  |
+|                   STMeta-V2                   | 6.10779  |  6.88889  | 4.79 hour / 10860 epochs |
+|                   STMeta-V3                   | 6.38780  |  7.18431  | 1.40 hour / 2571 epochs  |
 
 | <font color='red'>**Fitness: 60 mins**</font> | val-rmse | test-rmse |      Converged Time      |
 | :-------------------------------------------: | :------: | :-------: | :----------------------: |
@@ -42,9 +42,9 @@
 |                 DCRNN(G/D C)                  | 10.60033 | 11.12053  | 0.91 hour / 3247 epochs  |
 |                   LSTM (C)                    | 7.24440  | 10.08317  | 1.57 hour / 1868 epochs  |
 |                TMeta-LSTM-GAL                 | 5.65159  |  8.66965  | 1.19 hour / 12000 epochs |
-|               AMulti-GCLSTM-V1                | 5.89982  |  8.83393  | 2.99 hour / 1779 epochs  |
-|               AMulti-GCLSTM-V2                | 5.89793  |  9.14697  | 0.55 hour / 1590 epochs  |
-|               AMulti-GCLSTM-V3                | 6.33248  |  8.99345  | 0.80 hour / 2387 epochs  |
+|                   STMeta-V1                   | 5.89982  |  8.83393  | 2.99 hour / 1779 epochs  |
+|                   STMeta-V2                   | 5.89793  |  9.14697  | 0.55 hour / 1590 epochs  |
+|                   STMeta-V3                   | 6.33248  |  8.99345  | 0.80 hour / 2387 epochs  |
 
 
 
@@ -62,9 +62,9 @@
 |                 DCRNN(G/D C)                  | 2.49209  |  5.32297  | 35.05 hour / 16862 epochs |
 |                   LSTM (C)                    | 5.15498  |  2.68953  | 13.92 hour / 13000 epochs |
 |                TMeta-LSTM-GAL                 | 5.61040  |  2.54368  |  3.68 hour / 2297 epochs  |
-|               AMulti-GCLSTM-V1                | 5.52864  |  2.43292  | 24.00 hour / 8584 epochs  |
-|               AMulti-GCLSTM-V2                | 5.56845  |  2.44947  | 19.26 hour / 8562 epochs  |
-|               AMulti-GCLSTM-V3                | 5.54370  |  2.44571  | 19.71 hour / 6608 epochs  |
+|                   STMeta-V1                   | 5.52864  |  2.43292  | 24.00 hour / 8584 epochs  |
+|                   STMeta-V2                   | 5.56845  |  2.44947  | 19.26 hour / 8562 epochs  |
+|                   STMeta-V3                   | 5.54370  |  2.44571  | 19.71 hour / 6608 epochs  |
 
 | <font color='red'>**Fitness: 30 mins**</font> | val-rmse | test-rmse |      Converged Time       |
 | :-------------------------------------------: | :------: | :-------: | :-----------------------: |
@@ -76,9 +76,9 @@
 |                 DCRNN(G/D C)                  | 3.28756  |  6.19802  | 17.99 hour / 17013 epochs |
 |                   LSTM (C)                    | 5.96921  |  3.68256  | 7.48 hour / 13000 epochs  |
 |                TMeta-LSTM-GAL                 | 6.51965  |  3.23098  | 7.99 hour / 11116 epochs  |
-|               AMulti-GCLSTM-V1                | 6.44145  |  3.11554  |  8.34 hour / 5467 epochs  |
-|               AMulti-GCLSTM-V2                | 6.53199  |  3.20407  |  4.44 hour / 3492 epochs  |
-|               AMulti-GCLSTM-V3                | 6.49245  |  3.18722  |  3.08 hour / 1663 epochs  |
+|                   STMeta-V1                   | 6.44145  |  3.11554  |  8.34 hour / 5467 epochs  |
+|                   STMeta-V2                   | 6.53199  |  3.20407  |  4.44 hour / 3492 epochs  |
+|                   STMeta-V3                   | 6.49245  |  3.18722  |  3.08 hour / 1663 epochs  |
 
 | <font color='red'>**Fitness: 60 mins**</font> | val-rmse | test-rmse |      Converged Time       |
 | :-------------------------------------------: | :------: | :-------: | :-----------------------: |
@@ -90,6 +90,6 @@
 |                 DCRNN(G/D C)                  | 3.93587  |  6.91955  | 10.71 hour / 20000 epochs |
 |                   LSTM (C)                    | 6.95412  |  4.77696  | 7.53 hour / 10002 epochs  |
 |                TMeta-LSTM-GAL                 | 6.68086  |  3.61642  | 15.45 hour / 13000 epochs |
-|               AMulti-GCLSTM-V1                | 6.62233  |  3.51389  |  5.81 hour / 2372 epochs  |
-|               AMulti-GCLSTM-V2                | 7.11932  |  3.55159  |  6.45 hour / 9357 epochs  |
-|               AMulti-GCLSTM-V3                | 7.05142  |  3.49954  |  6.88 hour / 7573 epochs  |
+|                   STMeta-V1                   | 6.62233  |  3.51389  |  5.81 hour / 2372 epochs  |
+|                   STMeta-V2                   | 7.11932  |  3.55159  |  6.45 hour / 9357 epochs  |
+|                   STMeta-V3                   | 7.05142  |  3.49954  |  6.88 hour / 7573 epochs  |

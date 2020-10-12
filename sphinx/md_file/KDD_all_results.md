@@ -18,9 +18,9 @@ data_range:0.25，trainday=91(只用了91天的数据进行训练)
 |                 DCRNN(G/D C)                  |        1.71223        |        1.71789        |        1.59412        | 25.89 hour / 9999 epochsⅠ<br />0.86 hour / 542 epochsⅡ<br />12.72 hour / 9999 epochsⅢ |
 |                   LSTM (C)                    |        1.98866        |        1.80222        |        1.67762        | 14.87 hour / 986 epochsⅠ<br />15.79 hour / 9167 epochsⅡ<br />0.30 hour / 199 epochsⅢ |
 |                TMeta-LSTM-GAL                 |        1.81819        |        1.62269        |        1.54041        | 361 epochsⅠ<br />4.50 hour / 1278 epochsⅡ<br />0.51 hour / 199 epochsⅢ |
-|               AMulti-GCLSTM-V1                |        1.65939        |      **1.60743**      |        1.52698        | 49.28 hour / 2280 epochsⅠ<br />11.26 hour / 775 epochsⅡ<br />26.81 hour / 2929 epochsⅢ |
-|               AMulti-GCLSTM-V2                |        1.67336        |        1.62883        |      **1.51158**      | 84.40 hour / 6088 epochsⅠ<br />13.97 hour / 1269 epochsⅡ<br />51.15 hour / 7015 epochsⅢ |
-|               AMulti-GCLSTM-V3                |      **1.65351**      |        1.60917        |        1.51720        | 26.27 hour / 930 epochsⅠ<br />6.14 hour / 287 epochsⅡ<br />9.48 hour / 664 epochsⅢ |
+|                   STMeta-V1                   |        1.65939        |      **1.60743**      |        1.52698        | 49.28 hour / 2280 epochsⅠ<br />11.26 hour / 775 epochsⅡ<br />26.81 hour / 2929 epochsⅢ |
+|                   STMeta-V2                   |        1.67336        |        1.62883        |      **1.51158**      | 84.40 hour / 6088 epochsⅠ<br />13.97 hour / 1269 epochsⅡ<br />51.15 hour / 7015 epochsⅢ |
+|                   STMeta-V3                   |      **1.65351**      |        1.60917        |        1.51720        | 26.27 hour / 930 epochsⅠ<br />6.14 hour / 287 epochsⅡ<br />9.48 hour / 664 epochsⅢ |
 
 ​	**basic conclusion**:
 
@@ -38,9 +38,9 @@ data_range:0.25，trainday=91(只用了91天的数据进行训练)
 |                 DCRNN(G/D C)                  |        2.61848         |       2.24642        |        2.11771         | 56.82 hour / 10034 epochsⅠ<br />16.44 hour / 10000 epochsⅡ<br />8.98 hour / 6077 epochsⅢ |
 |                   LSTM (C)                    |        3.01836         |       2.49270        |        2.21191         | 93.77 hour / 14343 epochsⅠ<br />1.56 hour / 797 epochsⅡ<br />0.61 hour / 18 epochsⅢ |
 |                TMeta-LSTM-GAL                 |        2.51124         |       2.13333        |        1.92748         | 10839 epochsⅠ<br />1.01 hour / 138 epochsⅡ<br />26.25 hour / 3224 epochsⅢ |
-|               AMulti-GCLSTM-V1                |      **2.40976**       |       2.17032        |        1.85628         | 6764 epochsⅠ<br />6.67 hour / 332 epochsⅡ<br />192.52 hour / 4576 epochsⅢ |
-|               AMulti-GCLSTM-V2                |        2.41088         |     **2.13330**      |        1.85876         | 7100 epochsⅠ<br />5.28 hour / 310 epochsⅡ<br />53.36 hour / 2247 epochsⅢ |
-|               AMulti-GCLSTM-V3                |        2.41109         |       2.18174        |      **1.85199**       | 244.95 hour / 2848 epochsⅠ<br />8.40 hour / 308 epochsⅡ<br />48.27 hour / 1208 epochsⅢ |
+|                   STMeta-V1                   |      **2.40976**       |       2.17032        |        1.85628         | 6764 epochsⅠ<br />6.67 hour / 332 epochsⅡ<br />192.52 hour / 4576 epochsⅢ |
+|                   STMeta-V2                   |        2.41088         |     **2.13330**      |        1.85876         | 7100 epochsⅠ<br />5.28 hour / 310 epochsⅡ<br />53.36 hour / 2247 epochsⅢ |
+|                   STMeta-V3                   |        2.41109         |       2.18174        |      **1.85199**       | 244.95 hour / 2848 epochsⅠ<br />8.40 hour / 308 epochsⅡ<br />48.27 hour / 1208 epochsⅢ |
 
 注：data_range:0.5，trainday=183(只用了183天的数据进行训练)，Bike30mins使用的是全部的数据
 
@@ -56,9 +56,9 @@ data_range:0.25，trainday=91(只用了91天的数据进行训练)
 |                 DCRNN(G/D C)                  |        4.18666         | 3.08066`重新运行的结果` | 3.01575`重新运行的结果` | 15.32 hourⅡ<br />0.36 hourⅢ                                  |
 |                   LSTM (C)                    |        5.16719         |         3.72113         |         3.23409         | <br />48.23 hour / 20000 epochsⅡ<br />2.94 hour / 1783 epochsⅢ |
 |                TMeta-LSTM-GAL                 |        3.73916         |         2.84013         |         2.55653         | 115.19 hour / 16343 epochsⅠ<br />594 epochsⅡ<br />28.50 hour / 7194 epochsⅢ |
-|               AMulti-GCLSTM-V1                |        3.51827         |         2.69466         |         2.40463         | 5930 epochsⅠ<br />16.82 hour / 946 epochsⅡ<br />104.21 hour / 3875 epochsⅢ |
-|               AMulti-GCLSTM-V2                |      **3.50671**       |         2.73852         |       **2.40387**       | 15000 epochsⅠ<br /><br />211.76 hour / 14588 epochsⅡ<br />99.59 hour / 4087 epochsⅢ |
-|               AMulti-GCLSTM-V3                |        3.52124         |       **2.65204**       |         2.42338         | 7438 epochsⅠ<br />4403 epochsⅡ<br />96.94 hour / 2993 epochsⅢ |
+|                   STMeta-V1                   |        3.51827         |         2.69466         |         2.40463         | 5930 epochsⅠ<br />16.82 hour / 946 epochsⅡ<br />104.21 hour / 3875 epochsⅢ |
+|                   STMeta-V2                   |      **3.50671**       |         2.73852         |       **2.40387**       | 15000 epochsⅠ<br /><br />211.76 hour / 14588 epochsⅡ<br />99.59 hour / 4087 epochsⅢ |
+|                   STMeta-V3                   |        3.52124         |       **2.65204**       |         2.42338         | 7438 epochsⅠ<br />4403 epochsⅡ<br />96.94 hour / 2993 epochsⅢ |
 
 
 
@@ -79,9 +79,9 @@ data_range:0.25，trainday=91(只用了91天的数据进行训练)
 |                        DCRNN (G/D C)                         |                    |   2.35779   |   2.88934   |  50368   | 90.71 hour / 10000 epochs |
 |                           LSTM(C)                            |   `1-64-32-2-64`   |   2.58331   |   3.05138   |          |  6.01 hour / 8600 epochs  |
 |                          TMeta(TM)                           |                    |   2.39823   |   2.91712   |          |   0.86 hour / 7 epochs    |
-|                   AMulti-GCLSTM-V1 (G/DCI)                   | `1-1-1-64-32-2-64` |   2.45115   |   2.65320   |          | 24.12 hour / 7082 epochs  |
-|                   AMulti-GCLSTM-V2(G/DCI)                    | `1-1-1-64-32-2-64` |   2.35982   | **2.63673** |          |  8.34 hour / 2778 epochs  |
-|                   AMulti-GCLSTM-V3(G/DCI)                    |                    |   2.40360   |   2.64849   |          |  6.50 hour / 941 epochs   |
+|                      STMeta-V1 (G/DCI)                       | `1-1-1-64-32-2-64` |   2.45115   |   2.65320   |          | 24.12 hour / 7082 epochs  |
+|                       STMeta-V2(G/DCI)                       | `1-1-1-64-32-2-64` |   2.35982   | **2.63673** |          |  8.34 hour / 2778 epochs  |
+|                       STMeta-V3(G/DCI)                       |                    |   2.40360   |   2.64849   |          |  6.50 hour / 941 epochs   |
 
 
 
@@ -96,9 +96,9 @@ data_range:0.25，trainday=91(只用了91天的数据进行训练)
 |                        DCRNN (G/D C)                         |                    | **3.88778** |   4.52889   |  50368   | 47.15 hour / 10000 epochs |
 |                           LSTM(C)                            |   `1-64-32-2-64`   |   4.49371   |   4.95037   |          | 10.37 hour / 39614 epochs |
 |                            TMeta                             |                    |   4.10193   |   3.84690   |          | 5.25 hour / 10612 epochs  |
-|                   AMulti-GCLSTM-V1 (G/DCI)                   | `1-1-1-64-32-2-64` |   4.00090   |   3.80812   |          | 16.23 hour / 9331 epochs  |
-|                   AMulti-GCLSTM-V2(G/DCI)                    | `1-1-1-64-32-2-64` |   4.11326   | **3.77190** |          |  9.07 hour / 6312 epochs  |
-|                   AMulti-GCLSTM-V3(G/DCI)                    |                    |   4.00180   |   3.83278   |          |  7.96 hour / 3184 epochs  |
+|                      STMeta-V1 (G/DCI)                       | `1-1-1-64-32-2-64` |   4.00090   |   3.80812   |          | 16.23 hour / 9331 epochs  |
+|                       STMeta-V2(G/DCI)                       | `1-1-1-64-32-2-64` |   4.11326   | **3.77190** |          |  9.07 hour / 6312 epochs  |
+|                       STMeta-V3(G/DCI)                       |                    |   4.00180   |   3.83278   |          |  7.96 hour / 3184 epochs  |
 
 
 
@@ -113,9 +113,9 @@ data_range:0.25，trainday=91(只用了91天的数据进行训练)
 |                        DCRNN (G/D C)                         |                    |   7.29442   |   8.20254   |  50368   | 2.10 hour / 10000 epochs |
 |                           LSTM(C)                            |   `1-64-32-2-64`   |   9.86062   |   9.82962   |          | 2.37 hour / 11776 epochs |
 |                            TMeta                             |                    |   7.48951   |   5.84263   |          | 1.25 hour / 4265 epochs  |
-|                   AMulti-GCLSTM-V1 (G/DCI)                   | `1-1-1-64-32-2-64` |   7.29530   |   5.87104   |          | 6.64 hour / 6911 epochs  |
-|                   AMulti-GCLSTM-V2(G/DCI)                    | `1-1-1-64-32-2-64` |   7.35794   | **5.82891** |          | 2.52 hour / 2956 epochs  |
-|                   AMulti-GCLSTM-V3(G/DCI)                    |                    |   7.14426   |   5.90812   |          | 3.37 hour / 2393 epochs  |
+|                      STMeta-V1 (G/DCI)                       | `1-1-1-64-32-2-64` |   7.29530   |   5.87104   |          | 6.64 hour / 6911 epochs  |
+|                       STMeta-V2(G/DCI)                       | `1-1-1-64-32-2-64` |   7.35794   | **5.82891** |          | 2.52 hour / 2956 epochs  |
+|                       STMeta-V3(G/DCI)                       |                    |   7.14426   |   5.90812   |          | 3.37 hour / 2393 epochs  |
 
 #### Chengdu
 
@@ -130,9 +130,9 @@ data_range:0.25，trainday=91(只用了91天的数据进行训练)
 |                        DCRNN (G/D C)                         |                    |   3.11531   |   3.74328   |  50368   | 96.21 hour / 10000 epochs |
 |                           LSTM(C)                            |   `1-64-32-2-64`   |   3.30852   |   3.88830   |          | 21.24 hour / 40609 epochs |
 |                          TMeta(TM)                           |                    |   2.81329   |   3.28553   |          |  2.48 hour / 2244 epochs  |
-|                   AMulti-GCLSTM-V1 (G/DCI)                   | `1-1-1-64-32-2-64` |   2.75397   |   3.24408   |          |  7.10 hour / 1940 epochs  |
-|                   AMulti-GCLSTM-V2(G/DCI)                    | `1-1-1-64-32-2-64` |   2.75898   | **3.24125** |          |  6.88 hour / 2060 epochs  |
-|                   AMulti-GCLSTM-V3(G/DCI)                    |                    | **2.75049** |   3.25353   |          |  5.23 hour / 802 epochs   |
+|                      STMeta-V1 (G/DCI)                       | `1-1-1-64-32-2-64` |   2.75397   |   3.24408   |          |  7.10 hour / 1940 epochs  |
+|                       STMeta-V2(G/DCI)                       | `1-1-1-64-32-2-64` |   2.75898   | **3.24125** |          |  6.88 hour / 2060 epochs  |
+|                       STMeta-V3(G/DCI)                       |                    | **2.75049** |   3.25353   |          |  5.23 hour / 802 epochs   |
 
 
 
@@ -147,9 +147,9 @@ data_range:0.25，trainday=91(只用了91天的数据进行训练)
 |                        DCRNN (G/D C)                         |                    |   5.52255   |   6.25836   |  50368   | 25.24 hour / 5113 epochs  |
 |                           LSTM(C)                            |   `1-64-32-2-64`   |   5.86460   |   6.44397   |          | 11.24 hour / 50000 epochs |
 |                            TMeta                             |                    |   4.20394   |   4.67784   |          |  2.17 hour / 3919 epochs  |
-|                   AMulti-GCLSTM-V1 (G/DCI)                   | `1-1-1-64-32-2-64` |   4.18897   |   4.64988   |          |  5.25 hour / 2649 epochs  |
-|                   AMulti-GCLSTM-V2(G/DCI)                    | `1-1-1-64-32-2-64` | **4.10975** | **4.61277** |          |  2.79 hour / 1472 epochs  |
-|                   AMulti-GCLSTM-V3(G/DCI)                    |                    |   4.13489   |   4.63502   |          |  5.97 hour / 2398 epochs  |
+|                      STMeta-V1 (G/DCI)                       | `1-1-1-64-32-2-64` |   4.18897   |   4.64988   |          |  5.25 hour / 2649 epochs  |
+|                       STMeta-V2(G/DCI)                       | `1-1-1-64-32-2-64` | **4.10975** | **4.61277** |          |  2.79 hour / 1472 epochs  |
+|                       STMeta-V3(G/DCI)                       |                    |   4.13489   |   4.63502   |          |  5.97 hour / 2398 epochs  |
 
 
 
@@ -164,9 +164,9 @@ data_range:0.25，trainday=91(只用了91天的数据进行训练)
 |                       DCRNN (G/D C)                        |                    |  10.31850   |  11.44437   |          | 23.94 hour / 10000 epochs |
 |                          LSTM(C)                           |   `1-64-32-2-64`   |  12.69784   |  13.48316   |          | 3.48 hour / 17464 epochs  |
 |                           TMeta                            |                    |   6.48812   |   6.94881   |          | 3.68 hour / 13715 epochs  |
-|                  AMulti-GCLSTM-V1 (G/DCI)                  | `1-1-1-64-32-2-64` |   6.36790   | **6.85750** |          |  2.54 hour / 2285 epochs  |
-|                  AMulti-GCLSTM-V2(G/DCI)                   | `1-1-1-64-32-2-64` |   6.39528   |   6.87330   |          |  1.40 hour / 1445 epochs  |
-|                  AMulti-GCLSTM-V3(G/DCI)                   |                    | **6.30479** |   6.90394   |          |  1.76 hour / 1052 epochs  |
+|                     STMeta-V1 (G/DCI)                      | `1-1-1-64-32-2-64` |   6.36790   | **6.85750** |          |  2.54 hour / 2285 epochs  |
+|                      STMeta-V2(G/DCI)                      | `1-1-1-64-32-2-64` |   6.39528   |   6.87330   |          |  1.40 hour / 1445 epochs  |
+|                      STMeta-V3(G/DCI)                      |                    | **6.30479** |   6.90394   |          |  1.76 hour / 1052 epochs  |
 
 
 
@@ -184,11 +184,11 @@ data_range:0.25，trainday=91(只用了91天的数据进行训练)
 |                         DCRNN(G/D C)                         |        ---         |   30.53014   |   37.06903   |          | 149.65 hour / 8784 epochs  |
 |                           LSTM(C)                            |   `1-64-32-2-64`   |  44.7920197  |   55.36633   |          | 70.41 hour / 20000 epochs  |
 |                            TMeta                             | `1-1-1-64-32-2-64` |   30.03605   |   33.34361   |  62789   | 190.09 hour / 19897 epochs |
-|                   AMulti-GCLSTM-V1 (G/DCI)                   | `1-1-1-64-32-2-64` |   26.21625   |   31.39239   |  189521  | 138.15 hour / 8515 epochs  |
-|                   AMulti-GCLSTM-V2 (G/DCI)                   |    patience 200    |   31.00440   |   38.20912   |  180561  |  55.86 hour / 3981 epochs  |
-|                   AMulti-GCLSTM-V2 (G/DCI)                   |    patience 400    |   30.05590   |   31.54766   |          | 138.45 hour / 10000 epochs |
-|                   AMulti-GCLSTM-V3(G/DCI)                    |    patience 200    |   32.89818   |   36.90250   |  488447  |  18.62 hour / 1990 epochs  |
-|                   AMulti-GCLSTM-V3(G/DCI)                    |    patience 400    |   28.75334   | **31.23663** |          |  84.73 hour / 6355 epochs  |
+|                      STMeta-V1 (G/DCI)                       | `1-1-1-64-32-2-64` |   26.21625   |   31.39239   |  189521  | 138.15 hour / 8515 epochs  |
+|                      STMeta-V2 (G/DCI)                       |    patience 200    |   31.00440   |   38.20912   |  180561  |  55.86 hour / 3981 epochs  |
+|                      STMeta-V2 (G/DCI)                       |    patience 400    |   30.05590   |   31.54766   |          | 138.45 hour / 10000 epochs |
+|                       STMeta-V3(G/DCI)                       |    patience 200    |   32.89818   |   36.90250   |  488447  |  18.62 hour / 1990 epochs  |
+|                       STMeta-V3(G/DCI)                       |    patience 400    |   28.75334   | **31.23663** |          |  84.73 hour / 6355 epochs  |
 
 
 
@@ -202,9 +202,9 @@ data_range:0.25，trainday=91(只用了91天的数据进行训练)
 |                         DCRNN(G/D C)                         |        ---         |   46.79165   |   65.71969   |  50368   | 165.58 hour / 19050 epochs |
 |                           LSTM(C)                            |   `1-64-32-2-64`   |   80.58508   |  104.60832   |          | 81.92 hour / 39999 epochs  |
 |                            TMeta                             |                    |   54.05859   |   53.17723   |          | 109.74 hour / 24069 epochs |
-|                   AMulti-GCLSTM-V1 (G/DCI)                   | `1-1-1-64-32-2-64` |   42.03588   |   49.46800   |  189521  | 84.38 hour / 10387 epochs  |
-|                   AMulti-GCLSTM-V2 (G/DCI)                   |                    |   43.22523   |   50.01080   |  180561  | 101.56 hour / 15000 epochs |
-|                   AMulti-GCLSTM-V3(G/DCI)                    |                    | **39.82692** | **48.95798** |  488447  |  53.57 hour / 7148 epochs  |
+|                      STMeta-V1 (G/DCI)                       | `1-1-1-64-32-2-64` |   42.03588   |   49.46800   |  189521  | 84.38 hour / 10387 epochs  |
+|                      STMeta-V2 (G/DCI)                       |                    |   43.22523   |   50.01080   |  180561  | 101.56 hour / 15000 epochs |
+|                       STMeta-V3(G/DCI)                       |                    | **39.82692** | **48.95798** |  488447  |  53.57 hour / 7148 epochs  |
 
 
 
@@ -218,9 +218,9 @@ data_range:0.25，trainday=91(只用了91天的数据进行训练)
 |                         DCRNN(G/D C)                         |         ---          |   93.04695   |  122.31121   |           |                           |
 |                           LSTM(C)                            |    `1-64-32-2-64`    |  252.75417   |  322.80864   |           | 25.73 hour / 24338 epochs |
 |                            TMeta                             |    `1-64-32-2-64`    |  130.06602   |  102.85933   |   62789   | 47.22 hour / 20000 epochs |
-|                   AMulti-GCLSTM-V1 (G/DCI)                   |  `1-1-1-64-32-2-64`  |   84.79937   |   97.87108   |  189521   | 81.89 hour / 19970 epochs |
-|                   AMulti-GCLSTM-V2 (G/DCI)                   | 未完全收敛$\Uparrow$ |   94.91725   |  106.41066   |  180561   | 69.72 hour / 20000 epochs |
-|                   AMulti-GCLSTM-V3(G/DCI)                    |                      | **88.32695** | **94.77593** |  488447   | 40.19 hour / 10004 epochs |
+|                      STMeta-V1 (G/DCI)                       |  `1-1-1-64-32-2-64`  |   84.79937   |   97.87108   |  189521   | 81.89 hour / 19970 epochs |
+|                      STMeta-V2 (G/DCI)                       | 未完全收敛$\Uparrow$ |   94.91725   |  106.41066   |  180561   | 69.72 hour / 20000 epochs |
+|                       STMeta-V3(G/DCI)                       |                      | **88.32695** | **94.77593** |  488447   | 40.19 hour / 10004 epochs |
 
 #### Shanghai
 
@@ -234,9 +234,9 @@ data_range:0.25，trainday=91(只用了91天的数据进行训练)
 |                         DCRNN(G/D C)                         |        ---         |   45.20041   |   56.00411   |          |        12.26 hour         |
 |                           LSTM(C)                            |   `1-64-32-2-64`   |   76.35862   |   80.40264   |          | 15.89 hour / 20000 epochs |
 |                            TMeta                             | `1-1-1-64-32-2-64` |   39.08379   |   45.88331   |  62789   | 11.62 hour / 9178 epochs  |
-|                   AMulti-GCLSTM-V1 (G/DCI)                   | `1-1-1-64-32-2-64` |   35.83386   |   41.66834   |  189521  | 87.67 hour / 20000 epochs |
-|                   AMulti-GCLSTM-V2 (G/DCI)                   |                    |   36.83883   |   43.82808   |  180561  | 48.30 hour / 14488 epochs |
-|                   AMulti-GCLSTM-V3(G/DCI)                    |                    | **35.16851** | **40.94003** |  488447  | 65.16 hour / 12285 epochs |
+|                      STMeta-V1 (G/DCI)                       | `1-1-1-64-32-2-64` |   35.83386   |   41.66834   |  189521  | 87.67 hour / 20000 epochs |
+|                      STMeta-V2 (G/DCI)                       |                    |   36.83883   |   43.82808   |  180561  | 48.30 hour / 14488 epochs |
+|                       STMeta-V3(G/DCI)                       |                    | **35.16851** | **40.94003** |  488447  | 65.16 hour / 12285 epochs |
 
 
 
@@ -250,9 +250,9 @@ data_range:0.25，trainday=91(只用了91天的数据进行训练)
 |                         DCRNN(G/D C)                         |        ---         |  101.32999   |  116.14510   |          |       17391 epochs        |
 |                           LSTM(C)                            |   `1-64-32-2-64`   |  191.47008   |  195.60097   |          | 6.40 hour / 20000 epochs  |
 |                            TMeta                             | `1-1-1-64-32-2-64` |   69.75494   |   85.19422   |  62789   | 10.95 hour / 20000 epochs |
-|                   AMulti-GCLSTM-V1 (G/DCI)                   | `1-1-1-64-32-2-64` |   64.99845   | **75.36282** |  189521  | 39.91 hour / 20000 epochs |
-|                   AMulti-GCLSTM-V2 (G/DCI)                   |                    |   67.29904   |   80.68939   |  180561  | 35.27 hour / 20000 epochs |
-|                   AMulti-GCLSTM-V3(G/DCI)                    |                    | **63.52363** |   77.48744   |  488447  |       19990 epochs        |
+|                      STMeta-V1 (G/DCI)                       | `1-1-1-64-32-2-64` |   64.99845   | **75.36282** |  189521  | 39.91 hour / 20000 epochs |
+|                      STMeta-V2 (G/DCI)                       |                    |   67.29904   |   80.68939   |  180561  | 35.27 hour / 20000 epochs |
+|                       STMeta-V3(G/DCI)                       |                    | **63.52363** |   77.48744   |  488447  |       19990 epochs        |
 
 
 
@@ -266,9 +266,9 @@ data_range:0.25，trainday=91(只用了91天的数据进行训练)
 |                         DCRNN(G/D C)                         |        ---         |   294.13925   |   340.25143   |          |       20000 epochs        |
 |                           LSTM(C)                            |   `1-64-32-2-64`   |   504.10371   |   506.07193   |          | 3.43 hour / 20000 epochs  |
 |                            TMeta                             | `1-1-1-64-32-2-64` |   138.43769   |   163.30525   |  62789   |  1.42 hour / 4633 epochs  |
-|                   AMulti-GCLSTM-V1 (G/DCI)                   | `1-1-1-64-32-2-64` |   125.13439   |   153.17380   |  189521  |  3.59 hour / 3226 epochs  |
-|                   AMulti-GCLSTM-V2 (G/DCI)                   |                    |   123.05446   |   149.05331   |  180561  | 15.21 hour / 17945 epochs |
-|                   AMulti-GCLSTM-V3(G/DCI)                    |                    |   117.82761   | **143.18166** |  488447  | 30.38 hour / 20000 epochs |
+|                      STMeta-V1 (G/DCI)                       | `1-1-1-64-32-2-64` |   125.13439   |   153.17380   |  189521  |  3.59 hour / 3226 epochs  |
+|                      STMeta-V2 (G/DCI)                       |                    |   123.05446   |   149.05331   |  180561  | 15.21 hour / 17945 epochs |
+|                       STMeta-V3(G/DCI)                       |                    |   117.82761   | **143.18166** |  488447  | 30.38 hour / 20000 epochs |
 
 
 
@@ -284,9 +284,9 @@ data_range:0.25，trainday=91(只用了91天的数据进行训练)
 |                         DCRNN(G/D C)                         |                    |   0.51312   |   0.75740   |  50368   |  0.76 hour / 699 epochs   |
 |                           LSTM(C)                            |   `1-64-32-2-64`   |   0.51263   |   0.75474   |  28992   | 14.20 hour / 15135 epochs |
 |                            TMeta                             |                    |   0.47808   |   0.68627   |  62789   | 27.48 hour / 20000 epochs |
-|                   AMulti-GCLSTM-V1 (G/DC)                    | `1-1-1-64-32-2-64` |   0.46154   |   0.66985   |  130379  | 16.48 hour / 4242 epochs  |
-|                   AMulti-GCLSTM-V2 (G/DC)                    |                    | **0.45733** | **0.66675** |  129867  | 48.30 hour / 15543 epochs |
-|                   AMulti-GCLSTM-V3 (G/DC)                    |                    |   0.46164   |   0.66966   |  488447  | 30.59 hour / 6990 epochs  |
+|                       STMeta-V1 (G/DC)                       | `1-1-1-64-32-2-64` |   0.46154   |   0.66985   |  130379  | 16.48 hour / 4242 epochs  |
+|                       STMeta-V2 (G/DC)                       |                    | **0.45733** | **0.66675** |  129867  | 48.30 hour / 15543 epochs |
+|                       STMeta-V3 (G/DC)                       |                    |   0.46164   |   0.66966   |  488447  | 30.59 hour / 6990 epochs  |
 
 
 
@@ -300,9 +300,9 @@ data_range:0.25，trainday=91(只用了91天的数据进行训练)
 |                         DCRNN(G/D C)                         |                    |   0.70646   |   0.98871   |   50368   | 7.20 hour / 10000 epochs  |
 |                           LSTM(C)                            |   `1-64-32-2-64`   |   0.71128   |   0.99865   |   28992   | 8.19 hour / 17309 epochs  |
 |                            TMeta                             |   `1-64-32-2-64`   |   0.60686   |   0.84018   |   62789   | 31.53 hour / 39999 epochs |
-|                   AMulti-GCLSTM-V1 (G/DC)                    | `1-1-1-64-32-2-64` |   0.58684   |   0.83100   |  130379   |  5.51 hour / 2648 epochs  |
-|                   AMulti-GCLSTM-V2 (G/DC)                    |                    | **0.57477** |   0.80701   |  129867   | 41.44 hour / 20000 epochs |
-|                   AMulti-GCLSTM-V3 (G/DC)                    |                    |   0.57685   | **0.80259** |  488447   | 23.76 hour / 10497 epochs |
+|                       STMeta-V1 (G/DC)                       | `1-1-1-64-32-2-64` |   0.58684   |   0.83100   |  130379   |  5.51 hour / 2648 epochs  |
+|                       STMeta-V2 (G/DC)                       |                    | **0.57477** |   0.80701   |  129867   | 41.44 hour / 20000 epochs |
+|                       STMeta-V3 (G/DC)                       |                    |   0.57685   | **0.80259** |  488447   | 23.76 hour / 10497 epochs |
 
 注：60mins的ST_MGCN方法误差较大，经检查正常收敛，batch_size和LSTMUnit进行了简单的搜索，rmse没有得到明显的下降。
 

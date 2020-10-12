@@ -36,6 +36,7 @@ Spatial knowledge evaluation (60-minute). The base model is STMeta-DCGRU-GAL. Th
 | Only Interaction/Same-line |      V3      | 7.36363  |   5.80832   | 6.35 hour / 27936 epochs |
 |    Aggregation Together    |      V3      | 7.14426  |   5.90812   | 3.37 hour / 2393 epochs  |
 |    Aggregation Together    | patience 700 | 6.97737  |   5.93810   | 6.45 hour / 4560 epochs  |
+|    Aggregation Together    | patience 500 | 7.09199  |   5.81854   | 7.72 hour / 4307 epochs  |
 
 |     **City: Chengdu**      |   Version    | val-rmse |  test-rmse  |      Converged Time      |
 | :------------------------: | :----------: | :------: | :---------: | :----------------------: |
@@ -76,11 +77,11 @@ Temporal abalation evaluation (60-minute). The base model is STMeta-DCGRU-GAL. T
 
 ### Results on Bike Dataset
 
-|       **City: NYC**        | Version | val-rmse | test-rmse | Converged Time |
-| :------------------------: | :-----: | :------: | :-------: | :------------: |
-|       Only Closeness       |   V3    |          |           |                |
-|     Closeness & Period     |   V3    |          |           |                |
-| Closeness & Period & Trend |   V3    |    --    |  3.52124  |  7438 epochs   |
+|       **City: NYC**        | Version | val-rmse |  test-rmse  |       Converged Time       |
+| :------------------------: | :-----: | :------: | :---------: | :------------------------: |
+|       Only Closeness       |   V3    | 2.38088  |   4.20527   | 298.35 hour / 20000 epochs |
+|     Closeness & Period     |   V3    | 2.23290  |   3.63138   | 113.66 hour / 3880 epochs  |
+| Closeness & Period & Trend |   V3    |    --    | **3.52124** |        7438 epochs         |
 
 |     **City: Chicago**      | Version | val-rmse |  test-rmse  | Converged Time |
 | :------------------------: | :-----: | :------: | :---------: | :------------: |
@@ -100,7 +101,7 @@ Temporal abalation evaluation (60-minute). The base model is STMeta-DCGRU-GAL. T
 | :------------------------: | :----------: | :------: | :---------: | :----------------------: |
 |       Only Closeness       |   V3    | 6.00043 | 6.77654 | 13.53 hour / 14464 epochs |
 |     Closeness & Period     |   V3    | 6.13271 | 6.03849 | 12.81 hour / 7437 epochs |
-| Closeness & Period & Trend | V3 patience 700 | **6.97737** |  **5.93810**  | 6.45 hour / 4560 epochs |
+| Closeness & Period & Trend | V3 patience 700 | 5.93810  | **5.81854** |  7.72 hour / 4307 epochs  |
 
 |     **City: Chengdu**      |   Version    | val-rmse |  test-rmse  |      Converged Time      |
 | :------------------------: | :----------: | :------: | :---------: | :----------------------: |
@@ -113,8 +114,8 @@ Temporal abalation evaluation (60-minute). The base model is STMeta-DCGRU-GAL. T
 |     **City: Shanghai**     | Version | val-rmse  |   test-rmse   |      Converged Time       |
 | :------------------------: | :-----: | :-------: | :----------: | :-----------------------: |
 |       Only Closeness       |   V3    | 286.59168 |   328.80800   | 18.86 hour / 18891 epochs |
-|     Closeness & Period     |   V3    | 105.21594 |   140.66922   | 37.01 hour / 20000 epochs |
-| Closeness & Period & Trend |   V3    | 117.82761 | **143.18166** | 30.38 hour / 20000 epochs |
+|     Closeness & Period     |   V3    | 105.21594 |   **140.66922**   | 37.01 hour / 20000 epochs |
+| Closeness & Period & Trend |   V3    | 117.82761 | 143.18166`未完全收敛` | 30.38 hour / 20000 epochs |
 
 |    **City: Chongqing**     | Version | val-rmse  |  test-rmse   |      Converged Time       |
 | :------------------------: | :-----: | :-------: | :----------: | :-----------------------: |
@@ -129,3 +130,11 @@ Temporal abalation evaluation (60-minute). The base model is STMeta-DCGRU-GAL. T
 |       Only Closeness       |   V3    | 2.33941 | 3.42340 | 0.59 hour / 75 epochs |
 |     Closeness & Period     |   V3    | 0.57576 | 0.80900 | 12.81 hour / 4474 epochs |
 | Closeness & Period & Trend |   V3    | 0.57685  | **0.80259** | 23.76 hour / 10497 epochs |
+
+### Results on EV Dataset
+
+|     **City: METR-LA**      | Version | val-rmse |  test-rmse  |     Converged Time      |
+| :------------------------: | :-----: | :------: | :---------: | :---------------------: |
+|       Only Closeness       |   V3    | 11.33555 |  10.67190   | 2.69 hour / 1785 epochs |
+|     Closeness & Period     |   V3    | 10.66494 |  10.11732   | 2.97 hour / 1475 epochs |
+| Closeness & Period & Trend |   V3    | 6.33248  | **8.99345** | 0.80 hour / 2387 epochs |

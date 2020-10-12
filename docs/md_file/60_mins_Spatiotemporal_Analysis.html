@@ -99,6 +99,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#id2">Results on DiDi Dataset</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#id3">Results on Metro Dataset</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#id4">Results on EV Dataset</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id5">Results on EV Dataset</a></li>
 </ul>
 </li>
 </ul>
@@ -344,6 +345,13 @@
 <td align="center">5.93810</td>
 <td align="center">6.45 hour / 4560 epochs</td>
 </tr>
+<tr>
+<td align="center">Aggregation Together</td>
+<td align="center">patience 500</td>
+<td align="center">7.09199</td>
+<td align="center">5.81854</td>
+<td align="center">7.72 hour / 4307 epochs</td>
+</tr>
 </tbody>
 </table><table border="1" class="docutils">
 <thead>
@@ -539,22 +547,22 @@
 <tr>
 <td align="center">Only Closeness</td>
 <td align="center">V3</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">2.38088</td>
+<td align="center">4.20527</td>
+<td align="center">298.35 hour / 20000 epochs</td>
 </tr>
 <tr>
 <td align="center">Closeness &amp; Period</td>
 <td align="center">V3</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">2.23290</td>
+<td align="center">3.63138</td>
+<td align="center">113.66 hour / 3880 epochs</td>
 </tr>
 <tr>
 <td align="center">Closeness &amp; Period &amp; Trend</td>
 <td align="center">V3</td>
 <td align="center">--</td>
-<td align="center">3.52124</td>
+<td align="center"><strong>3.52124</strong></td>
 <td align="center">7438 epochs</td>
 </tr>
 </tbody>
@@ -655,9 +663,9 @@
 <tr>
 <td align="center">Closeness &amp; Period &amp; Trend</td>
 <td align="center">V3 patience 700</td>
-<td align="center"><strong>6.97737</strong></td>
-<td align="center"><strong>5.93810</strong></td>
-<td align="center">6.45 hour / 4560 epochs</td>
+<td align="center">5.93810</td>
+<td align="center"><strong>5.81854</strong></td>
+<td align="center">7.72 hour / 4307 epochs</td>
 </tr>
 </tbody>
 </table><table border="1" class="docutils">
@@ -718,14 +726,14 @@
 <td align="center">Closeness &amp; Period</td>
 <td align="center">V3</td>
 <td align="center">105.21594</td>
-<td align="center">140.66922</td>
+<td align="center"><strong>140.66922</strong></td>
 <td align="center">37.01 hour / 20000 epochs</td>
 </tr>
 <tr>
 <td align="center">Closeness &amp; Period &amp; Trend</td>
 <td align="center">V3</td>
 <td align="center">117.82761</td>
-<td align="center"><strong>143.18166</strong></td>
+<td align="center">143.18166<code>未完全收敛</code></td>
 <td align="center">30.38 hour / 20000 epochs</td>
 </tr>
 </tbody>
@@ -796,6 +804,42 @@
 <td align="center">0.57685</td>
 <td align="center"><strong>0.80259</strong></td>
 <td align="center">23.76 hour / 10497 epochs</td>
+</tr>
+</tbody>
+</table></div>
+<div class="section" id="id5">
+<h3>Results on EV Dataset<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th align="center"><strong>City: METR-LA</strong></th>
+<th align="center">Version</th>
+<th align="center">val-rmse</th>
+<th align="center">test-rmse</th>
+<th align="center">Converged Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Only Closeness</td>
+<td align="center">V3</td>
+<td align="center">11.33555</td>
+<td align="center">10.67190</td>
+<td align="center">2.69 hour / 1785 epochs</td>
+</tr>
+<tr>
+<td align="center">Closeness &amp; Period</td>
+<td align="center">V3</td>
+<td align="center">10.66494</td>
+<td align="center">10.11732</td>
+<td align="center">2.97 hour / 1475 epochs</td>
+</tr>
+<tr>
+<td align="center">Closeness &amp; Period &amp; Trend</td>
+<td align="center">V3</td>
+<td align="center">6.33248</td>
+<td align="center"><strong>8.99345</strong></td>
+<td align="center">0.80 hour / 2387 epochs</td>
 </tr>
 </tbody>
 </table></div>
