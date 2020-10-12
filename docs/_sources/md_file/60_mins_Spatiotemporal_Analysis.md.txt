@@ -29,14 +29,15 @@ Spatial knowledge evaluation (60-minute). The base model is STMeta-DCGRU-GAL. Th
 
 ### Results on DiDi Dataset
 
-|       **City: Xian**       |   Version    | val-rmse |  test-rmse  |      Converged Time      |
-| :------------------------: | :----------: | :------: | :---------: | :----------------------: |
-|     Only Functionality     |      V3      | 7.23334  |   5.80516   | 2.33 hour / 7982 epochs  |
-|       Only Proximity       |      V3      | 7.07511  | **5.78975** | 6.31 hour / 46461 epochs |
-| Only Interaction/Same-line |      V3      | 7.36363  |   5.80832   | 6.35 hour / 27936 epochs |
-|    Aggregation Together    |      V3      | 7.14426  |   5.90812   | 3.37 hour / 2393 epochs  |
-|    Aggregation Together    | patience 700 | 6.97737  |   5.93810   | 6.45 hour / 4560 epochs  |
-|    Aggregation Together    | patience 500 | 7.09199  |   5.81854   | 7.72 hour / 4307 epochs  |
+|       **City: Xian**        |   Version    | val-rmse |  test-rmse  |      Converged Time      |
+| :-------------------------: | :----------: | :------: | :---------: | :----------------------: |
+|     Only Functionality      |      V3      | 7.23334  |   5.80516   | 2.33 hour / 7982 epochs  |
+|       Only Proximity        |      V3      | 7.07511  | **5.78975** | 6.31 hour / 46461 epochs |
+| Only Interaction/Same-line  |      V3      | 7.36363  |   5.80832   | 6.35 hour / 27936 epochs |
+| Aggregation Together`Check` |      V3      | 7.14426  |   5.90812   | 3.37 hour / 2393 epochs  |
+|    Aggregation Together     | patience 700 | 6.97737  |   5.93810   | 6.45 hour / 4560 epochs  |
+|    Aggregation Together     | patience 500 | 7.09199  |   5.81854   | 7.72 hour / 4307 epochs  |
+|    Aggregation Together     |    BS 32     |  `运行`  |             |                          |
 
 |     **City: Chengdu**      |   Version    | val-rmse |  test-rmse  |      Converged Time      |
 | :------------------------: | :----------: | :------: | :---------: | :----------------------: |
@@ -55,12 +56,12 @@ Spatial knowledge evaluation (60-minute). The base model is STMeta-DCGRU-GAL. Th
 | Only Interaction/Same-line |   V3    | 123.43643 |   151.37936   | 7.05 hour / 20000 epochs  |
 |    Aggregation Together    |   V3    | 117.82761 | **143.18166** | 30.38 hour / 20000 epochs |
 
-|    **City: Chongqing**     | Version | val-rmse  |  test-rmse   |      Converged Time       |
-| :------------------------: | :-----: | :-------: | :----------: | :-----------------------: |
-|     Only Functionality     |   V3    | 129.72735 |  114.56845   | 8.66 hour / 10000 epochs  |
-|       Only Proximity       |   V3    | 144.16608 |  106.26378   | 8.67 hour / 10000 epochs  |
-| Only Interaction/Same-line |   V3    | 150.75353 |  110.13376   | 8.38 hour / 10000 epochs  |
-|    Aggregation Together    |   V3    | 88.32695  | **94.77593** | 40.19 hour / 10004 epochs |
+|        **City: Chongqing**         | Version | val-rmse  |  test-rmse   |      Converged Time       |
+| :--------------------------------: | :-----: | :-------: | :----------: | :-----------------------: |
+|     Only Functionality`未收敛`     |   V3    | 129.72735 |  114.56845   | 8.66 hour / 10000 epochs  |
+|       Only Proximity`未收敛`       |   V3    | 144.16608 |  106.26378   | 8.67 hour / 10000 epochs  |
+| Only Interaction/Same-line`未收敛` |   V3    | 150.75353 |  110.13376   | 8.38 hour / 10000 epochs  |
+|        Aggregation Together        |   V3    | 88.32695  | **94.77593** | 40.19 hour / 10004 epochs |
 
 ### Results on EV Dataset
 
