@@ -4,7 +4,15 @@
 
 Spatial knowledge evaluation (60-minute). The base model is STMeta-DCGRU-GAL. The best result is in bold.
 
-### Results on Bike Dataset
+**Bike**: NYC
+
+**Ridesharing** : Chengdu
+
+**Metro**: Shanghai
+
+**EV**: Beijing
+
+###Results on Bike Dataset
 
 |       **City: NYC**        | Version | val-rmse |  test-rmse  |     Converged Time      |
 | :------------------------: | :-----: | :------: | :---------: | :---------------------: |
@@ -37,7 +45,7 @@ Spatial knowledge evaluation (60-minute). The base model is STMeta-DCGRU-GAL. Th
 | Aggregation Together`Check` |      V3      | 7.14426  |   5.90812   | 3.37 hour / 2393 epochs  |
 |    Aggregation Together     | patience 700 | 6.97737  |   5.93810   | 6.45 hour / 4560 epochs  |
 |    Aggregation Together     | patience 500 | 7.09199  |   5.81854   | 7.72 hour / 4307 epochs  |
-|    Aggregation Together     |    BS 32     |  `运行`  |             |                          |
+|    Aggregation Together     |    BS 32     | 6.74762  |   5.84699   | 10.46 hour / 6320 epochs |
 
 |     **City: Chengdu**      |   Version    | val-rmse |  test-rmse  |      Converged Time      |
 | :------------------------: | :----------: | :------: | :---------: | :----------------------: |
@@ -63,6 +71,8 @@ Spatial knowledge evaluation (60-minute). The base model is STMeta-DCGRU-GAL. Th
 | Only Interaction/Same-line`未收敛` |   V3    | 150.75353 |  110.13376   | 8.38 hour / 10000 epochs  |
 |        Aggregation Together        |   V3    | 88.32695  | **94.77593** | 40.19 hour / 10004 epochs |
 
+**Original model is in IE edge explorer.**
+
 ### Results on EV Dataset
 
 |     **City: Beijing**      | Version | val-rmse |  test-rmse  |      Converged Time       |
@@ -71,6 +81,15 @@ Spatial knowledge evaluation (60-minute). The base model is STMeta-DCGRU-GAL. Th
 |       Only Proximity       |   V3    | 0.60764  |   0.83504   | 12.69 hour / 15189 epochs |
 | Only Interaction/Same-line |   V3    |    -     |      -      |             -             |
 |    Aggregation Together    |   V3    | 0.57685  | **0.80259** | 23.76 hour / 10497 epochs |
+
+### Results on Traffic Speed Dataset
+
+|     **City: METR-LA**      | Version | val-rmse |  test-rmse  |     Converged Time      |
+| :------------------------: | :-----: | :------: | :---------: | :---------------------: |
+|     Only Functionality     |   V3    | 10.71416 |  10.14918   | 1.15 hour / 1377 epochs |
+|       Only Proximity       |   V3    | 10.76365 |  10.16790   | 1.27 hour / 1577 epochs |
+| Only Interaction/Same-line |   V3    |    -     |      -      |            -            |
+|    Aggregation Together    |   V3    | 6.33248  | **8.99345** | 0.80 hour / 2387 epochs |
 
 ## 60 mins Temporal Abalation
 
@@ -132,7 +151,7 @@ Temporal abalation evaluation (60-minute). The base model is STMeta-DCGRU-GAL. T
 |     Closeness & Period     |   V3    | 0.57576 | 0.80900 | 12.81 hour / 4474 epochs |
 | Closeness & Period & Trend |   V3    | 0.57685  | **0.80259** | 23.76 hour / 10497 epochs |
 
-### Results on EV Dataset
+### Results on Traffic Speed Dataset
 
 |     **City: METR-LA**      | Version | val-rmse |  test-rmse  |     Converged Time      |
 | :------------------------: | :-----: | :------: | :---------: | :---------------------: |
