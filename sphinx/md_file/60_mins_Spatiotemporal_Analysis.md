@@ -66,9 +66,9 @@ Spatial knowledge evaluation (60-minute). The base model is STMeta-DCGRU-GAL. Th
 
 |        **City: Chongqing**         | Version | val-rmse  |  test-rmse   |      Converged Time       |
 | :--------------------------------: | :-----: | :-------: | :----------: | :-----------------------: |
-|     Only Functionality`未收敛`     |   V3    | 129.72735 |  114.56845   | 8.66 hour / 10000 epochs  |
-|       Only Proximity`未收敛`       |   V3    | 144.16608 |  106.26378   | 8.67 hour / 10000 epochs  |
-| Only Interaction/Same-line`未收敛` |   V3    | 150.75353 |  110.13376   | 8.38 hour / 10000 epochs  |
+|     Only Functionality`未收敛`     |   V3    | 113.22169 |  111.65962   | 36.32 hour / 40000 epochs |
+|       Only Proximity`未收敛`       |   V3    | 114.94363 |   95.24240   | 37.36 hour / 40000 epochs |
+| Only Interaction/Same-line`未收敛` |   V3    | 123.61437 |  101.43041   | 24.71 hour / 30000 epochs |
 |        Aggregation Together        |   V3    | 88.32695  | **94.77593** | 40.19 hour / 10004 epochs |
 
 **Original model is in IE edge explorer.**
@@ -91,6 +91,8 @@ Spatial knowledge evaluation (60-minute). The base model is STMeta-DCGRU-GAL. Th
 | Only Interaction/Same-line |   V3    |    -     |      -      |            -            |
 |    Aggregation Together    |   V3    | 6.33248  | **8.99345** | 0.80 hour / 2387 epochs |
 
+
+
 ## 60 mins Temporal Abalation
 
 Temporal abalation evaluation (60-minute). The base model is STMeta-DCGRU-GAL. The best result is in bold.
@@ -109,11 +111,11 @@ Temporal abalation evaluation (60-minute). The base model is STMeta-DCGRU-GAL. T
 |     Closeness & Period     |   V3    |          |             |                |
 | Closeness & Period & Trend |   V3    |    -     | **2.65204** |  4403 epochs   |
 
-|       **City: DC **        | Version | val-rmse | test-rmse | Converged Time |
-| :------------------------: | :-----: | :------: | :-------: | :------------: |
-|       Only Closeness       |   V3    |          |           |                |
-|     Closeness & Period     |   V3    |          |           |                |
-| Closeness & Period & Trend |   V3    |    -     |  2.42338  |  2993 epochs   |
+|       **City: DC **        | Version | val-rmse | test-rmse |      Converged Time      |
+| :------------------------: | :-----: | :------: | :-------: | :----------------------: |
+|       Only Closeness       |   V3    |          |           |                          |
+|     Closeness & Period     |   V3    | 1.61124  |  2.48293  | 26.68 hour / 1658 epochs |
+| Closeness & Period & Trend |   V3    |    -     |  2.42338  |       2993 epochs        |
 
 ### Results on DiDi Dataset
 
@@ -135,7 +137,7 @@ Temporal abalation evaluation (60-minute). The base model is STMeta-DCGRU-GAL. T
 | :------------------------: | :-----: | :-------: | :----------: | :-----------------------: |
 |       Only Closeness       |   V3    | 286.59168 |   328.80800   | 18.86 hour / 18891 epochs |
 |     Closeness & Period     |   V3    | 105.21594 |   **140.66922**   | 37.01 hour / 20000 epochs |
-| Closeness & Period & Trend |   V3    | 117.82761 | 143.18166`未完全收敛` | 30.38 hour / 20000 epochs |
+| Closeness & Period & Trend |   V3    | 117.82761 | 143.18166 | 30.38 hour / 20000 epochs |
 
 |    **City: Chongqing**     | Version | val-rmse  |  test-rmse   |      Converged Time       |
 | :------------------------: | :-----: | :-------: | :----------: | :-----------------------: |
@@ -158,3 +160,4 @@ Temporal abalation evaluation (60-minute). The base model is STMeta-DCGRU-GAL. T
 |       Only Closeness       |   V3    | 11.33555 |  10.67190   | 2.69 hour / 1785 epochs |
 |     Closeness & Period     |   V3    | 10.66494 |  10.11732   | 2.97 hour / 1475 epochs |
 | Closeness & Period & Trend |   V3    | 6.33248  | **8.99345** | 0.80 hour / 2387 epochs |
+
