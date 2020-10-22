@@ -64,12 +64,12 @@ Spatial knowledge evaluation (60-minute). The base model is STMeta-DCGRU-GAL. Th
 | Only Interaction/Same-line |   V3    | 123.43643 |   151.37936   | 7.05 hour / 20000 epochs  |
 |    Aggregation Together    |   V3    | 117.82761 | **143.18166** | 30.38 hour / 20000 epochs |
 
-|        **City: Chongqing**         | Version | val-rmse  |  test-rmse   |      Converged Time       |
-| :--------------------------------: | :-----: | :-------: | :----------: | :-----------------------: |
-|     Only Functionality`未收敛`     |   V3    | 113.22169 |  111.65962   | 36.32 hour / 40000 epochs |
-|       Only Proximity`未收敛`       |   V3    | 114.94363 |   95.24240   | 37.36 hour / 40000 epochs |
-| Only Interaction/Same-line`未收敛` |   V3    | 123.61437 |  101.43041   | 24.71 hour / 30000 epochs |
-|        Aggregation Together        |   V3    | 88.32695  | **94.77593** | 40.19 hour / 10004 epochs |
+|    **City: Chongqing**     | Version | val-rmse  |  test-rmse   |      Converged Time       |
+| :------------------------: | :-----: | :-------: | :----------: | :-----------------------: |
+|     Only Functionality     |   V3    | 106.82661 |  108.74125   |       50001 epochs        |
+|       Only Proximity       |   V3    | 107.63113 | **94.31738** |       50002 epochs        |
+| Only Interaction/Same-line |   V3    | 123.61437 |  101.43041   | 24.71 hour / 30000 epochs |
+|    Aggregation Together    |   V3    | 88.32695  |   94.77593   | 40.19 hour / 10004 epochs |
 
 **Original model is in IE edge explorer.**
 
