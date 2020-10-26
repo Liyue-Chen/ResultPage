@@ -1,0 +1,503 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Train Day Length Analysis &mdash; ResultPage  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="External Feature Ablation Results" href="Context/Context_60mins_abalation.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> ResultPage
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../STMeta.html">Welcome to STMeta Result Pages!</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Context.html">Welcome to Context Result Pages!</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Train Day Length Analysis</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#mins-train-day">60 mins train day</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#results-on-bike-dataset">Results on Bike Dataset</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">ResultPage</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Train Day Length Analysis</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/md_file/Train_day_length.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="train-day-length-analysis">
+<h1>Train Day Length Analysis<a class="headerlink" href="#train-day-length-analysis" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="mins-train-day">
+<h2>60 mins train day<a class="headerlink" href="#mins-train-day" title="Permalink to this headline">¶</a></h2>
+<p>The base model is <strong>STMeta-DCGRU-GAL</strong>. The best result is in bold. 原始数据的粒度为60 mins, data_range指定为0.25，时间跨度为一年多一点，context建模方法为$Raw-Gating$ 方法</p>
+<div class="section" id="results-on-bike-dataset">
+<h3>Results on Bike Dataset<a class="headerlink" href="#results-on-bike-dataset" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th align="center"><strong>City: DC</strong></th>
+<th align="center">Days</th>
+<th align="center">val-rmse</th>
+<th align="center">test-rmse</th>
+<th align="center">Converged Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">STMeta-V3-Context</td>
+<td align="center">7</td>
+<td align="center">1.7463906</td>
+<td align="center">5.73942279</td>
+<td align="center">0.05 hour / 433 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-V3-Context</td>
+<td align="center">28</td>
+<td align="center">3.0149283</td>
+<td align="center">2.82652771</td>
+<td align="center">0.72 hour / 1468 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-V3-Context</td>
+<td align="center">49</td>
+<td align="center">2.508105</td>
+<td align="center">2.666094606</td>
+<td align="center">0.84 hour / 626 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-V3-Context</td>
+<td align="center">70</td>
+<td align="center">2.4044392</td>
+<td align="center">2.5581854</td>
+<td align="center">1.36 hour / 517 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-V3-Context</td>
+<td align="center">91</td>
+<td align="center">2.3253407</td>
+<td align="center">2.5347000025848483</td>
+<td align="center">3.72 hour / 1097 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-V3-Context</td>
+<td align="center">112</td>
+<td align="center">2.4781277</td>
+<td align="center">2.5241638</td>
+<td align="center">4.99 hour / 1128 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-V3-Context</td>
+<td align="center">133</td>
+<td align="center">2.4233427</td>
+<td align="center">2.527435054</td>
+<td align="center">10.45 hour / 1968 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-V3-Context</td>
+<td align="center">154</td>
+<td align="center">2.3952448</td>
+<td align="center">2.536095507</td>
+<td align="center">6.91 hour / 1048 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-V3-Context</td>
+<td align="center">196</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-V3-Context</td>
+<td align="center">259</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-V3-Context</td>
+<td align="center">322</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-V3-Context</td>
+<td align="center">385</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table><table border="1" class="docutils">
+<thead>
+<tr>
+<th align="center"><strong>City: DC</strong></th>
+<th align="center">Days</th>
+<th align="center">val-rmse</th>
+<th align="center">test-rmse</th>
+<th align="center">Converged Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">STMeta-V3-w/o context</td>
+<td align="center">7</td>
+<td align="center">1.8131874</td>
+<td align="center">3.2362974739</td>
+<td align="center">0.04 hour / 314 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-V3-w/o context</td>
+<td align="center">28</td>
+<td align="center">2.9178348</td>
+<td align="center">2.6315900720</td>
+<td align="center">0.18 hour / 304 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-V3-w/o context</td>
+<td align="center">49</td>
+<td align="center">2.5159404</td>
+<td align="center">2.4994903</td>
+<td align="center">0.55 hour / 371 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-V3-w/o context</td>
+<td align="center">70</td>
+<td align="center">2.3288496</td>
+<td align="center">2.46409958</td>
+<td align="center">6.76 hour / 3035 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-V3-w/o context</td>
+<td align="center">91</td>
+<td align="center">2.4020553</td>
+<td align="center">2.52117001</td>
+<td align="center">0.81 hour / 167 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-V3-w/o context</td>
+<td align="center">112</td>
+<td align="center">2.4351285</td>
+<td align="center">2.4607768254</td>
+<td align="center">24.24 hour / 5766 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-V3-w/o context</td>
+<td align="center">133</td>
+<td align="center">2.4213538</td>
+<td align="center">2.461727915</td>
+<td align="center">10.50 hour / 1952 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-V3-w/o context</td>
+<td align="center">154</td>
+<td align="center">2.3805287</td>
+<td align="center">2.4872454319</td>
+<td align="center">45.22 hour / 7253 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-V3-w/o context</td>
+<td align="center">196</td>
+<td align="center">2.442964</td>
+<td align="center">2.487856267</td>
+<td align="center">26.78 hour / 3190 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-V3-w/o context</td>
+<td align="center">259</td>
+<td align="center">2.5098527</td>
+<td align="center">2.496907828</td>
+<td align="center">76.00 hour / 6757 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-V3-w/o context</td>
+<td align="center">322</td>
+<td align="center">2.47380803</td>
+<td align="center">2.46645875</td>
+<td align="center">53.81 hour / 3728 epochs</td>
+</tr>
+<tr>
+<td align="center">STMeta-V3-w/o context</td>
+<td align="center">385</td>
+<td align="center">2.44229955285</td>
+<td align="center">2.478165765</td>
+<td align="center">97.09 hour / 6453 epochs</td>
+</tr>
+</tbody>
+</table><table border="1" class="docutils">
+<thead>
+<tr>
+<th align="center"><strong>City: template</strong></th>
+<th align="center">Days</th>
+<th align="center">val-rmse</th>
+<th align="center">test-rmse</th>
+<th align="center">Converged Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">STMeta-V3-Context</td>
+<td align="center">7</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-V3-Context</td>
+<td align="center">28</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-V3-Context</td>
+<td align="center">49</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-V3-Context</td>
+<td align="center">70</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-V3-Context</td>
+<td align="center">91</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-V3-Context</td>
+<td align="center">112</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-V3-Context</td>
+<td align="center">133</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-V3-Context</td>
+<td align="center">154</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-V3-Context</td>
+<td align="center">196</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-V3-Context</td>
+<td align="center">259</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-V3-Context</td>
+<td align="center">322</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">STMeta-V3-Context</td>
+<td align="center">385</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="Context/Context_60mins_abalation.html" class="btn btn-neutral float-left" title="External Feature Ablation Results" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, UCTB group
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
