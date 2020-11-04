@@ -85,12 +85,12 @@ Spatial knowledge evaluation (60-minute). The base model is STMeta-DCGRU-GAL. Th
 | Only Interaction/Same-line |     V3     |    -     |      -      |            -            |
 |    Aggregation Together    |     V3     | 6.33248  | **8.99345** | 0.80 hour / 2387 epochs |
 
-|     **City: PEMS-BAY**     | Version | val-rmse |  test-rmse  |     Converged Time      |
-| :------------------------: | :-----: | :------: | :---------: | :---------------------: |
-|     Only Functionality     |   V3    | RUNNING  | DUAL 2080Ti |                         |
-|       Only Proximity       |   V3    |          |             |                         |
-| Only Interaction/Same-line |   V3    |    -     |      -      |            -            |
-|    Aggregation Together    |   V3    | 7.05142  |   3.49954   | 6.88 hour / 7573 epochs |
+|     **City: PEMS-BAY**     | Version | val-rmse |  test-rmse  |      Converged Time       |
+| :------------------------: | :-----: | :------: | :---------: | :-----------------------: |
+|     Only Functionality     |   V3    | 3.50101  |   3.42625   | 17.57 hour / 10000 epochs |
+|       Only Proximity       |   V3    | 3.48891  |   3.45365   | 17.71 hour / 10000 epochs |
+| Only Interaction/Same-line |   V3    |    -     |      -      |             -             |
+|    Aggregation Together    |   V3    | 3.29037  | **3.39171** | 92.00 hour / 20830 epochs |
 
 ## 60 mins Temporal Abalation
 
@@ -104,11 +104,11 @@ Temporal abalation evaluation (60-minute). The base model is STMeta-DCGRU-GAL. T
 |     Closeness & Period     |   V3    | 2.23290  |   3.63138   | 113.66 hour / 3880 epochs  |
 | Closeness & Period & Trend |   V3    |    --    | **3.52124** |        7438 epochs         |
 
-|     **City: Chicago**      | Version | val-rmse |  test-rmse  |      Converged Time       |
-| :------------------------: | :-----: | :------: | :---------: | :-----------------------: |
-|       Only Closeness       |   V3    | running  |    `991`    |                           |
-|     Closeness & Period     |   V3    | 1.20951  |   2.72191   | 110.70 hour / 5999 epochs |
-| Closeness & Period & Trend |   V3    |    -     | **2.65204** |        4403 epochs        |
+|     **City: Chicago**      | Version | val-rmse |  test-rmse  |       Converged Time       |
+| :------------------------: | :-----: | :------: | :---------: | :------------------------: |
+|       Only Closeness       |   V3    | 2.19645  |   2.99774   | 132.18 hour / 14183 epochs |
+|     Closeness & Period     |   V3    | 1.20951  |   2.72191   | 110.70 hour / 5999 epochs  |
+| Closeness & Period & Trend |   V3    |    -     | **2.65204** |        4403 epochs         |
 
 |       **City: DC **        | Version | val-rmse |  test-rmse  |       Converged Time       |
 | :------------------------: | :-----: | :------: | :---------: | :------------------------: |
@@ -160,8 +160,8 @@ Temporal abalation evaluation (60-minute). The base model is STMeta-DCGRU-GAL. T
 |     Closeness & Period     |   V3    | 10.66494 |  10.11732   | 2.97 hour / 1475 epochs |
 | Closeness & Period & Trend |   V3    | 6.33248  | **8.99345** | 0.80 hour / 2387 epochs |
 
-|     **City: PEMS-BAY**     | Version | val-rmse |    test-rmse    |     Converged Time      |
-| :------------------------: | :-----: | :------: | :-------------: | :---------------------: |
-|       Only Closeness       |   V3    | running  | `2080 notebook` |                         |
-|     Closeness & Period     |   V3    |          |                 |                         |
-| Closeness & Period & Trend |   V3    | 7.05142  |     3.49954     | 6.88 hour / 7573 epochs |
+|     **City: PEMS-BAY**     | Version | val-rmse |  test-rmse  |      Converged Time       |
+| :------------------------: | :-----: | :------: | :---------: | :-----------------------: |
+|       Only Closeness       |   V3    | 3.88880  |   3.74053   | 20.66 hour / 10000 epochs |
+|     Closeness & Period     |   V3    | 3.25786  | **3.28855** | 37.69 hour / 9994 epochs  |
+| Closeness & Period & Trend |   V3    | 3.29037  |   3.39171   | 92.00 hour / 20830 epochs |

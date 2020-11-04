@@ -36,7 +36,7 @@
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Spatiotemporal Analysis" href="STMeta_spatiotemporal_analysis.html" />
-    <link rel="prev" title="Welcome to STMeta Result Pages!" href="../../STMeta.html" /> 
+    <link rel="prev" title="STMeta Result Pages" href="../../STMeta.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -82,7 +82,7 @@
             
               <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="../../STMeta.html">Welcome to STMeta Result Pages!</a><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../STMeta.html">STMeta Result Pages</a><ul class="current">
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Results on Different Datasets</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#results-on-bike">Results on Bike</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#results-on-didi">Results on DiDi</a><ul>
@@ -107,7 +107,7 @@
 <li class="toctree-l2"><a class="reference internal" href="STMeta_all_results_time.html">Time Cost on Different Datasets</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../Context.html">Welcome to Context Result Pages!</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Context.html">Context Result Page</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Train_day_length.html">Train Day Length Analysis</a></li>
 </ul>
 
@@ -154,7 +154,7 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-          <li><a href="../../STMeta.html">Welcome to STMeta Result Pages!</a> &raquo;</li>
+          <li><a href="../../STMeta.html">STMeta Result Pages</a> &raquo;</li>
         
       <li>Results on Different Datasets</li>
     
@@ -181,7 +181,7 @@
 <p><strong>只有DCRNN 60mins的实验不必重新跑</strong>(重新跑60mins的实验，结果会有细微的区别，这可能是由处理数据的细小误差，或者Merge的时候数据精度决定的)</p>
 <div class="section" id="results-on-bike">
 <h2>Results on Bike<a class="headerlink" href="#results-on-bike" title="Permalink to this headline">¶</a></h2>
-<p>**5 mins setting data_range:0.125，trainday=30(取前1/8的数据，只用其中30天的数据进行训练) **</p>
+<p>**5 mins setting data_range:0.125，trainday=60(取前1/8的数据，只用其中30天的数据进行训练) **</p>
 <table border="1" class="docutils">
 <thead>
 <tr>
@@ -237,38 +237,38 @@
 </tr>
 <tr>
 <td align="center">LSTM (C)</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">1.09245</td>
+<td align="center">1.13370</td>
+<td align="center">1.98413</td>
+<td align="center">1.20 hour / 135 epochsⅠ<br />1.97 hour / 423 epochsⅡ<br />0.11 hour / 226 epochsⅢ</td>
 </tr>
 <tr>
 <td align="center">TMeta-LSTM-GAL</td>
-<td align="center">running <code>old 2080Ti</code></td>
-<td align="center"></td>
-<td align="center">running <code>410</code></td>
-<td align="center"></td>
+<td align="center">1.08471</td>
+<td align="center">1.13760</td>
+<td align="center">1.91510</td>
+<td align="center">4.87 hour / 666 epochsⅠ<br />2.58 hour / 359 epochsⅡ<br />0.25 hour / 436 epochsⅢ</td>
 </tr>
 <tr>
 <td align="center">STMeta-V1</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">1.07651</td>
+<td align="center">1.11621</td>
+<td align="center">1.76058</td>
+<td align="center">46.08 hour / 1703 epochsⅠ<br />5.10 hour / 126 epochsⅡ<br />13.44 hour / 7969 epochsⅢ</td>
 </tr>
 <tr>
 <td align="center">STMeta-V2</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">1.08050</td>
+<td align="center">1.13592</td>
+<td align="center">1.82870</td>
+<td align="center">26.45 hour / 1201 epochs<br />3.24 hour / 57 epochsⅡ<br />1.00 hour / 644 epochsⅢ</td>
 </tr>
 <tr>
 <td align="center">STMeta-V3</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">1.07169</td>
+<td align="center">1.11769</td>
+<td align="center">1.76601</td>
+<td align="center">63.65 hour / 1537 epochs<br />7.81 hour / 173 epochsⅡ<br />2.23 hour / 866 epochsⅢ</td>
 </tr>
 </tbody>
 </table><p>**15 mins setting data_range:0.25，trainday=91(只用了91天的数据进行训练) **</p>
@@ -606,37 +606,37 @@
 <tr>
 <td align="center">LSTM (C)</td>
 <td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">1.70892</td>
+<td align="center">1.72004</td>
+<td align="center">1.81 hour / 999 epochs</td>
 </tr>
 <tr>
 <td align="center">TMeta-LSTM-GAL</td>
 <td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">1.58379</td>
+<td align="center">1.63673</td>
+<td align="center">5.20 hour / 1572 epochs</td>
 </tr>
 <tr>
 <td align="center">STMeta-V1</td>
 <td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">1.56940</td>
+<td align="center">1.63138</td>
+<td align="center">13.41 hour / 978 epochs</td>
 </tr>
 <tr>
 <td align="center">STMeta-V2</td>
 <td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">1.57257</td>
+<td align="center">1.63010</td>
+<td align="center">13.28 hour / 1231 epochs</td>
 </tr>
 <tr>
 <td align="center">STMeta-V3</td>
 <td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">1.57058</td>
+<td align="center"><strong>1.62423</strong></td>
+<td align="center">14.62 hour / 623 epochs</td>
 </tr>
 </tbody>
 </table><table border="1" class="docutils">
@@ -986,37 +986,37 @@
 <tr>
 <td align="center">LSTM (C)</td>
 <td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">2.07790</td>
+<td align="center">2.07850</td>
+<td align="center">29.77 hour / 12159 epochs</td>
 </tr>
 <tr>
 <td align="center">TMeta-LSTM-GAL</td>
 <td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">1.94822</td>
+<td align="center">1.95230</td>
+<td align="center">2.96 hour / 368 epochs</td>
 </tr>
 <tr>
 <td align="center">STMeta-V1</td>
 <td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">1.93298</td>
+<td align="center"><strong>1.94136</strong></td>
+<td align="center">22.93 hour / 1860 epochs</td>
 </tr>
 <tr>
 <td align="center">STMeta-V2</td>
 <td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">1.94308</td>
+<td align="center">1.94998</td>
+<td align="center">64.18 hour / 7471 epochs</td>
 </tr>
 <tr>
 <td align="center">STMeta-V3</td>
 <td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">1.93444</td>
+<td align="center">1.94929</td>
+<td align="center">13.11 hour / 366 epochs</td>
 </tr>
 </tbody>
 </table><table border="1" class="docutils">
@@ -1369,7 +1369,7 @@
 <tr>
 <td align="center">LSTM (C)</td>
 <td align="center"></td>
-<td align="center"></td>
+<td align="center"><code>running chaidi 1080Ti</code></td>
 <td align="center"></td>
 <td align="center"></td>
 </tr>
@@ -1786,7 +1786,7 @@
 <tr>
 <td align="center">LSTM (C)</td>
 <td align="center"></td>
-<td align="center"></td>
+<td align="center"><code>running dual 2080Ti</code></td>
 <td align="center"></td>
 <td align="center"></td>
 </tr>
@@ -2596,7 +2596,7 @@
 <tbody>
 <tr>
 <td align="center">HM``</td>
-<td align="center"></td>
+<td align="center"><code>running on 2080 notebook</code></td>
 <td align="center"></td>
 <td align="center"></td>
 </tr>
@@ -2887,9 +2887,9 @@
 </tr>
 <tr>
 <td align="center">STMeta-V3</td>
-<td align="center">7.05142</td>
-<td align="center">3.49954</td>
-<td align="center">6.88 hour / 7573 epochs</td>
+<td align="center">3.29037</td>
+<td align="center"><strong>3.39171</strong></td>
+<td align="center">92.00 hour / 20830 epochs</td>
 </tr>
 </tbody>
 </table></div>
@@ -2907,7 +2907,7 @@
         <a href="STMeta_spatiotemporal_analysis.html" class="btn btn-neutral float-right" title="Spatiotemporal Analysis" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../../STMeta.html" class="btn btn-neutral float-left" title="Welcome to STMeta Result Pages!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="../../STMeta.html" class="btn btn-neutral float-left" title="STMeta Result Pages" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
