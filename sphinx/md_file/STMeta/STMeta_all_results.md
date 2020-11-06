@@ -80,7 +80,9 @@
 
 ## Results on DiDi
 
-由于这两个数据集的时间维度均较短，datarange和trainday参数均为all（全部的数据）
+由于这两个数据集的时间维度均较短，datarange和trainday参数均为all (全部的数据).
+
+在5mins的粒度下，滴滴两个数据集ST_MGCN的效果比STMeta好得多
 
 #### Xi'an
 
@@ -90,13 +92,14 @@
 |                           ARIMA(C)                           |        |          |             |                          |
 |                           XGBoost                            |        |          |             |                          |
 |                             GBRT                             |        |          |             |                          |
-|                       ST_MGCN (G/DCI)                        |        |          |             |                          |
+|                          ST-ResNet                           |        | 1.18156  |   1.61597   |        0.32 hour         |
+|                       ST_MGCN (G/DCI)                        |        | 1.64811  | **1.19564** | 16.70 hour / 464 epochs  |
 |                         DCRNN(G/D C)                         |        |          |             |                          |
 |                           LSTM (C)                           |        | 1.70892  |   1.72004   |  1.81 hour / 999 epochs  |
 |                        TMeta-LSTM-GAL                        |        | 1.58379  |   1.63673   | 5.20 hour / 1572 epochs  |
 |                          STMeta-V1                           |        | 1.56940  |   1.63138   | 13.41 hour / 978 epochs  |
 |                          STMeta-V2                           |        | 1.57257  |   1.63010   | 13.28 hour / 1231 epochs |
-|                          STMeta-V3                           |        | 1.57058  | **1.62423** | 14.62 hour / 623 epochs  |
+|                          STMeta-V3                           |        | 1.57058  |   1.62423   | 14.62 hour / 623 epochs  |
 
 | <font color='red'>**City: Xi'an <br />Fitness: 15 mins**</font> |       Params       |  val-rmse   |  test-rmse  |      Converged Time       |
 | :----------------------------------------------------------: | :----------------: | :---------: | :---------: | :-----------------------: |
@@ -153,11 +156,12 @@
 |                           ARIMA(C)                           |        |          |             |                           |
 |                           XGBoost                            |        |          |             |                           |
 |                             GBRT                             |        |          |             |                           |
-|                       ST_MGCN (G/DCI)                        |        |          |             |                           |
+|                          ST-ResNet                           |        | 1.49047  |   1.95177   |         0.32 hour         |
+|                       ST_MGCN (G/DCI)                        |        | 1.95203  | **1.49627** |  14.60 hour / 393 epochs  |
 |                         DCRNN(G/D C)                         |        |          |             |                           |
 |                           LSTM (C)                           |        | 2.07790  |   2.07850   | 29.77 hour / 12159 epochs |
 |                        TMeta-LSTM-GAL                        |        | 1.94822  |   1.95230   |  2.96 hour / 368 epochs   |
-|                          STMeta-V1                           |        | 1.93298  | **1.94136** | 22.93 hour / 1860 epochs  |
+|                          STMeta-V1                           |        | 1.93298  |   1.94136   | 22.93 hour / 1860 epochs  |
 |                          STMeta-V2                           |        | 1.94308  |   1.94998   | 64.18 hour / 7471 epochs  |
 |                          STMeta-V3                           |        | 1.93444  |   1.94929   |  13.11 hour / 366 epochs  |
 

@@ -547,7 +547,8 @@
 </table></div>
 <div class="section" id="results-on-didi">
 <h2>Results on DiDi<a class="headerlink" href="#results-on-didi" title="Permalink to this headline">¶</a></h2>
-<p>由于这两个数据集的时间维度均较短，datarange和trainday参数均为all（全部的数据）</p>
+<p>由于这两个数据集的时间维度均较短，datarange和trainday参数均为all (全部的数据).</p>
+<p>在5mins的粒度下，滴滴两个数据集ST_MGCN的效果比STMeta好得多</p>
 <div class="section" id="xi-an">
 <h3>Xi’an<a class="headerlink" href="#xi-an" title="Permalink to this headline">¶</a></h3>
 <table border="1" class="docutils">
@@ -590,11 +591,18 @@
 <td align="center"></td>
 </tr>
 <tr>
+<td align="center">ST-ResNet</td>
+<td align="center"></td>
+<td align="center">1.18156</td>
+<td align="center">1.61597</td>
+<td align="center">0.32 hour</td>
+</tr>
+<tr>
 <td align="center">ST_MGCN (G/DCI)</td>
 <td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">1.64811</td>
+<td align="center"><strong>1.19564</strong></td>
+<td align="center">16.70 hour / 464 epochs</td>
 </tr>
 <tr>
 <td align="center">DCRNN(G/D C)</td>
@@ -635,7 +643,7 @@
 <td align="center">STMeta-V3</td>
 <td align="center"></td>
 <td align="center">1.57058</td>
-<td align="center"><strong>1.62423</strong></td>
+<td align="center">1.62423</td>
 <td align="center">14.62 hour / 623 epochs</td>
 </tr>
 </tbody>
@@ -970,11 +978,18 @@
 <td align="center"></td>
 </tr>
 <tr>
+<td align="center">ST-ResNet</td>
+<td align="center"></td>
+<td align="center">1.49047</td>
+<td align="center">1.95177</td>
+<td align="center">0.32 hour</td>
+</tr>
+<tr>
 <td align="center">ST_MGCN (G/DCI)</td>
 <td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">1.95203</td>
+<td align="center"><strong>1.49627</strong></td>
+<td align="center">14.60 hour / 393 epochs</td>
 </tr>
 <tr>
 <td align="center">DCRNN(G/D C)</td>
@@ -1001,7 +1016,7 @@
 <td align="center">STMeta-V1</td>
 <td align="center"></td>
 <td align="center">1.93298</td>
-<td align="center"><strong>1.94136</strong></td>
+<td align="center">1.94136</td>
 <td align="center">22.93 hour / 1860 epochs</td>
 </tr>
 <tr>
