@@ -12,3 +12,5 @@ Welcome to UCTB's Result Pages!
 
    md_file/Train_day_length.md
 
+   md_file/dynamicGraph/dynamic.md
+

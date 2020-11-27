@@ -8,19 +8,19 @@
 
 **5 mins setting data_range:0.125，trainday=60(取前1/8的数据，只用其中30天的数据进行训练) **
 
-| <font color='red'>**Fitness: 5 mins**</font> |     NYCⅠ      | ChicagoⅡ |   DCⅢ   |                        Converged Time                        |
-| :------------------------------------------: | :-----------: | :------: | :-----: | :----------------------------------------------------------: |
-|                      HM                      |               |          |         |                                                              |
-|                   ARIMA(C)                   |               |          |         |                                                              |
-|                   XGBoost                    |               |          |         |                                                              |
-|                     GBRT                     |               |          |         |                                                              |
-|               ST_MGCN (G/DCI)                | `lenovo 2080` |          |         |                                                              |
-|                 DCRNN(G/D C)                 |               |          |         |                                                              |
-|                   LSTM (C)                   |    1.09245    | 1.13370  | 1.98413 | 1.20 hour / 135 epochsⅠ<br />1.97 hour / 423 epochsⅡ<br />0.11 hour / 226 epochsⅢ |
-|                TMeta-LSTM-GAL                |    1.08471    | 1.13760  | 1.91510 | 4.87 hour / 666 epochsⅠ<br />2.58 hour / 359 epochsⅡ<br />0.25 hour / 436 epochsⅢ |
-|                  STMeta-V1                   |    1.07651    | 1.11621  | 1.76058 | 46.08 hour / 1703 epochsⅠ<br />5.10 hour / 126 epochsⅡ<br />13.44 hour / 7969 epochsⅢ |
-|                  STMeta-V2                   |    1.08050    | 1.13592  | 1.82870 | 26.45 hour / 1201 epochs<br />3.24 hour / 57 epochsⅡ<br />1.00 hour / 644 epochsⅢ |
-|                  STMeta-V3                   |    1.07169    | 1.11769  | 1.76601 | 63.65 hour / 1537 epochs<br />7.81 hour / 173 epochsⅡ<br />2.23 hour / 866 epochsⅢ |
+| <font color='red'>**Fitness: 5 mins**</font> |    NYCⅠ     |  ChicagoⅡ   |     DCⅢ     |                        Converged Time                        |
+| :------------------------------------------: | :---------: | :---------: | :---------: | :----------------------------------------------------------: |
+|                      HM                      |             |             |             |                                                              |
+|                   ARIMA(C)                   |             |             |             |                                                              |
+|                   XGBoost                    |             |             |             |                                                              |
+|                     GBRT                     |             |             |             |                                                              |
+|               ST_MGCN (G/DCI)                |   1.08738   |   1.13117   | **1.18093** | 22.11 hour / 86 epochsⅠ<br />14.23 hour / 24 epochsⅡ<br />10.94 hour / 78 epochsⅢ |
+|                 DCRNN(G/D C)                 |   1.08122   |   1.13004   |   1.18159   | 1.13 hour / 45 epochsⅠ<br />0.68 hour / 98 epochsⅡ<br />0.82 hour / 183 epochsⅢ<br /> |
+|                   LSTM (C)                   |   1.09245   |   1.13370   |   1.98413   | 1.20 hour / 135 epochsⅠ<br />1.97 hour / 423 epochsⅡ<br />0.11 hour / 226 epochsⅢ |
+|                TMeta-LSTM-GAL                |   1.08471   |   1.13760   |   1.91510   | 4.87 hour / 666 epochsⅠ<br />2.58 hour / 359 epochsⅡ<br />0.25 hour / 436 epochsⅢ |
+|                  STMeta-V1                   |   1.07651   |   1.11621   |   1.76058   | 46.08 hour / 1703 epochsⅠ<br />5.10 hour / 126 epochsⅡ<br />13.44 hour / 7969 epochsⅢ |
+|                  STMeta-V2                   |   1.08050   |   1.13592   |   1.82870   | 26.45 hour / 1201 epochs<br />3.24 hour / 57 epochsⅡ<br />1.00 hour / 644 epochsⅢ |
+|                  STMeta-V3                   | **1.07169** | **1.11769** |   1.76601   | 63.65 hour / 1537 epochs<br />7.81 hour / 173 epochsⅡ<br />2.23 hour / 866 epochsⅢ |
 
 **15 mins setting data_range:0.25，trainday=91(只用了91天的数据进行训练) **
 
@@ -86,20 +86,20 @@
 
 #### Xi'an
 
-| <font color='red'>**City: Xi'an<br />Fitness: 5 mins**</font> | Params | val-rmse |  test-rmse  |      Converged Time      |
-| :----------------------------------------------------------: | :----: | :------: | :---------: | :----------------------: |
-|                              HM                              |        |          |             |                          |
-|                           ARIMA(C)                           |        |          |             |                          |
-|                           XGBoost                            |        |          |             |                          |
-|                             GBRT                             |        |          |             |                          |
-|                          ST-ResNet                           |        | 1.18156  |   1.61597   |        0.32 hour         |
-|                       ST_MGCN (G/DCI)                        |        | 1.64811  | **1.19564** | 16.70 hour / 464 epochs  |
-|                         DCRNN(G/D C)                         |        |          |             |                          |
-|                           LSTM (C)                           |        | 1.70892  |   1.72004   |  1.81 hour / 999 epochs  |
-|                        TMeta-LSTM-GAL                        |        | 1.58379  |   1.63673   | 5.20 hour / 1572 epochs  |
-|                          STMeta-V1                           |        | 1.56940  |   1.63138   | 13.41 hour / 978 epochs  |
-|                          STMeta-V2                           |        | 1.57257  |   1.63010   | 13.28 hour / 1231 epochs |
-|                          STMeta-V3                           |        | 1.57058  |   1.62423   | 14.62 hour / 623 epochs  |
+| <font color='red'>**City: Xi'an<br />Fitness: 5 mins**</font> | Params | val-rmse |  test-rmse  |      Converged Time       |
+| :----------------------------------------------------------: | :----: | :------: | :---------: | :-----------------------: |
+|                              HM                              |        |          |             |                           |
+|                           ARIMA(C)                           |        |          |             |                           |
+|                           XGBoost                            |        |          |             |                           |
+|                             GBRT                             |        |          |             |                           |
+|                          ST-ResNet                           |        | 1.18156  |   1.61597   |         0.32 hour         |
+|                       ST_MGCN (G/DCI)                        |        | 1.64811  | **1.19564** |  16.70 hour / 464 epochs  |
+|                         DCRNN(G/D C)                         |        | 1.24127  |   1.70750   | 17.43 hour / 10000 epochs |
+|                           LSTM (C)                           |        | 1.70892  |   1.72004   |  1.81 hour / 999 epochs   |
+|                        TMeta-LSTM-GAL                        |        | 1.58379  |   1.63673   |  5.20 hour / 1572 epochs  |
+|                          STMeta-V1                           |        | 1.56940  |   1.63138   |  13.41 hour / 978 epochs  |
+|                          STMeta-V2                           |        | 1.57257  |   1.63010   | 13.28 hour / 1231 epochs  |
+|                          STMeta-V3                           |        | 1.57058  |   1.62423   |  14.62 hour / 623 epochs  |
 
 | <font color='red'>**City: Xi'an <br />Fitness: 15 mins**</font> |       Params       |  val-rmse   |  test-rmse  |      Converged Time       |
 | :----------------------------------------------------------: | :----------------: | :---------: | :---------: | :-----------------------: |
@@ -158,7 +158,7 @@
 |                             GBRT                             |        |          |             |                           |
 |                          ST-ResNet                           |        | 1.49047  |   1.95177   |         0.32 hour         |
 |                       ST_MGCN (G/DCI)                        |        | 1.95203  | **1.49627** |  14.60 hour / 393 epochs  |
-|                         DCRNN(G/D C)                         |        |          |             |                           |
+|                         DCRNN(G/D C)                         |        | 1.53995  |   2.03950   | 17.44 hour / 10000 epochs |
 |                           LSTM (C)                           |        | 2.07790  |   2.07850   | 29.77 hour / 12159 epochs |
 |                        TMeta-LSTM-GAL                        |        | 1.94822  |   1.95230   |  2.96 hour / 368 epochs   |
 |                          STMeta-V1                           |        | 1.93298  |   1.94136   | 22.93 hour / 1860 epochs  |
@@ -387,105 +387,105 @@
 
 #### METR-LA
 
-| <font color='red'>**Fitness: 5 mins**</font> |       val-rmse        | test-rmse |     Converged Time      |
-| :------------------------------------------: | :-------------------: | :-------: | :---------------------: |
-|                     HM``                     |                       |           |                         |
-|                   ARIMA(C)                   |                       |           |                         |
-|                  XGBoost``                   |                       |           |                         |
-|                    GBRT``                    |                       |           |                         |
-|               ST_MGCN (G/DCI)                |        5.29760        |  5.43718  | 34.04 hour / 564 epochs |
-|                 DCRNN(G/D C)                 |                       |           |                         |
-|                   LSTM (C)                   | `running dual 2080Ti` |           |                         |
-|                TMeta-LSTM-GAL                |                       |           |                         |
-|                  STMeta-V1                   |                       |           |                         |
-|                  STMeta-V2                   |                       |           |                         |
-|                  STMeta-V3                   |                       |           |                         |
+| <font color='red'>**Fitness: 5 mins**</font> | val-rmse |  test-rmse  |      Converged Time       |
+| :------------------------------------------: | :------: | :---------: | :-----------------------: |
+|                     HM``                     |          |             |                           |
+|                   ARIMA(C)                   |          |             |                           |
+|                  XGBoost``                   |          |             |                           |
+|                    GBRT``                    |          |             |                           |
+|               ST_MGCN (G/DCI)                | 5.29760  |   5.43718   |  34.04 hour / 564 epochs  |
+|                 DCRNN(G/D C)                 |          |             |                           |
+|                   LSTM (C)                   | 5.12706  |   5.57683   | 77.08 hour / 10000 epochs |
+|                TMeta-LSTM-GAL                | 5.50895  |   5.49366   | 99.32 hour / 6826 epochs  |
+|                  STMeta-V1                   | 5.40202  |   5.42765   | 41.90 hour / 1450 epochs  |
+|                  STMeta-V2                   | 5.34845  |   5.41480   | 38.04 hour / 2090 epochs  |
+|                  STMeta-V3                   | 5.33583  | **5.36920** | 23.28 hour / 1082 epochs  |
 
-| <font color='red'>**Fitness: 15 mins**</font> | val-rmse | test-rmse |     Converged Time      |
-| :-------------------------------------------: | :------: | :-------: | :---------------------: |
-|                   HM`2-0-4`                   | 7.20075  |  8.93415  |                         |
-|                   ARIMA(C)                    | 6.67445  |  7.02787  |                         |
-|             XGBoost`11-1-2-25-3`              | 6.30128  |  6.44322  |                         |
-|               GBRT`11-8-2-29-4`               | 6.22460  |  6.37050  |                         |
-|                ST_MGCN (G/DCI)                | 6.37587  |  6.64489  | 9.66 hour / 424 epochs  |
-|                 DCRNN(G/D C)                  | 5.75337  |  6.44030  | 4.37 hour / 5254 epochs |
-|                   LSTM (C)                    | 5.36337  |  6.38015  | 9.21 hour / 8296 epochs |
-|                TMeta-LSTM-GAL                 | 5.35551  |  6.15585  | 0.96 hour / 1113 epochs |
-|                   STMeta-V1                   | 5.40675  |  5.64445  | 2.68 hour / 3100 epochs |
-|                   STMeta-V2                   | 5.34392  |  5.79998  | 3.10 hour / 4265 epochs |
-|                   STMeta-V3                   | 5.42232  |  5.78807  | 1.00 hour / 1202 epochs |
+| <font color='red'>**Fitness: 15 mins**</font> | val-rmse |  test-rmse  |     Converged Time      |
+| :-------------------------------------------: | :------: | :---------: | :---------------------: |
+|                   HM`2-0-4`                   | 7.20075  |   8.93415   |                         |
+|                   ARIMA(C)                    | 6.67445  |   7.02787   |                         |
+|             XGBoost`11-1-2-25-3`              | 6.30128  |   6.44322   |                         |
+|               GBRT`11-8-2-29-4`               | 6.22460  |   6.37050   |                         |
+|                ST_MGCN (G/DCI)                | 6.37587  |   6.64489   | 9.66 hour / 424 epochs  |
+|                 DCRNN(G/D C)                  | 5.75337  |   6.44030   | 4.37 hour / 5254 epochs |
+|                   LSTM (C)                    | 5.36337  |   6.38015   | 9.21 hour / 8296 epochs |
+|                TMeta-LSTM-GAL                 | 5.35551  |   6.15585   | 0.96 hour / 1113 epochs |
+|                   STMeta-V1                   | 5.40675  | **5.64445** | 2.68 hour / 3100 epochs |
+|                   STMeta-V2                   | 5.34392  |   5.79998   | 3.10 hour / 4265 epochs |
+|                   STMeta-V3                   | 5.42232  |   5.78807   | 1.00 hour / 1202 epochs |
 
-| <font color='red'>**Fitness: 30 mins**</font> | val-rmse | test-rmse |      Converged Time      |
-| :-------------------------------------------: | :------: | :-------: | :----------------------: |
-|                   HM`2-0-4`                   | 7.71999  |  9.55981  |                          |
-|                   ARIMA(C)                    | 8.03009  |  9.22951  |                          |
-|              XGBoost`6-6-0-25-3`              | 7.24981  |  8.29796  |                          |
-|               GBRT`10-0-0-27-3`               | 7.12267  |  8.26941  |                          |
-|                ST_MGCN (G/DCI)                | 8.34595  |  8.07924  |  5.33 hour / 452 epochs  |
-|                 DCRNN(G/D C)                  | 7.34029  |  8.56215  | 1.99 hour / 4406 epochs  |
-|                   LSTM (C)                    | 6.26720  |  7.86569  | 5.06 hour / 10071 epochs |
-|                TMeta-LSTM-GAL                 | 6.27180  |  7.43553  | 0.78 hour / 1744 epochs  |
-|                   STMeta-V1                   | 6.57803  |  7.15628  | 1.84 hour / 3465 epochs  |
-|                   STMeta-V2                   | 6.10779  |  6.88889  | 4.79 hour / 10860 epochs |
-|                   STMeta-V3                   | 6.38780  |  7.18431  | 1.40 hour / 2571 epochs  |
+| <font color='red'>**Fitness: 30 mins**</font> | val-rmse |  test-rmse  |      Converged Time      |
+| :-------------------------------------------: | :------: | :---------: | :----------------------: |
+|                   HM`2-0-4`                   | 7.71999  |   9.55981   |                          |
+|                   ARIMA(C)                    | 8.03009  |   9.22951   |                          |
+|              XGBoost`6-6-0-25-3`              | 7.24981  |   8.29796   |                          |
+|               GBRT`10-0-0-27-3`               | 7.12267  |   8.26941   |                          |
+|                ST_MGCN (G/DCI)                | 8.34595  |   8.07924   |  5.33 hour / 452 epochs  |
+|                 DCRNN(G/D C)                  | 7.34029  |   8.56215   | 1.99 hour / 4406 epochs  |
+|                   LSTM (C)                    | 6.26720  |   7.86569   | 5.06 hour / 10071 epochs |
+|                TMeta-LSTM-GAL                 | 6.27180  |   7.43553   | 0.78 hour / 1744 epochs  |
+|                   STMeta-V1                   | 6.57803  |   7.15628   | 1.84 hour / 3465 epochs  |
+|                   STMeta-V2                   | 6.10779  | **6.88889** | 4.79 hour / 10860 epochs |
+|                   STMeta-V3                   | 6.38780  |   7.18431   | 1.40 hour / 2571 epochs  |
 
-| <font color='red'>**Fitness: 60 mins**</font> | val-rmse | test-rmse |      Converged Time      |
-| :-------------------------------------------: | :------: | :-------: | :----------------------: |
-|                   HM`2-1-4`                   | 9.85644  | 10.72724  |                          |
-|                   ARIMA(C)                    | 10.73827 | 11.73901  |                          |
-|              XGBoost`2-2-0-25-3`              | 9.17326  | 10.29861  |                          |
-|               GBRT`4-5-1-19-4`                | 9.03259  | 10.01320  |                          |
-|                ST_MGCN (G/DCI)                | 10.40405 | 10.79813  | 6.64 hour / 1240 epochs  |
-|                 DCRNN(G/D C)                  | 10.60033 | 11.12053  | 0.91 hour / 3247 epochs  |
-|                   LSTM (C)                    | 7.24440  | 10.08317  | 1.57 hour / 1868 epochs  |
-|                TMeta-LSTM-GAL                 | 5.65159  |  8.66965  | 1.19 hour / 12000 epochs |
-|                   STMeta-V1                   | 5.89982  |  8.83393  | 2.99 hour / 1779 epochs  |
-|                   STMeta-V2                   | 5.89793  |  9.14697  | 0.55 hour / 1590 epochs  |
-|                   STMeta-V3                   | 6.33248  |  8.99345  | 0.80 hour / 2387 epochs  |
+| <font color='red'>**Fitness: 60 mins**</font> | val-rmse |  test-rmse  |      Converged Time      |
+| :-------------------------------------------: | :------: | :---------: | :----------------------: |
+|                   HM`2-1-4`                   | 9.85644  |  10.72724   |                          |
+|                   ARIMA(C)                    | 10.73827 |  11.73901   |                          |
+|              XGBoost`2-2-0-25-3`              | 9.17326  |  10.29861   |                          |
+|               GBRT`4-5-1-19-4`                | 9.03259  |  10.01320   |                          |
+|                ST_MGCN (G/DCI)                | 10.40405 |  10.79813   | 6.64 hour / 1240 epochs  |
+|                 DCRNN(G/D C)                  | 10.60033 |  11.12053   | 0.91 hour / 3247 epochs  |
+|                   LSTM (C)                    | 7.24440  |  10.08317   | 1.57 hour / 1868 epochs  |
+|                TMeta-LSTM-GAL                 | 5.65159  | **8.66965** | 1.19 hour / 12000 epochs |
+|                   STMeta-V1                   | 5.89982  |   8.83393   | 2.99 hour / 1779 epochs  |
+|                   STMeta-V2                   | 5.89793  |   9.14697   | 0.55 hour / 1590 epochs  |
+|                   STMeta-V3                   | 6.33248  |   8.99345   | 0.80 hour / 2387 epochs  |
 
 #### PEMS-BAY
 
-| <font color='red'>**Fitness: 5 mins**</font> |          val-rmse           | test-rmse  |     Converged Time      |
-| :------------------------------------------: | :-------------------------: | :--------: | :---------------------: |
-|                     HM``                     | `running on 2080 notebook ` |            |                         |
-|                   ARIMA(C)                   |                             |            |                         |
-|                  XGBoost``                   |                             |            |                         |
-|                    GBRT``                    |                             |            |                         |
-|               ST_MGCN (G/DCI)                |         1.549654913         | 1.56445687 | 83.18 hour / 606 epochs |
-|                 DCRNN(G/D C)                 |                             |            |                         |
-|                   LSTM (C)                   |                             |            |                         |
-|                TMeta-LSTM-GAL                |                             |            |                         |
-|                  STMeta-V1                   |                             |            |                         |
-|                  STMeta-V2                   |                             |            |                         |
-|                  STMeta-V3                   |                             |            |                         |
+| <font color='red'>**Fitness: 5 mins**</font> |          val-rmse           | test-rmse |       Converged Time       |
+| :------------------------------------------: | :-------------------------: | :-------: | :------------------------: |
+|                     HM``                     |                             |           |                            |
+|                   ARIMA(C)                   |                             |           |                            |
+|                  XGBoost``                   |                             |           |                            |
+|                    GBRT``                    |                             |           |                            |
+|               ST_MGCN (G/DCI)                |           1.54965           |  1.56446  |  83.18 hour / 606 epochs   |
+|                 DCRNN(G/D C)                 |                             |           |                            |
+|                   LSTM (C)                   |           1.66181           |  1.63306  | 89.93 hour / 10000 epochs  |
+|                TMeta-LSTM-GAL                |           1.63218           |  1.59169  | 194.58 hour / 10000 epochs |
+|                  STMeta-V1                   |           1.59411           |  1.55908  | 183.12 hour / 3254 epochs  |
+|                  STMeta-V2                   |                             |           |                            |
+|                  STMeta-V3                   | `running on 2080 notebook ` |           |                            |
 
-| <font color='red'>**Fitness: 15 mins**</font> | val-rmse | test-rmse |      Converged Time       |
-| :-------------------------------------------: | :------: | :-------: | :-----------------------: |
-|                   HM`1-0-1`                   | 3.38002  |  3.68983  |                           |
-|                   ARIMA(C)                    | 2.95765  |  2.86893  |                           |
-|             XGBoost`12-4-2-21-4`              | 2.54384  |  2.62339  |                           |
-|               GBRT`10-6-1-65-6`               | 2.54514  |  2.64524  |                           |
-|                ST_MGCN (G/DCI)                | 5.28291  |  2.42605  |  23.16 hour / 489 epochs  |
-|                 DCRNN(G/D C)                  | 2.49209  |  5.32297  | 35.05 hour / 16862 epochs |
-|                   LSTM (C)                    | 5.15498  |  2.68953  | 13.92 hour / 13000 epochs |
-|                TMeta-LSTM-GAL                 | 5.61040  |  2.54368  |  3.68 hour / 2297 epochs  |
-|                   STMeta-V1                   | 5.52864  |  2.43292  | 24.00 hour / 8584 epochs  |
-|                   STMeta-V2                   | 5.56845  |  2.44947  | 19.26 hour / 8562 epochs  |
-|                   STMeta-V3                   | 5.54370  |  2.44571  | 19.71 hour / 6608 epochs  |
+| <font color='red'>**Fitness: 15 mins**</font> | val-rmse |  test-rmse  |      Converged Time       |
+| :-------------------------------------------: | :------: | :---------: | :-----------------------: |
+|                   HM`1-0-1`                   | 3.38002  |   3.68983   |                           |
+|                   ARIMA(C)                    | 2.95765  |   2.86893   |                           |
+|             XGBoost`12-4-2-21-4`              | 2.54384  |   2.62339   |                           |
+|               GBRT`10-6-1-65-6`               | 2.54514  |   2.64524   |                           |
+|                ST_MGCN (G/DCI)                | 5.28291  | **2.42605** |  23.16 hour / 489 epochs  |
+|                 DCRNN(G/D C)                  | 2.49209  |   5.32297   | 35.05 hour / 16862 epochs |
+|                   LSTM (C)                    | 5.15498  |   2.68953   | 13.92 hour / 13000 epochs |
+|                TMeta-LSTM-GAL                 | 5.61040  |   2.54368   |  3.68 hour / 2297 epochs  |
+|                   STMeta-V1                   | 5.52864  |   2.43292   | 24.00 hour / 8584 epochs  |
+|                   STMeta-V2                   | 5.56845  |   2.44947   | 19.26 hour / 8562 epochs  |
+|                   STMeta-V3                   | 5.54370  |   2.44571   | 19.71 hour / 6608 epochs  |
 
-| <font color='red'>**Fitness: 30 mins**</font> | val-rmse | test-rmse |      Converged Time       |
-| :-------------------------------------------: | :------: | :-------: | :-----------------------: |
-|                   HM`1-0-1`                   | 3.77182  |  3.96537  |                           |
-|                   ARIMA(C)                    | 4.20225  |  3.93569  |                           |
-|             XGBoost`12-13-2-27-3`             | 3.19128  |  3.25334  |                           |
-|               GBRT`12-6-2-90-7`               | 3.19538  |  3.37025  |                           |
-|                ST_MGCN (G/DCI)                | 6.01616  |  3.04172  | 21.48 hour / 1182 epochs  |
-|                 DCRNN(G/D C)                  | 3.28756  |  6.19802  | 17.99 hour / 17013 epochs |
-|                   LSTM (C)                    | 5.96921  |  3.68256  | 7.48 hour / 13000 epochs  |
-|                TMeta-LSTM-GAL                 | 6.51965  |  3.23098  | 7.99 hour / 11116 epochs  |
-|                   STMeta-V1                   | 6.44145  |  3.11554  |  8.34 hour / 5467 epochs  |
-|                   STMeta-V2                   | 6.53199  |  3.20407  |  4.44 hour / 3492 epochs  |
-|                   STMeta-V3                   | 6.49245  |  3.18722  |  3.08 hour / 1663 epochs  |
+| <font color='red'>**Fitness: 30 mins**</font> | val-rmse |  test-rmse  |      Converged Time       |
+| :-------------------------------------------: | :------: | :---------: | :-----------------------: |
+|                   HM`1-0-1`                   | 3.77182  |   3.96537   |                           |
+|                   ARIMA(C)                    | 4.20225  |   3.93569   |                           |
+|             XGBoost`12-13-2-27-3`             | 3.19128  |   3.25334   |                           |
+|               GBRT`12-6-2-90-7`               | 3.19538  |   3.37025   |                           |
+|                ST_MGCN (G/DCI)                |          |   3.04172   | 21.48 hour / 1182 epochs  |
+|                 DCRNN(G/D C)                  | 3.28756  |   6.19802   | 17.99 hour / 17013 epochs |
+|                   LSTM (C)                    |          |   3.68256   | 7.48 hour / 13000 epochs  |
+|                TMeta-LSTM-GAL                 |          |   3.23098   | 7.99 hour / 11116 epochs  |
+|                   STMeta-V1                   |          | **3.11554** |  8.34 hour / 5467 epochs  |
+|                   STMeta-V2                   |          |   3.20407   |  4.44 hour / 3492 epochs  |
+|                   STMeta-V3                   |          |   3.18722   |  3.08 hour / 1663 epochs  |
 
 | <font color='red'>**Fitness: 60 mins**</font> | val-rmse |  test-rmse  |        Converged Time         |
 | :-------------------------------------------: | :------: | :---------: | :---------------------------: |
@@ -493,10 +493,10 @@
 |                   ARIMA(C)                    | 6.15591  |   5.67008   |                               |
 |             XGBoost`12-6-2-19-3`              | 3.46341  |   3.70330   |                               |
 |               GBRT`12-7-2-59-5`               | 3.40530  |   3.70401   |                               |
-|                ST_MGCN (G/DCI)                | 6.47523  |   3.48569   |   10.94 hour / 1236 epochs    |
+|                ST_MGCN (G/DCI)                |          |   3.48569   |   10.94 hour / 1236 epochs    |
 |                 DCRNN(G/D C)                  | 3.93587  |   6.91955   |   10.71 hour / 20000 epochs   |
-|                   LSTM (C)                    | 6.95412  |   4.77696   |   7.53 hour / 10002 epochs    |
-|                TMeta-LSTM-GAL                 | 6.68086  |   3.61642   |   15.45 hour / 13000 epochs   |
+|                   LSTM (C)                    |          |   4.77696   |   7.53 hour / 10002 epochs    |
+|                TMeta-LSTM-GAL                 |          |   3.61642   |   15.45 hour / 13000 epochs   |
 |                   STMeta-V1                   | 3.27156  | **3.26053** |   92.66 hour / 27151 epochs   |
 |                   STMeta-V2                   | 3.36153  |   3.32834   | 81.70 hour / **30000** epochs |
 |                   STMeta-V3                   | 3.29037  |   3.39171   |   92.00 hour / 20830 epochs   |
