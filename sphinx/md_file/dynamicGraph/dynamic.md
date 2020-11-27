@@ -17,7 +17,7 @@
 | <font color='red'>**City: Shanghai<br />Fitness: 5 mins**</font> | Params | val-rmse | test-rmse | Converged Time |
 | :----------------------------------------------------------: | :----: | :------: | :-------: | :------------: |
 |                        distance graph                        |        | 25.51274 | 25.99594  |  3188 epochs   |
-|                    static reachable graph                    |        |          |           |                |
+|                    static reachable graph                    |        | 38.33571 | 39.66569  |   958 epochs   |
 |                   dynamic reachable graph                    |        |          |           |                |
 
 * distance graph : 根据站点的欧氏距离计算的静态图.
