@@ -8,19 +8,19 @@
 
 **5 mins setting data_range:0.125，trainday=60(取前1/8的数据，只用其中30天的数据进行训练) **
 
-| <font color='red'>**Fitness: 5 mins**</font> |    NYCⅠ     |  ChicagoⅡ   |     DCⅢ     |                        Converged Time                        |
-| :------------------------------------------: | :---------: | :---------: | :---------: | :----------------------------------------------------------: |
-|                      HM                      |             |             |             |                                                              |
-|                   ARIMA(C)                   |             |             |             |                                                              |
-|                   XGBoost                    |             |             |             |                                                              |
-|                     GBRT                     |             |             |             |                                                              |
-|               ST_MGCN (G/DCI)                |   1.08738   |   1.13117   | **1.18093** | 22.11 hour / 86 epochsⅠ<br />14.23 hour / 24 epochsⅡ<br />10.94 hour / 78 epochsⅢ |
-|                 DCRNN(G/D C)                 |   1.08122   |   1.13004   |   1.18159   | 1.13 hour / 45 epochsⅠ<br />0.68 hour / 98 epochsⅡ<br />0.82 hour / 183 epochsⅢ<br /> |
-|                   LSTM (C)                   |   1.09245   |   1.13370   |   1.98413   | 1.20 hour / 135 epochsⅠ<br />1.97 hour / 423 epochsⅡ<br />0.11 hour / 226 epochsⅢ |
-|                TMeta-LSTM-GAL                |   1.08471   |   1.13760   |   1.91510   | 4.87 hour / 666 epochsⅠ<br />2.58 hour / 359 epochsⅡ<br />0.25 hour / 436 epochsⅢ |
-|                  STMeta-V1                   |   1.07651   |   1.11621   |   1.76058   | 46.08 hour / 1703 epochsⅠ<br />5.10 hour / 126 epochsⅡ<br />13.44 hour / 7969 epochsⅢ |
-|                  STMeta-V2                   |   1.08050   |   1.13592   |   1.82870   | 26.45 hour / 1201 epochs<br />3.24 hour / 57 epochsⅡ<br />1.00 hour / 644 epochsⅢ |
-|                  STMeta-V3                   | **1.07169** | **1.11769** |   1.76601   | 63.65 hour / 1537 epochs<br />7.81 hour / 173 epochsⅡ<br />2.23 hour / 866 epochsⅢ |
+| <font color='red'>**Fitness: 5 mins**</font> |         NYCⅠ         |       ChicagoⅡ        |      DCⅢ       |                        Converged Time                        |
+| :------------------------------------------: | :------------------: | :-------------------: | :------------: | :----------------------------------------------------------: |
+|                      HM                      |    1.07305`6-0-0`    |    1.11948`2-2-2`     | 1.15209`6-1-0` |                                                              |
+|                   ARIMA(C)                   |       1.08698        |        1.12772        |    1.17559     |                                                              |
+|                   XGBoost                    | 1.04363`11-0-0-92-2` | 1.11312`11-1-0-159-2` |                |                                                              |
+|                     GBRT                     |                      |                       |                |                                                              |
+|               ST_MGCN (G/DCI)                |       1.08738        |        1.13117        |  **1.18093**   | 22.11 hour / 86 epochsⅠ<br />14.23 hour / 24 epochsⅡ<br />10.94 hour / 78 epochsⅢ |
+|                 DCRNN(G/D C)                 |       1.08122        |        1.13004        |    1.18159     | 1.13 hour / 45 epochsⅠ<br />0.68 hour / 98 epochsⅡ<br />0.82 hour / 183 epochsⅢ<br /> |
+|                   LSTM (C)                   |       1.09245        |        1.13370        |    1.98413     | 1.20 hour / 135 epochsⅠ<br />1.97 hour / 423 epochsⅡ<br />0.11 hour / 226 epochsⅢ |
+|                TMeta-LSTM-GAL                |       1.08471        |        1.13760        |    1.91510     | 4.87 hour / 666 epochsⅠ<br />2.58 hour / 359 epochsⅡ<br />0.25 hour / 436 epochsⅢ |
+|                  STMeta-V1                   |       1.07651        |        1.11621        |    1.76058     | 46.08 hour / 1703 epochsⅠ<br />5.10 hour / 126 epochsⅡ<br />13.44 hour / 7969 epochsⅢ |
+|                  STMeta-V2                   |       1.08050        |        1.13592        |    1.82870     | 26.45 hour / 1201 epochs<br />3.24 hour / 57 epochsⅡ<br />1.00 hour / 644 epochsⅢ |
+|                  STMeta-V3                   |     **1.07169**      |      **1.11769**      |    1.76601     | 63.65 hour / 1537 epochs<br />7.81 hour / 173 epochsⅡ<br />2.23 hour / 866 epochsⅢ |
 
 **15 mins setting data_range:0.25，trainday=91(只用了91天的数据进行训练) **
 
@@ -89,7 +89,7 @@
 | <font color='red'>**City: Xi'an<br />Fitness: 5 mins**</font> | Params | val-rmse |  test-rmse  |      Converged Time       |
 | :----------------------------------------------------------: | :----: | :------: | :---------: | :-----------------------: |
 |                              HM                              |        |          |             |                           |
-|                           ARIMA(C)                           |        |          |             |                           |
+|                           ARIMA(C)                           |        | 1.67708  |   1.69753   |                           |
 |                           XGBoost                            |        |          |             |                           |
 |                             GBRT                             |        |          |             |                           |
 |                          ST-ResNet                           |        | 1.18156  |   1.61597   |         0.32 hour         |
@@ -153,7 +153,7 @@
 | <font color='red'>**City: Chengdu<br />Fitness: 5 mins**</font> | Params | val-rmse |  test-rmse  |      Converged Time       |
 | :----------------------------------------------------------: | :----: | :------: | :---------: | :-----------------------: |
 |                              HM                              |        |          |             |                           |
-|                           ARIMA(C)                           |        |          |             |                           |
+|                           ARIMA(C)                           |        | 2.04964  |   2.05823   |                           |
 |                           XGBoost                            |        |          |             |                           |
 |                             GBRT                             |        |          |             |                           |
 |                          ST-ResNet                           |        | 1.49047  |   1.95177   |         0.32 hour         |
@@ -220,19 +220,19 @@
 
 #### Chongqing
 
-| <font color='red'>**City: Chongqing<br />Fitness: 5 mins**</font> | Params |        val-rmse         | test-rmse |     Converged Time      |
-| :----------------------------------------------------------: | :----: | :---------------------: | :-------: | :---------------------: |
-|                              HM                              |        |                         |           |                         |
-|                           ARIMA(C)                           |        |                         |           |                         |
-|                           XGBoost                            |        |                         |           |                         |
-|                             GBRT                             |        |                         |           |                         |
-|                       ST_MGCN (G/DCI)                        |        |        21.54642         | 25.68775  | 68.96 hour / 372 epochs |
-|                         DCRNN(G/D C)                         |        |                         |           |                         |
-|                           LSTM (C)                           |        | `running chaidi 1080Ti` |           |                         |
-|                        TMeta-LSTM-GAL                        |        |                         |           |                         |
-|                          STMeta-V1                           |        |                         |           |                         |
-|                          STMeta-V2                           |        |                         |           |                         |
-|                          STMeta-V3                           |        |                         |           |                         |
+| <font color='red'>**City: Chongqing<br />Fitness: 5 mins**</font> |     Params     |        val-rmse         | test-rmse |      Converged Time      |
+| :----------------------------------------------------------: | :------------: | :---------------------: | :-------: | :----------------------: |
+|                              HM                              |                |                         |           |                          |
+|                           ARIMA(C)                           |                |        29.97825         | 30.22180  |                          |
+|                           XGBoost                            | `12-10-2-75-6` |        22.27867         | 23.61560  |                          |
+|                             GBRT                             |                |                         |           |                          |
+|                       ST_MGCN (G/DCI)                        |                |        21.54642         | 25.68775  | 68.96 hour / 372 epochs  |
+|                         DCRNN(G/D C)                         |                |        23.42774         | 28.04862  | 41.27 hour / 8219 epochs |
+|                           LSTM (C)                           |                | `running chaidi 1080Ti` |           |                          |
+|                        TMeta-LSTM-GAL                        |                |                         |           |                          |
+|                          STMeta-V1                           |                |                         |           |                          |
+|                          STMeta-V2                           |                |                         |           |                          |
+|                          STMeta-V3                           |                |                         |           |                          |
 
 | **<font color='#ff0000'>City: Chongqing <br />Fitness: 15mins</font>** |       Params       |   val-rmse   |  test-rmse   |       Converged Time       |
 | :----------------------------------------------------------: | :----------------: | :----------: | :----------: | :------------------------: |
@@ -293,19 +293,19 @@
 
 #### Shanghai
 
-| <font color='red'>**City: Shanghai<br />Fitness: 5 mins**</font> | Params |       val-rmse        | test-rmse |       Converged Time       |
-| :----------------------------------------------------------: | :----: | :-------------------: | :-------: | :------------------------: |
-|                              HM                              |        |                       |           |                            |
-|                           ARIMA(C)                           |        |                       |           |                            |
-|                           XGBoost                            |        |                       |           |                            |
-|                             GBRT                             |        |                       |           |                            |
-|                       ST_MGCN (G/DCI)                        |        |       18.18615        | 21.79021  |  45.13 hour / 1152 epochs  |
-|                         DCRNN(G/D C)                         |        |                       |           |                            |
-|                           LSTM (C)                           |        |       25.52363        | 25.80541  | 43.28 hour / 20000 epochs  |
-|                        TMeta-LSTM-GAL                        |        |       22.49166        | 23.17000  | 59.68 hour / 20000 epochs  |
-|                          STMeta-V1                           |        |       19.65263        | 20.51375  | 197.48 hour / 20000 epochs |
-|                          STMeta-V2                           |        |                       |           |                            |
-|                          STMeta-V3                           |        | `running dual 2080Ti` |           |                            |
+| <font color='red'>**City: Shanghai<br />Fitness: 5 mins**</font> |     Params      |       val-rmse        | test-rmse |       Converged Time       |
+| :----------------------------------------------------------: | :-------------: | :-------------------: | :-------: | :------------------------: |
+|                              HM                              |                 |                       |           |                            |
+|                           ARIMA(C)                           |                 |       25.98658        | 26.10506  |                            |
+|                           XGBoost                            | `11-13-3-191-3` |       18.70653        | 20.35689  |                            |
+|                             GBRT                             |                 |                       |           |                            |
+|                       ST_MGCN (G/DCI)                        |                 |       18.18615        | 21.79021  |  45.13 hour / 1152 epochs  |
+|                         DCRNN(G/D C)                         |                 |       20.31293        | 23.97142  | 36.49 hour / 20000 epochs  |
+|                           LSTM (C)                           |                 |       25.52363        | 25.80541  | 43.28 hour / 20000 epochs  |
+|                        TMeta-LSTM-GAL                        |                 |       22.49166        | 23.17000  | 59.68 hour / 20000 epochs  |
+|                          STMeta-V1                           |                 |       19.65263        | 20.51375  | 197.48 hour / 20000 epochs |
+|                          STMeta-V2                           |                 |                       |           |                            |
+|                          STMeta-V3                           |                 | `running dual 2080Ti` |           |                            |
 
 | <font color='#ff0000'>**City: Shanghai  Fitness: 15mins**</font> |       Params       |   val-rmse   |  test-rmse   |      Converged Time       |
 | :----------------------------------------------------------: | :----------------: | :----------: | :----------: | :-----------------------: |
@@ -390,7 +390,7 @@
 | <font color='red'>**Fitness: 5 mins**</font> | val-rmse |  test-rmse  |      Converged Time       |
 | :------------------------------------------: | :------: | :---------: | :-----------------------: |
 |                     HM``                     |          |             |                           |
-|                   ARIMA(C)                   |          |             |                           |
+|                   ARIMA(C)                   | 5.33371  |   5.77613   |                           |
 |                  XGBoost``                   |          |             |                           |
 |                    GBRT``                    |          |             |                           |
 |               ST_MGCN (G/DCI)                | 5.29760  |   5.43718   |  34.04 hour / 564 epochs  |
@@ -447,8 +447,8 @@
 
 | <font color='red'>**Fitness: 5 mins**</font> |          val-rmse           | test-rmse |       Converged Time       |
 | :------------------------------------------: | :-------------------------: | :-------: | :------------------------: |
-|                     HM``                     |                             |           |                            |
-|                   ARIMA(C)                   |                             |           |                            |
+|                  HM`1-0-0`                   |           1.82400           |  1.85713  |                            |
+|                   ARIMA(C)                   |           1.75849           |  1.82180  |                            |
 |                  XGBoost``                   |                             |           |                            |
 |                    GBRT``                    |                             |           |                            |
 |               ST_MGCN (G/DCI)                |           1.54965           |  1.56446  |  83.18 hour / 606 epochs   |
