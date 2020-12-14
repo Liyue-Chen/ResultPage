@@ -199,10 +199,11 @@
 <div class="section" id="shanghai">
 <h3>Shanghai<a class="headerlink" href="#shanghai" title="Permalink to this headline">¶</a></h3>
 <p>使用一个月(30天)的数据进行训练，<em><strong>C/P/T=6/0/0</strong></em>，实验基于STMeta-V1(GCLSTM-GAL-GAL)</p>
+<p><strong>以下是使用inflow+outflow 预测inflow+outflow的结果</strong></p>
 <table border="1" class="docutils">
 <thead>
 <tr>
-<th align="center"><font color='red'><strong>City: Shanghai<br />Fitness: 5 mins</strong></font></th>
+<th align="center"><strong>Fitness: 5 mins<br />Inflow,Outflow :arrow_right:Inflow,Outflow</strong></th>
 <th align="center">Params</th>
 <th align="center">val-rmse</th>
 <th align="center">test-rmse</th>
@@ -214,15 +215,15 @@
 <td align="center">distance graph</td>
 <td align="center"></td>
 <td align="center">25.51274</td>
-<td align="center">25.99594</td>
-<td align="center">3188 epochs</td>
+<td align="center">25.81179</td>
+<td align="center">44.30 hour / 3000 epochs</td>
 </tr>
 <tr>
 <td align="center">static reachable graph</td>
 <td align="center">1-hop</td>
 <td align="center">41.23481</td>
-<td align="center">37.46707</td>
-<td align="center">25.20 hour / 2039 epochs</td>
+<td align="center">36.92094</td>
+<td align="center">96.88 hour / 7941 epochs</td>
 </tr>
 <tr>
 <td align="center">static reachable graph</td>
@@ -244,7 +245,48 @@
 <li><p>static reachable graph  : 根据站点之间的运行时间确定的5分钟可达图，这是一张静态图，因为站点与站点的距离是固定的.</p></li>
 <li><p>dynamic reachable graph：根据发车间隔和运行时间共同确定的5分钟可达图，这是一张动态图，因为列车的是动态的.</p></li>
 </ul>
-</div>
+<p><strong>以下是使用inflow+outflow 预测outflow的结果</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th align="center"><strong>Fitness: 5 mins</strong></th>
+<th align="center">Params</th>
+<th align="center">val-rmse</th>
+<th align="center">test-rmse</th>
+<th align="center">Converged Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">distance graph<br /><strong>Inflow:arrow_right:Outflow</strong></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">static reachable graph<br /><strong>Inflow:arrow_right:Outflow</strong></td>
+<td align="center">2-hop</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">distance graph<br /><strong>Inflow,Outflow :arrow_right:Outflow</strong></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">static reachable graph<br /><strong>Inflow,Outflow :arrow_right:Outflow</strong></td>
+<td align="center">2-hop</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table></div>
 </div>
 </div>
 
