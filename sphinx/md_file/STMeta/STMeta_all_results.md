@@ -394,7 +394,7 @@
 |             XGBoost`12-1-0-36-3`             | 5.05414  |   5.46866   |                           |
 |               GBRT`6-1-0-42-3`               | 5.00347  |   5.42328   |                           |
 |               ST_MGCN (G/DCI)                | 5.29760  |   5.43718   |  34.04 hour / 564 epochs  |
-|                 DCRNN(G/D C)                 |  `3090`  |             |                           |
+|                 DCRNN(G/D C)                 | 4.82119  |   5.43916   | 240.14 hour / 6668 epochs |
 |                   LSTM (C)                   | 5.12706  |   5.57683   | 77.08 hour / 10000 epochs |
 |                TMeta-LSTM-GAL                | 5.50895  |   5.49366   | 99.32 hour / 6826 epochs  |
 |                  STMeta-V1                   | 5.40202  |   5.42765   | 41.90 hour / 1450 epochs  |
